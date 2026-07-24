@@ -9,6 +9,14 @@
 <meta content="#07101f" name="theme-color"/>
 <link href="/assets/images/ui/og-cover.png" rel="icon"/>
 <link href="/assets/css/site-v90.css" rel="stylesheet"/>
+<script>
+(function () {
+  var hash = window.location.hash || "";
+  if (/^#(?:invite_token|recovery_token|confirmation_token)=/i.test(hash)) {
+    window.location.replace('/admin/' + hash);
+  }
+})();
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Bỏ qua điều hướng</a><div class="page-wipe"></div>
