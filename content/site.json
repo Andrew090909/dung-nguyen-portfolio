@@ -1,0 +1,44 @@
+{
+  "vi": {
+    "home": {
+      "heroTitle": "Chiến lược rõ ràng.<br><span class=\"accent\">Tăng trưởng có hệ thống.</span>",
+      "heroLead": "Tôi kết hợp chiến lược thương hiệu, digital marketing, dữ liệu và AI để giúp doanh nghiệp biến các hoạt động rời rạc thành một hệ thống có thể đo lường, vận hành và mở rộng.",
+      "aboutTitle": "Marketing không bắt đầu từ quảng cáo.",
+      "aboutText": "Nó bắt đầu từ sản phẩm, trải nghiệm, niềm tin và khả năng doanh nghiệp biến dữ liệu thành quyết định tốt hơn."
+    },
+    "contact": {
+      "email": "nguyendhungdung@gmail.com",
+      "phone": "",
+      "zalo": "https://zaloapp.com/qr/p/1ute4cg6xoom2"
+    }
+  },
+  "en": {
+    "home": {
+      "heroTitle": "Clear strategy.<br><span class=\"accent\">Scalable growth systems.</span>",
+      "heroLead": "I combine brand strategy, digital marketing, data and AI to turn scattered activities into a measurable, operable and scalable growth system.",
+      "aboutTitle": "Marketing does not start with advertising.",
+      "aboutText": "It starts with the product, the experience, trust and the ability to turn data into better decisions."
+    },
+    "contact": {
+      "email": "nguyendhungdung@gmail.com",
+      "phone": "",
+      "zalo": "https://zaloapp.com/qr/p/1ute4cg6xoom2"
+    }
+  },
+  "zh": {
+    "home": {
+      "heroTitle": "清晰的战略。<br><span class=\"accent\">可扩展的增长系统。</span>",
+      "heroLead": "我结合品牌战略、数字营销、数据与人工智能，把分散的营销活动转化为可衡量、可运营、可扩展的增长系统。",
+      "aboutTitle": "营销并不是从广告开始。",
+      "aboutText": "它始于产品、体验、信任，以及企业把数据转化为更好决策的能力。"
+    },
+    "contact": {
+      "email": "nguyendhungdung@gmail.com",
+      "phone": "",
+      "zalo": "https://zaloapp.com/qr/p/1ute4cg6xoom2"
+    }
+  },
+  "settings": {
+    "showHomePortfolio": false
+  }
+}

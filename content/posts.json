@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "slug": "marketing-system-before-ad-spend",
+      "status": "published",
+      "cover": "/assets/images/portfolio/phong-cach-moc-04.webp",
+      "vi": {
+        "category": "Chiến lược",
+        "title": "Vì sao tăng ngân sách quảng cáo không giải quyết được một hệ thống marketing yếu?",
+        "excerpt": "Quảng cáo có thể khuếch đại một hệ thống tốt, nhưng cũng khuếch đại rất nhanh những điểm yếu trong định vị, nội dung, landing page và đo lường.",
+        "body": "<p>Doanh nghiệp thường nhìn thấy doanh số giảm và phản ứng bằng cách tăng ngân sách. Vấn đề là ngân sách chỉ là một đòn bẩy phân phối. Nó không tự sửa được định vị mơ hồ, thông điệp thiếu sức thuyết phục, trang đích yếu hay quy trình bán hàng chậm.</p><h2>Bắt đầu bằng chẩn đoán</h2><p>Hãy kiểm tra bốn tầng: nhu cầu thị trường, đề xuất giá trị, trải nghiệm chuyển đổi và hệ thống đo lường. Khi bốn tầng này đủ chắc, quảng cáo mới trở thành động cơ tăng trưởng thay vì khoản chi khó kiểm soát.</p>"
+      },
+      "en": {
+        "category": "Strategy",
+        "title": "Why more ad spend cannot fix a weak marketing system",
+        "excerpt": "Advertising amplifies a strong system, but it also amplifies weak positioning, content, landing pages and measurement.",
+        "body": "<p>Businesses often react to declining sales by increasing media spend. Budget is only a distribution lever. It cannot repair unclear positioning, weak messaging, a poor landing page or a slow sales process.</p><h2>Start with diagnosis</h2><p>Review four layers: market demand, value proposition, conversion experience and measurement. Once these layers are strong, advertising becomes a growth engine rather than an uncontrolled cost.</p>"
+      },
+      "zh": {
+        "category": "战略",
+        "title": "为什么增加广告预算无法修复薄弱的营销系统",
+        "excerpt": "广告会放大强大的系统，也会放大定位、内容、落地页和衡量体系中的弱点。",
+        "body": "<p>当销售下降时，企业常常直接增加广告预算。但预算只是分发杠杆，无法修复模糊的定位、缺乏说服力的信息、糟糕的落地页或缓慢的销售流程。</p><h2>从诊断开始</h2><p>检查四个层面：市场需求、价值主张、转化体验和衡量体系。只有这些层面足够稳固，广告才会成为增长引擎。</p>"
+      }
+    },
+    {
+      "slug": "ai-workflow-for-marketing-team",
+      "status": "published",
+      "cover": "/assets/images/portfolio/adeva-04.webp",
+      "vi": {
+        "category": "AI & Vận hành",
+        "title": "AI nên đi vào quy trình marketing ở đâu trước?",
+        "excerpt": "Không bắt đầu bằng việc mua thật nhiều công cụ. Hãy bắt đầu ở những điểm lặp lại, tốn thời gian và có dữ liệu đầu vào rõ ràng.",
+        "body": "<p>AI có giá trị nhất khi nó giảm ma sát trong một quy trình đã được xác định rõ. Nghiên cứu sơ bộ, chuẩn hóa brief, phân loại lead, tổng hợp báo cáo và tái sử dụng nội dung là những điểm khởi đầu thực tế.</p><h2>Nguyên tắc triển khai</h2><p>Chọn một workflow, xác định đầu vào và đầu ra, đặt tiêu chuẩn kiểm tra chất lượng, sau đó mới tự động hóa. Không tự động hóa sự hỗn loạn.</p>"
+      },
+      "en": {
+        "category": "AI & Operations",
+        "title": "Where should AI enter a marketing workflow first?",
+        "excerpt": "Do not begin by buying many tools. Begin with repetitive, time-consuming tasks that have clear inputs.",
+        "body": "<p>AI is most valuable when it removes friction from a clearly defined process. Early research, brief standardisation, lead classification, reporting and content repurposing are practical starting points.</p><h2>Implementation rule</h2><p>Select one workflow, define inputs and outputs, set quality checks and only then automate. Do not automate chaos.</p>"
+      },
+      "zh": {
+        "category": "AI 与运营",
+        "title": "人工智能应该首先进入营销流程的哪个环节？",
+        "excerpt": "不要从购买大量工具开始，而要从重复、耗时且输入清晰的任务开始。",
+        "body": "<p>当流程已经被清晰定义时，AI 才最有价值。初步研究、简报标准化、线索分类、报告汇总和内容再利用都是实际的起点。</p><h2>实施原则</h2><p>选择一个流程，定义输入和输出，建立质量检查，然后再自动化。不要自动化混乱。</p>"
+      }
+    },
+    {
+      "slug": "brand-trust-in-b2b",
+      "status": "published",
+      "cover": "/assets/images/portfolio/phuc-dai-nam-06.webp",
+      "vi": {
+        "category": "Thương hiệu",
+        "title": "B2B không chỉ bán giải pháp. B2B bán mức độ tin cậy.",
+        "excerpt": "Khách hàng doanh nghiệp đánh giá năng lực qua bằng chứng, tính nhất quán, quy trình và cảm giác rủi ro khi hợp tác.",
+        "body": "<p>Trong B2B, người mua hiếm khi quyết định chỉ vì một mẫu quảng cáo đẹp. Họ cần thấy bằng chứng triển khai, cách doanh nghiệp phản hồi, chất lượng tài liệu, mức độ rõ ràng của quy trình và khả năng chịu trách nhiệm.</p><h2>Biến niềm tin thành hệ thống</h2><p>Case study, tài liệu bán hàng, website, nội dung chuyên môn và quy trình chăm sóc phải cùng kể một câu chuyện nhất quán về năng lực.</p>"
+      },
+      "en": {
+        "category": "Brand",
+        "title": "B2B does not only sell solutions. It sells confidence.",
+        "excerpt": "Business buyers assess capability through evidence, consistency, process and perceived collaboration risk.",
+        "body": "<p>In B2B, buyers rarely decide because of one attractive ad. They look for delivery evidence, responsiveness, document quality, process clarity and accountability.</p><h2>Turn trust into a system</h2><p>Case studies, sales materials, the website, expert content and follow-up processes must tell one consistent story about capability.</p>"
+      },
+      "zh": {
+        "category": "品牌",
+        "title": "B2B 不只销售解决方案，更销售可信度。",
+        "excerpt": "企业买家通过证据、一致性、流程和合作风险来评估能力。",
+        "body": "<p>在 B2B 中，买家很少因为一则漂亮的广告就做出决定。他们需要看到执行证据、响应速度、文件质量、流程清晰度和责任感。</p><h2>把信任变成系统</h2><p>案例研究、销售材料、网站、专业内容和跟进流程必须共同讲述一个一致的能力故事。</p>"
+      }
+    }
+  ]
+}

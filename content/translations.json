@@ -1,0 +1,546 @@
+{
+  "vi": {
+    "code": "vi",
+    "prefix": "",
+    "home": "Trang chủ",
+    "portfolio": "Portfolio",
+    "pricing": "Báo giá",
+    "insights": "Insights",
+    "contact": "Liên hệ",
+    "langhome": "/",
+    "title": "Dũng Nguyễn — Marketing Strategist, AI & Growth Systems",
+    "heroEyebrow": "Marketing strategist · AI-enabled growth",
+    "heroTitle": "Chiến lược rõ ràng.<br><span class=\"accent\">Tăng trưởng có hệ thống.</span>",
+    "heroLead": "Tôi kết hợp chiến lược thương hiệu, digital marketing, dữ liệu và AI để giúp doanh nghiệp biến các hoạt động rời rạc thành một hệ thống có thể đo lường, vận hành và mở rộng.",
+    "explore": "Xem năng lực",
+    "talk": "Trao đổi dự án",
+    "scroll": "Cuộn để khám phá",
+    "problemK": "Tôi giải quyết điều gì",
+    "problemH": "Không bắt đầu bằng công cụ.<br>Bắt đầu bằng nút thắt tăng trưởng.",
+    "problemP": "Một website đẹp, một chiến dịch quảng cáo hay một workflow AI chỉ có giá trị khi chúng phục vụ đúng bài toán kinh doanh và tạo ra năng lực vận hành tốt hơn.",
+    "problems": [
+      [
+        "Định vị chưa rõ",
+        "Khách hàng không hiểu vì sao nên chọn bạn thay vì một lựa chọn khác."
+      ],
+      [
+        "Marketing rời rạc",
+        "Nội dung, quảng cáo, website, sales và dữ liệu không vận hành như một hệ thống."
+      ],
+      [
+        "Tăng trưởng khó đo lường",
+        "Doanh nghiệp có nhiều hoạt động nhưng thiếu tracking, dashboard và tiêu chuẩn ra quyết định."
+      ]
+    ],
+    "capK": "Năng lực & công nghệ",
+    "capH": "Từ chiến lược đến triển khai.<br>Không đứt gãy giữa ý tưởng và vận hành.",
+    "capP": "Tôi dùng công cụ như một phần của hệ thống: nghiên cứu, xây thương hiệu, sản xuất nội dung, phân phối, đo lường và tự động hóa.",
+    "caps": [
+      [
+        "AI · Research · Strategy",
+        "ChatGPT · Gemini · Claude",
+        "Nghiên cứu thị trường, khai phá insight, phát triển chiến lược, thông điệp và workflow tri thức."
+      ],
+      [
+        "Brand · Design System",
+        "Photoshop · Canva · CorelDRAW",
+        "Xây nhận diện, key visual, tài sản bán hàng và hệ thống hình ảnh nhất quán."
+      ],
+      [
+        "Video · Storytelling",
+        "CapCut · Premiere Pro · DaVinci Resolve",
+        "Kịch bản, quay dựng, chỉnh màu và kể chuyện cho social, website, quảng cáo."
+      ],
+      [
+        "Growth · Measurement",
+        "GA4 · GTM · Meta Ads · Google Ads · SEO · WordPress · n8n",
+        "Thiết lập tracking, quảng cáo, dashboard và tự động hóa để marketing có thể quản trị."
+      ]
+    ],
+    "workK": "Selected work",
+    "workH": "Những bài toán đã đi qua.",
+    "workP": "Mỗi dự án bắt đầu từ bối cảnh thật: hệ thống bị mất dữ liệu, thương hiệu thiếu nhất quán, đội ngũ chưa hình thành hoặc doanh nghiệp cần xây từ con số không.",
+    "viewCase": "Xem case study",
+    "methodsK": "Phương pháp làm việc",
+    "methodsH": "Chẩn đoán trước.<br>Thiết kế hệ thống sau.",
+    "methodsP": "Tôi không bán một gói dịch vụ cố định trước khi hiểu vấn đề. Phạm vi công việc được xây từ mức độ ưu tiên, nguồn lực và rủi ro thực tế.",
+    "methods": [
+      [
+        "Nghiên cứu",
+        "Thị trường, khách hàng, đối thủ và dữ liệu hiện có."
+      ],
+      [
+        "Chẩn đoán",
+        "Xác định nút thắt thay vì xử lý triệu chứng."
+      ],
+      [
+        "Kiến trúc",
+        "Thiết kế thông điệp, điểm chạm, dữ liệu và workflow."
+      ],
+      [
+        "Triển khai",
+        "Biến chiến lược thành website, nội dung, quảng cáo, tracking và quy trình."
+      ],
+      [
+        "Đo lường",
+        "Thiết lập tiêu chuẩn, dashboard và vòng lặp tối ưu."
+      ]
+    ],
+    "insK": "Insights",
+    "insH": "Tư duy, công cụ và tín hiệu thị trường.",
+    "insP": "Nơi tôi phân tích marketing, AI, consumer behavior và cách doanh nghiệp xây hệ thống tăng trưởng thực tế.",
+    "readAll": "Xem toàn bộ Insights",
+    "ctaH": "Bạn đang có một bài toán marketing chưa được giải đúng?",
+    "ctaBtn": "Gửi bối cảnh dự án",
+    "footerDesc": "Chiến lược thương hiệu · Digital marketing · AI · Growth systems",
+    "rights": "© 2026 Dũng Nguyễn. All rights reserved.",
+    "location": "Đà Nẵng · Việt Nam",
+    "portfolioHero": "Bằng chứng triển khai.<br>Không phải một danh sách công cụ.",
+    "portfolioLead": "Năm bối cảnh doanh nghiệp khác nhau, được trình bày theo vấn đề, vai trò, cách triển khai và tài sản thực tế.",
+    "gateK": "Khu vực giới hạn",
+    "gateH": "Portfolio được bảo vệ.",
+    "gateP": "Nhập mật khẩu để xem case study và hình ảnh dự án.",
+    "password": "Mật khẩu",
+    "unlock": "Mở Portfolio",
+    "pricingHero": "Báo giá đi sau chẩn đoán.<br>Không đi trước bài toán.",
+    "pricingLead": "Chi phí phụ thuộc vào độ phức tạp, mức độ sẵn sàng của doanh nghiệp và phạm vi cần triển khai. Các gói dưới đây là cấu trúc tham chiếu, không phải báo giá đóng khung.",
+    "scope": "Phạm vi tham chiếu",
+    "packages": [
+      [
+        "Brand Foundation",
+        "Dành cho doanh nghiệp cần làm rõ định vị và xây nền tảng thương hiệu.",
+        [
+          "Audit thương hiệu và khách hàng",
+          "Định vị, thông điệp và kiến trúc thương hiệu",
+          "Visual direction và guideline ứng dụng",
+          "Kế hoạch nội dung 90 ngày"
+        ]
+      ],
+      [
+        "Growth Campaign",
+        "Dành cho doanh nghiệp đã có nền tảng và cần tạo nhu cầu có đo lường.",
+        [
+          "Landing page và conversion flow",
+          "Tracking GA4, GTM, Pixel",
+          "Meta Ads / Google Ads",
+          "Dashboard và chu kỳ tối ưu"
+        ]
+      ],
+      [
+        "Marketing System",
+        "Dành cho doanh nghiệp cần chuẩn hóa toàn bộ vận hành marketing.",
+        [
+          "Chiến lược và hệ thống nội dung",
+          "Website, tracking, CRM/lead workflow",
+          "Dashboard quản trị",
+          "Đào tạo và chuyển giao đội ngũ"
+        ]
+      ]
+    ],
+    "pricingProcess": "Quy trình từ brief đến đề xuất",
+    "steps": [
+      [
+        "01",
+        "Nhận bối cảnh",
+        "Mục tiêu, dữ liệu, nguồn lực và các vấn đề đang tồn tại."
+      ],
+      [
+        "02",
+        "Chẩn đoán",
+        "Xác định điểm nghẽn và mức độ ưu tiên."
+      ],
+      [
+        "03",
+        "Thiết kế phạm vi",
+        "Chọn đúng đầu việc, deliverable và tiêu chuẩn nghiệm thu."
+      ],
+      [
+        "04",
+        "Gửi đề xuất",
+        "Timeline, chi phí, trách nhiệm và phương án triển khai."
+      ]
+    ],
+    "insightsHero": "Marketing intelligence.<br>AI, thị trường và hành vi.",
+    "insightsLead": "Theo dõi tín hiệu thị trường, đọc xu hướng và chuyển chúng thành quyết định có thể áp dụng cho thương hiệu và tăng trưởng.",
+    "market": "Market overview",
+    "articles": "Bài viết mới",
+    "featuredTitle": "Hệ thống marketing trước, ngân sách quảng cáo sau.",
+    "featuredText": "Một cách nhìn thực tế về định vị, chuyển đổi và đo lường trước khi doanh nghiệp tăng chi tiêu truyền thông.",
+    "read": "Đọc bài viết",
+    "contactHero": "Nói về bài toán thật.",
+    "contactLead": "Bạn không cần viết một brief hoàn hảo. Chỉ cần mô tả bối cảnh, mục tiêu, điều đang không hiệu quả và thời điểm mong muốn.",
+    "name": "Họ và tên",
+    "company": "Doanh nghiệp",
+    "email": "Email",
+    "phone": "Điện thoại / Zalo",
+    "need": "Nhu cầu chính",
+    "budget": "Ngân sách dự kiến",
+    "timeline": "Thời điểm mong muốn",
+    "problem": "Bài toán cần giải quyết",
+    "send": "Gửi thông tin",
+    "select": "Chưa xác định",
+    "success": "Đã gửi. Tôi sẽ phản hồi sớm nhất có thể."
+  },
+  "en": {
+    "code": "en",
+    "prefix": "/en",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "insights": "Insights",
+    "contact": "Contact",
+    "title": "Dung Nguyen — Marketing Strategist, AI & Growth Systems",
+    "heroEyebrow": "Marketing strategist · AI-enabled growth",
+    "heroTitle": "Clear strategy.<br><span class=\"accent\">Scalable growth systems.</span>",
+    "heroLead": "I combine brand strategy, digital marketing, data and AI to turn scattered activities into a measurable, operable and scalable growth system.",
+    "explore": "Explore capabilities",
+    "talk": "Discuss a project",
+    "scroll": "Scroll to explore",
+    "problemK": "What I solve",
+    "problemH": "Do not start with tools.<br>Start with the growth constraint.",
+    "problemP": "A polished website, a media campaign or an AI workflow only matters when it solves the right business problem and improves operating capability.",
+    "problems": [
+      [
+        "Unclear positioning",
+        "Customers cannot clearly understand why they should choose you over alternatives."
+      ],
+      [
+        "Disconnected marketing",
+        "Content, media, website, sales and data do not operate as one system."
+      ],
+      [
+        "Unmeasurable growth",
+        "Many activities exist, but tracking, dashboards and decision standards are missing."
+      ]
+    ],
+    "capK": "Capabilities & technology",
+    "capH": "From strategy to execution.<br>No gap between idea and operation.",
+    "capP": "I use tools as parts of a system: research, brand building, content, distribution, measurement and automation.",
+    "caps": [
+      [
+        "AI · Research · Strategy",
+        "ChatGPT · Gemini · Claude",
+        "Market research, insight development, strategy, messaging and knowledge workflows."
+      ],
+      [
+        "Brand · Design System",
+        "Photoshop · Canva · CorelDRAW",
+        "Brand identity, key visuals, sales assets and consistent design systems."
+      ],
+      [
+        "Video · Storytelling",
+        "CapCut · Premiere Pro · DaVinci Resolve",
+        "Scripting, production, editing, colour and storytelling for social, web and campaigns."
+      ],
+      [
+        "Growth · Measurement",
+        "GA4 · GTM · Meta Ads · Google Ads · SEO · WordPress · n8n",
+        "Tracking, media, dashboards and automation that make marketing manageable."
+      ]
+    ],
+    "workK": "Selected work",
+    "workH": "Real business contexts.",
+    "workP": "Each project started from a real constraint: data loss, inconsistent brand systems, missing internal capability or a business built from zero.",
+    "viewCase": "View case study",
+    "methodsK": "How I work",
+    "methodsH": "Diagnose first.<br>Design the system second.",
+    "methodsP": "I do not sell a fixed package before understanding the problem. Scope is designed around priority, resources and risk.",
+    "methods": [
+      [
+        "Research",
+        "Market, customer, competitor and existing data."
+      ],
+      [
+        "Diagnosis",
+        "Identify constraints instead of treating symptoms."
+      ],
+      [
+        "Architecture",
+        "Design messaging, touchpoints, data and workflows."
+      ],
+      [
+        "Execution",
+        "Turn strategy into websites, content, media, tracking and process."
+      ],
+      [
+        "Measurement",
+        "Create standards, dashboards and optimisation loops."
+      ]
+    ],
+    "insK": "Insights",
+    "insH": "Thinking, tools and market signals.",
+    "insP": "Analysis of marketing, AI, consumer behaviour and practical growth systems.",
+    "readAll": "Explore Insights",
+    "ctaH": "Do you have a marketing problem that has not been solved correctly?",
+    "ctaBtn": "Share your project context",
+    "footerDesc": "Brand strategy · Digital marketing · AI · Growth systems",
+    "rights": "© 2026 Dung Nguyen. All rights reserved.",
+    "location": "Da Nang · Vietnam",
+    "portfolioHero": "Execution evidence.<br>Not a tool list.",
+    "portfolioLead": "Five business contexts presented through the problem, role, approach and real project assets.",
+    "gateK": "Restricted area",
+    "gateH": "Portfolio is protected.",
+    "gateP": "Enter the password to view project case studies and imagery.",
+    "password": "Password",
+    "unlock": "Unlock Portfolio",
+    "pricingHero": "Pricing follows diagnosis.<br>Not the other way around.",
+    "pricingLead": "Investment depends on complexity, organisational readiness and implementation scope. These packages are reference structures, not rigid quotations.",
+    "scope": "Reference scope",
+    "packages": [
+      [
+        "Brand Foundation",
+        "For businesses that need clearer positioning and brand foundations.",
+        [
+          "Brand and customer audit",
+          "Positioning, messaging and brand architecture",
+          "Visual direction and application guidelines",
+          "90-day content plan"
+        ]
+      ],
+      [
+        "Growth Campaign",
+        "For businesses with a foundation that need measurable demand generation.",
+        [
+          "Landing page and conversion flow",
+          "GA4, GTM and Pixel tracking",
+          "Meta Ads / Google Ads",
+          "Dashboard and optimisation cycle"
+        ]
+      ],
+      [
+        "Marketing System",
+        "For businesses that need integrated, standardised marketing operations.",
+        [
+          "Strategy and content system",
+          "Website, tracking and lead workflow",
+          "Management dashboard",
+          "Team training and handover"
+        ]
+      ]
+    ],
+    "pricingProcess": "From brief to proposal",
+    "steps": [
+      [
+        "01",
+        "Receive context",
+        "Goals, data, resources and current issues."
+      ],
+      [
+        "02",
+        "Diagnose",
+        "Identify constraints and priorities."
+      ],
+      [
+        "03",
+        "Design scope",
+        "Select the right work, deliverables and acceptance criteria."
+      ],
+      [
+        "04",
+        "Send proposal",
+        "Timeline, investment, responsibilities and delivery plan."
+      ]
+    ],
+    "insightsHero": "Marketing intelligence.<br>AI, markets and behaviour.",
+    "insightsLead": "Track signals, interpret trends and turn them into decisions for brand and growth.",
+    "market": "Market overview",
+    "articles": "Latest articles",
+    "featuredTitle": "Build the marketing system before increasing ad spend.",
+    "featuredText": "A practical view of positioning, conversion and measurement before a business scales media investment.",
+    "read": "Read article",
+    "contactHero": "Talk about the real problem.",
+    "contactLead": "You do not need a perfect brief. Describe the context, objective, what is not working and the desired timing.",
+    "name": "Full name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone / Zalo",
+    "need": "Primary need",
+    "budget": "Expected budget",
+    "timeline": "Desired timing",
+    "problem": "Problem to solve",
+    "send": "Send inquiry",
+    "select": "Not determined",
+    "success": "Sent. I will respond as soon as possible."
+  },
+  "zh": {
+    "code": "zh-CN",
+    "prefix": "/zh",
+    "home": "首页",
+    "portfolio": "作品集",
+    "pricing": "报价",
+    "insights": "洞察",
+    "contact": "联系",
+    "title": "Dũng Nguyễn — 营销战略、AI 与增长系统",
+    "heroEyebrow": "营销战略 · AI 驱动增长",
+    "heroTitle": "清晰的战略。<br><span class=\"accent\">可扩展的增长系统。</span>",
+    "heroLead": "我结合品牌战略、数字营销、数据与人工智能，把分散的营销活动转化为可衡量、可运营、可扩展的增长系统。",
+    "explore": "查看能力",
+    "talk": "讨论项目",
+    "scroll": "向下探索",
+    "problemK": "我解决的问题",
+    "problemH": "不要从工具开始。<br>从增长瓶颈开始。",
+    "problemP": "漂亮的网站、广告活动或 AI 工作流，只有在解决正确的商业问题并提升运营能力时才有价值。",
+    "problems": [
+      [
+        "定位不清晰",
+        "客户无法理解为什么应该选择你，而不是其他方案。"
+      ],
+      [
+        "营销系统割裂",
+        "内容、广告、网站、销售和数据没有作为一个系统运行。"
+      ],
+      [
+        "增长难以衡量",
+        "活动很多，但缺少追踪、仪表板和决策标准。"
+      ]
+    ],
+    "capK": "能力与技术",
+    "capH": "从战略到执行。<br>让创意与运营连接。",
+    "capP": "我把工具放进完整系统中：研究、品牌、内容、分发、衡量与自动化。",
+    "caps": [
+      [
+        "AI · 研究 · 战略",
+        "ChatGPT · Gemini · Claude",
+        "市场研究、洞察、战略、信息体系和知识工作流。"
+      ],
+      [
+        "品牌 · 设计系统",
+        "Photoshop · Canva · CorelDRAW",
+        "品牌识别、主视觉、销售资产和一致的视觉系统。"
+      ],
+      [
+        "视频 · 故事营销",
+        "CapCut · Premiere Pro · DaVinci Resolve",
+        "脚本、拍摄、剪辑、调色与社交、网站和广告故事。"
+      ],
+      [
+        "增长 · 衡量",
+        "GA4 · GTM · Meta Ads · Google Ads · SEO · WordPress · n8n",
+        "追踪、广告、仪表板与自动化，让营销可管理。"
+      ]
+    ],
+    "workK": "精选项目",
+    "workH": "真实的商业场景。",
+    "workP": "每个项目都始于真实约束：数据丢失、品牌不一致、内部能力不足，或从零建立业务。",
+    "viewCase": "查看案例",
+    "methodsK": "工作方法",
+    "methodsH": "先诊断。<br>再设计系统。",
+    "methodsP": "在理解问题之前，我不会先出售固定套餐。范围根据优先级、资源和风险设计。",
+    "methods": [
+      [
+        "研究",
+        "市场、客户、竞争对手与现有数据。"
+      ],
+      [
+        "诊断",
+        "识别瓶颈，而不是只处理表面症状。"
+      ],
+      [
+        "架构",
+        "设计信息、触点、数据和工作流。"
+      ],
+      [
+        "执行",
+        "把战略变成网站、内容、广告、追踪和流程。"
+      ],
+      [
+        "衡量",
+        "建立标准、仪表板和优化循环。"
+      ]
+    ],
+    "insK": "洞察",
+    "insH": "思考、工具与市场信号。",
+    "insP": "分析营销、AI、消费者行为与实际增长系统。",
+    "readAll": "查看全部洞察",
+    "ctaH": "你是否有一个尚未被正确解决的营销问题？",
+    "ctaBtn": "提交项目背景",
+    "footerDesc": "品牌战略 · 数字营销 · AI · 增长系统",
+    "rights": "© 2026 Dũng Nguyễn. 保留所有权利。",
+    "location": "越南 · 岘港",
+    "portfolioHero": "真实执行证据。<br>不是工具清单。",
+    "portfolioLead": "五个不同商业场景，通过问题、角色、方法与真实项目资产呈现。",
+    "gateK": "限制区域",
+    "gateH": "作品集已受保护。",
+    "gateP": "输入密码查看项目案例和图片。",
+    "password": "密码",
+    "unlock": "打开作品集",
+    "pricingHero": "先诊断，再报价。",
+    "pricingLead": "投入取决于复杂度、企业准备程度和实施范围。以下套餐是结构参考，不是固定报价。",
+    "scope": "参考范围",
+    "packages": [
+      [
+        "品牌基础",
+        "适合需要明确定位和品牌基础的企业。",
+        [
+          "品牌与客户审计",
+          "定位、信息与品牌架构",
+          "视觉方向与应用规范",
+          "90 天内容计划"
+        ]
+      ],
+      [
+        "增长活动",
+        "适合已有基础并需要可衡量获客的企业。",
+        [
+          "落地页与转化流程",
+          "GA4、GTM 与 Pixel",
+          "Meta Ads / Google Ads",
+          "仪表板与优化周期"
+        ]
+      ],
+      [
+        "营销系统",
+        "适合需要标准化整体营销运营的企业。",
+        [
+          "战略与内容系统",
+          "网站、追踪与线索流程",
+          "管理仪表板",
+          "团队培训与交接"
+        ]
+      ]
+    ],
+    "pricingProcess": "从背景到提案",
+    "steps": [
+      [
+        "01",
+        "接收背景",
+        "目标、数据、资源与当前问题。"
+      ],
+      [
+        "02",
+        "诊断",
+        "识别瓶颈与优先级。"
+      ],
+      [
+        "03",
+        "设计范围",
+        "选择正确工作、交付物与验收标准。"
+      ],
+      [
+        "04",
+        "发送提案",
+        "时间表、投入、责任与实施方案。"
+      ]
+    ],
+    "insightsHero": "营销情报。<br>AI、市场与行为。",
+    "insightsLead": "追踪信号、理解趋势，并转化为品牌与增长决策。",
+    "market": "市场概览",
+    "articles": "最新文章",
+    "featuredTitle": "先建立营销系统，再增加广告预算。",
+    "featuredText": "在扩大媒体投入之前，先从定位、转化与衡量看企业增长。",
+    "read": "阅读文章",
+    "contactHero": "讨论真实问题。",
+    "contactLead": "你不需要一份完美的简报。只需描述背景、目标、当前无效之处和希望的时间。",
+    "name": "姓名",
+    "company": "企业",
+    "email": "邮箱",
+    "phone": "电话 / Zalo",
+    "need": "主要需求",
+    "budget": "预计预算",
+    "timeline": "期望时间",
+    "problem": "需要解决的问题",
+    "send": "发送信息",
+    "select": "尚未确定",
+    "success": "已发送。我会尽快回复。"
+  }
+}
