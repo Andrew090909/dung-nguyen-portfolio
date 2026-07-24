@@ -9,43 +9,115 @@
   function showAdmin(){ $('#loginView').classList.add('hidden'); $('#adminView').classList.remove('hidden'); $('#userEmail').textContent=user?.email||'Demo mode'; loadData(); }
   function showLogin(){ $('#adminView').classList.add('hidden'); $('#loginView').classList.remove('hidden'); }
   const authParams = new URLSearchParams((window.location.hash || '').replace(/^#/, ''));
-  const hasInviteToken = authParams.has('invite_token');
-  const hasRecoveryToken = authParams.has('recovery_token');
-  const hasConfirmationToken = authParams.has('confirmation_token');
+  const inviteToken = authParams.get('invite_token');
+  const recoveryToken = authParams.get('recovery_token');
+  const confirmationToken = authParams.get('confirmation_token');
   const authHelp = $('#authHelp');
 
-  if(window.netlifyIdentity){
-    netlifyIdentity.on('init',u=>{
-      user=u;
-      if(u){
-        showAdmin();
-        return;
+  function renderPasswordSetup(mode){
+    const card = $('#loginView .login-card');
+    if(!card) return;
+    const isInvite = mode === 'invite';
+    card.innerHTML = `
+      <div class="brand">DŨNG NGUYỄN / ADMIN</div>
+      <h1>${isInvite ? 'Tạo mật khẩu Admin.' : 'Đặt lại mật khẩu.'}</h1>
+      <p>${isInvite ? 'Hoàn tất lời mời quản trị bằng cách tạo mật khẩu riêng cho trang Admin.' : 'Nhập mật khẩu mới cho tài khoản quản trị của bạn.'}</p>
+      <form id="passwordSetupForm" class="grid" style="grid-template-columns:1fr;margin-top:22px">
+        <div class="field full"><label>Mật khẩu mới</label><input id="newAdminPassword" type="password" autocomplete="new-password" minlength="10" required></div>
+        <div class="field full"><label>Nhập lại mật khẩu</label><input id="confirmAdminPassword" type="password" autocomplete="new-password" minlength="10" required></div>
+        <div class="actions"><button class="btn blue" id="saveAdminPassword" type="submit" disabled>${isInvite ? 'Tạo mật khẩu và vào Admin' : 'Lưu mật khẩu mới'}</button></div>
+        <p class="notice" id="passwordSetupStatus">Đang xác thực liên kết…</p>
+      </form>`;
+  }
+
+  async function startPasswordSetup(){
+    const mode = inviteToken ? 'invite' : recoveryToken ? 'recovery' : confirmationToken ? 'confirmation' : null;
+    if(!mode || !window.netlifyIdentity?.gotrue) return false;
+
+    renderPasswordSetup(mode);
+    // Remove token from the visible URL after it has been captured.
+    history.replaceState(null,'',window.location.pathname + window.location.search);
+
+    const form = $('#passwordSetupForm');
+    const password = $('#newAdminPassword');
+    const confirmPassword = $('#confirmAdminPassword');
+    const submit = $('#saveAdminPassword');
+    const message = $('#passwordSetupStatus');
+    let recoveredUser = null;
+
+    const setMessage=(text,error=false)=>{
+      message.textContent=text;
+      message.classList.toggle('error',error);
+    };
+
+    try{
+      if(mode==='recovery'){
+        const result = await netlifyIdentity.gotrue.recover(recoveryToken,true);
+        recoveredUser = result?.user || result || netlifyIdentity.gotrue.currentUser();
+        if(!recoveredUser || typeof recoveredUser.update!=='function') throw new Error('Không thể mở phiên đặt lại mật khẩu.');
+      }else if(mode==='confirmation'){
+        const result = await netlifyIdentity.gotrue.confirm(confirmationToken,true);
+        recoveredUser = result?.user || result || netlifyIdentity.gotrue.currentUser();
+        if(!recoveredUser || typeof recoveredUser.update!=='function') throw new Error('Không thể xác nhận tài khoản.');
       }
-      // Netlify appends invite/recovery tokens to the URL hash. Opening the
-      // widget after init lets it process the token and show the password form.
-      if(hasInviteToken){
-        if(authHelp) authHelp.textContent='Lời mời hợp lệ. Hãy đặt mật khẩu Admin trong cửa sổ đang mở.';
-        setTimeout(()=>netlifyIdentity.open('signup'),80);
-      }else if(hasRecoveryToken || hasConfirmationToken){
-        if(authHelp) authHelp.textContent='Đang xác nhận tài khoản. Hoàn tất bước trong cửa sổ đang mở.';
-        setTimeout(()=>netlifyIdentity.open(),80);
-      }
-    });
-    netlifyIdentity.on('login',u=>{
-      user=u;
-      netlifyIdentity.close();
-      if(window.location.hash) history.replaceState(null,'',window.location.pathname);
-      showAdmin();
-    });
-    netlifyIdentity.on('logout',()=>{user=null;showLogin()});
-    netlifyIdentity.on('error',err=>{
+      submit.disabled=false;
+      setMessage('Liên kết hợp lệ. Hãy nhập mật khẩu mới ít nhất 10 ký tự.');
+      password.focus();
+    }catch(err){
       console.error(err);
-      if(authHelp) authHelp.textContent='Liên kết mời có thể đã hết hạn hoặc đã dùng. Vào Netlify → Identity → Users để gửi lại lời mời hoặc email đặt lại mật khẩu.';
+      submit.disabled=true;
+      setMessage('Liên kết đã hết hạn hoặc đã được sử dụng. Hãy gửi lại email đặt mật khẩu từ Netlify Identity → Users.',true);
+      return true;
+    }
+
+    form.addEventListener('submit',async e=>{
+      e.preventDefault();
+      const next=password.value;
+      if(next.length<10){setMessage('Mật khẩu cần ít nhất 10 ký tự.',true);password.focus();return}
+      if(next!==confirmPassword.value){setMessage('Hai ô mật khẩu chưa giống nhau.',true);confirmPassword.focus();return}
+      submit.disabled=true;setMessage('Đang lưu mật khẩu…');
+      try{
+        let result;
+        if(mode==='invite'){
+          result = await netlifyIdentity.gotrue.acceptInvite(inviteToken,next,true);
+          user = result?.user || result || netlifyIdentity.gotrue.currentUser();
+        }else{
+          result = await recoveredUser.update({password:next});
+          user = result?.user || result || recoveredUser;
+        }
+        setMessage('Đã tạo mật khẩu. Đang mở trang quản trị…');
+        setTimeout(()=>window.location.replace('/admin/'),450);
+      }catch(err){
+        console.error(err);submit.disabled=false;
+        setMessage(err?.message || 'Không thể lưu mật khẩu. Hãy gửi lại email đặt mật khẩu.',true);
+      }
     });
-    netlifyIdentity.init();
+    return true;
+  }
+
+  if(window.netlifyIdentity){
+    if(inviteToken || recoveryToken || confirmationToken){
+      startPasswordSetup();
+    }else{
+      netlifyIdentity.on('init',u=>{
+        user=u;
+        if(u) showAdmin();
+      });
+      netlifyIdentity.on('login',u=>{
+        user=u;netlifyIdentity.close();
+        if(window.location.hash) history.replaceState(null,'',window.location.pathname);
+        showAdmin();
+      });
+      netlifyIdentity.on('logout',()=>{user=null;showLogin()});
+      netlifyIdentity.on('error',err=>{
+        console.error(err);
+        if(authHelp) authHelp.textContent='Không thể xác thực. Hãy dùng email đặt lại mật khẩu mới nhất.';
+      });
+      netlifyIdentity.init();
+    }
   }
   $('#loginBtn').onclick=()=>netlifyIdentity?.open('login');
-    $('#logoutBtn').onclick=()=>netlifyIdentity?.logout();
+  $('#logoutBtn').onclick=()=>netlifyIdentity?.logout();
 
   $$('.tab').forEach(btn=>btn.onclick=()=>{
     $$('.tab').forEach(x=>x.classList.toggle('active',x===btn));
