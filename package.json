@@ -1,0 +1,12 @@
+{
+  "name": "dung-nguyen-portfolio-v9",
+  "version": "9.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python scripts/validate_site.py"
+  },
+  "dependencies": {
+    "@netlify/identity": "latest"
+  }
+}
