@@ -4,8 +4,8 @@ import json
 import re
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
-
+SOURCE_ROOT = Path(__file__).resolve().parents[1]
+ROOT = (SOURCE_ROOT / sys.argv[1]).resolve() if len(sys.argv) > 1 else SOURCE_ROOT
 
 class Parser(HTMLParser):
     def __init__(self):
@@ -44,10 +44,13 @@ def main():
     for required in [
         'assets/css/site-v90.css',
         'assets/js/site-v90.js',
+        'assets/js/theme-settings.js',
         'assets/js/portfolio-v90.js',
         'content/portfolio-v72.enc.json',
-        'netlify/functions/cms.mjs',
-        'netlify/functions/news.mjs',
+        'content/posts.json',
+        'content/translations.json',
+        'content/theme.json',
+        'admin/config.yml',
     ]:
         if not (ROOT / required).exists():
             errors.append(f'missing required file: {required}')
@@ -65,11 +68,7 @@ def main():
         print('\n'.join('ERROR: ' + error for error in errors))
         sys.exit(1)
 
-    print(
-        f'Validated {len(html_files)} HTML pages, '
-        f'{len(portfolio_images)} local portfolio images, and required V9 assets.'
-    )
-
+    print(f'Validated {len(html_files)} HTML pages, {len(portfolio_images)} local portfolio images, and V10 CMS output.')
 
 if __name__ == '__main__':
     main()

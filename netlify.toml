@@ -1,10 +1,11 @@
 [build]
-  command = "python scripts/validate_site.py"
-  publish = "."
+  command = "node scripts/build_cms.mjs && python scripts/validate_site.py _site"
+  publish = "_site"
   functions = "netlify/functions"
 
 [build.environment]
   PYTHON_VERSION = "3.13"
+  NODE_VERSION = "22"
 
 [[headers]]
   for = "/admin/*"
@@ -12,14 +13,8 @@
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-store"
 
-
 [[headers]]
   for = "/content/*"
-  [headers.values]
-    Cache-Control = "no-store"
-
-[[headers]]
-  for = "/content/portfolio-v72.enc.json"
   [headers.values]
     Cache-Control = "no-store"
 

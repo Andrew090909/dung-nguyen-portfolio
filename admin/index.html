@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Admin — Dũng Nguyễn</title><meta content="noindex,nofollow" name="robots"/><link href="/admin/admin.css" rel="stylesheet"/><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body>
-<section class="login" id="loginView"><div class="login-card"><div class="brand">DŨNG NGUYỄN / ADMIN</div><h1>Quản trị nội dung.</h1><p>Đăng nhập bằng tài khoản được mời trong Netlify Identity. Trang này không xuất hiện trong menu công khai.</p><div class="actions"><button class="btn blue" id="loginBtn">Đăng nhập</button></div><p class="notice" id="authHelp" style="margin-top:18px">Tài khoản Admin dùng email được mời qua Netlify Identity. Khi mở đúng liên kết mời, cửa sổ đặt mật khẩu sẽ tự xuất hiện.</p></div></section>
-<div class="admin hidden" id="adminView"><aside class="sidebar"><div class="brand">DŨNG NGUYỄN</div><h1>Content Studio</h1><nav><button class="tab active" data-tab="home">Trang chủ</button><button class="tab" data-tab="pricing">Báo giá</button><button class="tab" data-tab="contact">Liên hệ</button><button class="tab" data-tab="portfolio">Portfolio</button><button class="tab" data-tab="posts">Bài viết</button></nav><div class="meta"><span id="userEmail">Demo mode</span><button class="btn ghost" id="logoutBtn">Đăng xuất</button><a href="/" style="color:#fff" target="_blank">Xem website ↗</a></div></aside><main class="main"><div class="topbar"><div><h2 id="panelTitle">Trang chủ</h2><div class="status" id="status">Đang tải dữ liệu…</div></div><button class="btn blue" id="publishAll">Đăng thay đổi</button></div>
-<section class="panel active" data-panel="home"><div class="lang-tabs" data-lang-tabs=""></div><div class="card"><h3>Hiển thị Portfolio</h3><p>Portfolio chỉ xuất hiện ở trang được bảo vệ bằng mật khẩu và không hiển thị dự án trên Trang chủ.</p></div><div class="card"><h3>Hero &amp; định vị</h3><div class="grid"><div class="field full"><label>H1 trang chủ</label><textarea data-t-path="heroTitle"></textarea></div><div class="field full"><label>Mô tả Hero</label><textarea data-t-path="heroLead"></textarea></div><div class="field full"><label>Tiêu đề phần vấn đề</label><textarea data-t-path="problemH"></textarea></div><div class="field full"><label>Mô tả phần vấn đề</label><textarea data-t-path="problemP"></textarea></div><div class="field full"><label>Tiêu đề năng lực</label><textarea data-t-path="capH"></textarea></div><div class="field full"><label>Mô tả năng lực</label><textarea data-t-path="capP"></textarea></div><div class="field full"><label>CTA cuối trang</label><textarea data-t-path="ctaH"></textarea></div></div></div></section>
-<section class="panel" data-panel="pricing"><div class="lang-tabs" data-lang-tabs=""></div><div class="card"><h3>Nội dung báo giá</h3><div class="grid"><div class="field full"><label>H1</label><textarea data-t-path="pricingHero"></textarea></div><div class="field full"><label>Mô tả</label><textarea data-t-path="pricingLead"></textarea></div><div class="field full"><label>Các gói dịch vụ — JSON</label><textarea class="jsonbox" data-t-json="packages"></textarea></div></div></div></section>
-<section class="panel" data-panel="contact"><div class="lang-tabs" data-lang-tabs=""></div><div class="card"><h3>Trang liên hệ</h3><div class="grid"><div class="field full"><label>H1</label><textarea data-t-path="contactHero"></textarea></div><div class="field full"><label>Mô tả</label><textarea data-t-path="contactLead"></textarea></div></div></div><div class="card"><h3>Thông tin trực tiếp</h3><div class="grid"><div class="field"><label>Email</label><input id="contactEmail"/></div><div class="field"><label>Zalo URL</label><input id="contactZalo"/></div></div></div></section>
-<section class="panel" data-panel="portfolio"><div class="card"><h3>Portfolio được mã hóa</h3><p>Nhập mật khẩu Portfolio để tải và chỉnh sửa nội dung dự án. Khi đăng, dữ liệu sẽ được mã hóa lại trước khi lưu.</p><div class="grid"><div class="field"><label>Mật khẩu Portfolio</label><input id="portfolioPassword" inputmode="numeric" placeholder="999999" type="password"/></div><div class="field" style="align-content:end"><button class="btn" id="loadPortfolio">Mở dữ liệu</button></div></div><div id="portfolioEditors"></div></div></section>
-<section class="panel" data-panel="posts"><div class="card"><div class="topbar" style="margin:0"><div><h3 style="margin:0">Bài viết</h3><p style="margin:6px 0 0;color:var(--muted)">Tạo, sửa, lưu nháp và đăng bài lên Insights.</p></div><button class="btn" id="newPost">Bài viết mới</button></div><div class="post-list" id="postList" style="margin-top:18px"></div></div><div class="card hidden" id="postEditor"><h3 id="postEditorTitle">Bài viết mới</h3><div class="grid"><div class="field"><label>Slug</label><input id="postSlug"/></div><div class="field"><label>Trạng thái</label><select id="postStatus"><option value="published">Đã đăng</option><option value="draft">Bản nháp</option></select></div><div class="field full"><label>Ảnh cover</label><input id="postCover"/><input accept="image/*" id="coverFile" type="file"/><img class="upload-preview hidden" id="coverPreview"/></div></div><div class="lang-tabs" id="postLangTabs"></div><div class="grid"><div class="field"><label>Chuyên mục</label><input id="postCategory"/></div><div class="field full"><label>Tiêu đề</label><textarea id="postTitle"></textarea></div><div class="field full"><label>Mô tả ngắn</label><textarea id="postExcerpt"></textarea></div><div class="field full"><label>Nội dung HTML</label><textarea class="jsonbox" id="postBody"></textarea></div></div><div class="actions"><button class="btn blue" id="savePost">Lưu bài viết</button><button class="btn ghost" id="cancelPost">Đóng</button><button class="btn ghost" id="deletePost" style="color:var(--red)">Xóa</button></div></div></section>
-</main></div><script src="/admin/admin.js?v=94"></script></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Dũng Nguyễn — Content Studio</title>
+  <link rel="icon" href="/assets/images/ui/og-cover.png">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div class="cms-loading">
+    <strong>DŨNG NGUYỄN / CONTENT STUDIO</strong>
+    <span>Đang mở trang quản trị…</span>
+  </div>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      var loading = document.querySelector('.cms-loading');
+      if (loading) setTimeout(function(){ loading.remove(); }, 1200);
+    });
+  </script>
+</body>
+</html>

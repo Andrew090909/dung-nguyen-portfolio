@@ -1,0 +1,194 @@
+{
+  "code": "vi",
+  "title": "Dũng Nguyễn — Marketing Strategist, AI & Growth Systems",
+  "navigation": {
+    "home": "Trang chủ",
+    "portfolio": "Portfolio",
+    "pricing": "Báo giá",
+    "insights": "Insights",
+    "contact": "Liên hệ"
+  },
+  "homePage": {
+    "heroEyebrow": "Marketing strategist · AI-enabled growth",
+    "heroTitle": "Chiến lược rõ ràng.<br><span class=\"accent\">Tăng trưởng có hệ thống.</span>",
+    "heroLead": "Tôi kết hợp chiến lược thương hiệu, digital marketing, dữ liệu và AI để giúp doanh nghiệp biến các hoạt động rời rạc thành một hệ thống có thể đo lường, vận hành và mở rộng.",
+    "explore": "Xem năng lực",
+    "talk": "Trao đổi dự án",
+    "scroll": "Cuộn để khám phá",
+    "problemK": "Tôi giải quyết điều gì",
+    "problemH": "Không bắt đầu bằng công cụ.<br>Bắt đầu bằng nút thắt tăng trưởng.",
+    "problemP": "Một website đẹp, một chiến dịch quảng cáo hay một workflow AI chỉ có giá trị khi chúng phục vụ đúng bài toán kinh doanh và tạo ra năng lực vận hành tốt hơn.",
+    "problems": [
+      {
+        "title": "Định vị chưa rõ",
+        "description": "Khách hàng không hiểu vì sao nên chọn bạn thay vì một lựa chọn khác."
+      },
+      {
+        "title": "Marketing rời rạc",
+        "description": "Nội dung, quảng cáo, website, sales và dữ liệu không vận hành như một hệ thống."
+      },
+      {
+        "title": "Tăng trưởng khó đo lường",
+        "description": "Doanh nghiệp có nhiều hoạt động nhưng thiếu tracking, dashboard và tiêu chuẩn ra quyết định."
+      }
+    ],
+    "capK": "Năng lực & công nghệ",
+    "capH": "Từ chiến lược đến triển khai.<br>Không đứt gãy giữa ý tưởng và vận hành.",
+    "capP": "Tôi dùng công cụ như một phần của hệ thống: nghiên cứu, xây thương hiệu, sản xuất nội dung, phân phối, đo lường và tự động hóa.",
+    "capabilities": [
+      {
+        "title": "AI · Research · Strategy",
+        "tools": "ChatGPT · Gemini · Claude",
+        "description": "Nghiên cứu thị trường, khai phá insight, phát triển chiến lược, thông điệp và workflow tri thức."
+      },
+      {
+        "title": "Brand · Design System",
+        "tools": "Photoshop · Canva · CorelDRAW",
+        "description": "Xây nhận diện, key visual, tài sản bán hàng và hệ thống hình ảnh nhất quán."
+      },
+      {
+        "title": "Video · Storytelling",
+        "tools": "CapCut · Premiere Pro · DaVinci Resolve",
+        "description": "Kịch bản, quay dựng, chỉnh màu và kể chuyện cho social, website, quảng cáo."
+      },
+      {
+        "title": "Growth · Measurement",
+        "tools": "GA4 · GTM · Meta Ads · Google Ads · SEO · WordPress · n8n",
+        "description": "Thiết lập tracking, quảng cáo, dashboard và tự động hóa để marketing có thể quản trị."
+      }
+    ],
+    "workK": "Selected work",
+    "workH": "Những bài toán đã đi qua.",
+    "workP": "Mỗi dự án bắt đầu từ bối cảnh thật: hệ thống bị mất dữ liệu, thương hiệu thiếu nhất quán, đội ngũ chưa hình thành hoặc doanh nghiệp cần xây từ con số không.",
+    "viewCase": "Xem case study",
+    "methodsK": "Phương pháp làm việc",
+    "methodsH": "Chẩn đoán trước.<br>Thiết kế hệ thống sau.",
+    "methodsP": "Tôi không bán một gói dịch vụ cố định trước khi hiểu vấn đề. Phạm vi công việc được xây từ mức độ ưu tiên, nguồn lực và rủi ro thực tế.",
+    "methods": [
+      {
+        "title": "Nghiên cứu",
+        "description": "Thị trường, khách hàng, đối thủ và dữ liệu hiện có."
+      },
+      {
+        "title": "Chẩn đoán",
+        "description": "Xác định nút thắt thay vì xử lý triệu chứng."
+      },
+      {
+        "title": "Kiến trúc",
+        "description": "Thiết kế thông điệp, điểm chạm, dữ liệu và workflow."
+      },
+      {
+        "title": "Triển khai",
+        "description": "Biến chiến lược thành website, nội dung, quảng cáo, tracking và quy trình."
+      },
+      {
+        "title": "Đo lường",
+        "description": "Thiết lập tiêu chuẩn, dashboard và vòng lặp tối ưu."
+      }
+    ],
+    "insK": "Insights",
+    "insH": "Tư duy, công cụ và tín hiệu thị trường.",
+    "insP": "Nơi tôi phân tích marketing, AI, consumer behavior và cách doanh nghiệp xây hệ thống tăng trưởng thực tế.",
+    "readAll": "Xem toàn bộ Insights",
+    "ctaH": "Bạn đang có một bài toán marketing chưa được giải đúng?",
+    "ctaBtn": "Gửi bối cảnh dự án"
+  },
+  "portfolioPage": {
+    "hero": "Bằng chứng triển khai.<br>Không phải một danh sách công cụ.",
+    "lead": "Năm bối cảnh doanh nghiệp khác nhau, được trình bày theo vấn đề, vai trò, cách triển khai và tài sản thực tế.",
+    "gateK": "Khu vực giới hạn",
+    "gateH": "Portfolio được bảo vệ.",
+    "gateP": "Nhập mật khẩu để xem case study và hình ảnh dự án.",
+    "password": "Mật khẩu",
+    "unlock": "Mở Portfolio"
+  },
+  "pricingPage": {
+    "hero": "Báo giá đi sau chẩn đoán.<br>Không đi trước bài toán.",
+    "lead": "Chi phí phụ thuộc vào độ phức tạp, mức độ sẵn sàng của doanh nghiệp và phạm vi cần triển khai. Các gói dưới đây là cấu trúc tham chiếu, không phải báo giá đóng khung.",
+    "scope": "Phạm vi tham chiếu",
+    "packages": [
+      {
+        "title": "Brand Foundation",
+        "note": "Dành cho doanh nghiệp cần làm rõ định vị và xây nền tảng thương hiệu.",
+        "items": [
+          "Audit thương hiệu và khách hàng",
+          "Định vị, thông điệp và kiến trúc thương hiệu",
+          "Visual direction và guideline ứng dụng",
+          "Kế hoạch nội dung 90 ngày"
+        ]
+      },
+      {
+        "title": "Growth Campaign",
+        "note": "Dành cho doanh nghiệp đã có nền tảng và cần tạo nhu cầu có đo lường.",
+        "items": [
+          "Landing page và conversion flow",
+          "Tracking GA4, GTM, Pixel",
+          "Meta Ads / Google Ads",
+          "Dashboard và chu kỳ tối ưu"
+        ]
+      },
+      {
+        "title": "Marketing System",
+        "note": "Dành cho doanh nghiệp cần chuẩn hóa toàn bộ vận hành marketing.",
+        "items": [
+          "Chiến lược và hệ thống nội dung",
+          "Website, tracking, CRM/lead workflow",
+          "Dashboard quản trị",
+          "Đào tạo và chuyển giao đội ngũ"
+        ]
+      }
+    ],
+    "processTitle": "Quy trình từ brief đến đề xuất",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Nhận bối cảnh",
+        "description": "Mục tiêu, dữ liệu, nguồn lực và các vấn đề đang tồn tại."
+      },
+      {
+        "number": "02",
+        "title": "Chẩn đoán",
+        "description": "Xác định điểm nghẽn và mức độ ưu tiên."
+      },
+      {
+        "number": "03",
+        "title": "Thiết kế phạm vi",
+        "description": "Chọn đúng đầu việc, deliverable và tiêu chuẩn nghiệm thu."
+      },
+      {
+        "number": "04",
+        "title": "Gửi đề xuất",
+        "description": "Timeline, chi phí, trách nhiệm và phương án triển khai."
+      }
+    ]
+  },
+  "insightsPage": {
+    "hero": "Marketing intelligence.<br>AI, thị trường và hành vi.",
+    "lead": "Theo dõi tín hiệu thị trường, đọc xu hướng và chuyển chúng thành quyết định có thể áp dụng cho thương hiệu và tăng trưởng.",
+    "market": "Market overview",
+    "articles": "Bài viết mới",
+    "featuredTitle": "Hệ thống marketing trước, ngân sách quảng cáo sau.",
+    "featuredText": "Một cách nhìn thực tế về định vị, chuyển đổi và đo lường trước khi doanh nghiệp tăng chi tiêu truyền thông.",
+    "read": "Đọc bài viết"
+  },
+  "contactPage": {
+    "hero": "Nói về bài toán thật.",
+    "lead": "Bạn không cần viết một brief hoàn hảo. Chỉ cần mô tả bối cảnh, mục tiêu, điều đang không hiệu quả và thời điểm mong muốn.",
+    "name": "Họ và tên",
+    "company": "Doanh nghiệp",
+    "email": "Email",
+    "phone": "Điện thoại / Zalo",
+    "need": "Nhu cầu chính",
+    "budget": "Ngân sách dự kiến",
+    "timeline": "Thời điểm mong muốn",
+    "problem": "Bài toán cần giải quyết",
+    "send": "Gửi thông tin",
+    "select": "Chưa xác định",
+    "success": "Đã gửi. Tôi sẽ phản hồi sớm nhất có thể."
+  },
+  "footer": {
+    "description": "Chiến lược thương hiệu · Digital marketing · AI · Growth systems",
+    "rights": "© 2026 Dũng Nguyễn. All rights reserved.",
+    "location": "Đà Nẵng · Việt Nam"
+  }
+}

@@ -1,0 +1,363 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://dung-nguyen.netlify.app
+display_url: https://dung-nguyen.netlify.app
+logo_url: /assets/images/ui/og-cover.png
+publish_mode: editorial_workflow
+locale: vi
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: pages
+    label: Nội dung trang
+    label_singular: Trang
+    folder: content/pages
+    create: false
+    extension: json
+    format: json
+    identifier_field: code
+    summary: "{{navigation.home}} · {{code}}"
+    fields:
+      - { label: Mã ngôn ngữ, name: code, widget: string, hint: vi, en hoặc zh-CN }
+      - { label: SEO title, name: title, widget: string }
+      - label: Điều hướng
+        name: navigation
+        widget: object
+        collapsed: true
+        fields:
+          - { label: Trang chủ, name: home, widget: string }
+          - { label: Portfolio, name: portfolio, widget: string }
+          - { label: Báo giá, name: pricing, widget: string }
+          - { label: Insights, name: insights, widget: string }
+          - { label: Liên hệ, name: contact, widget: string }
+      - label: Trang chủ
+        name: homePage
+        widget: object
+        collapsed: false
+        fields:
+          - { label: Eyebrow Hero, name: heroEyebrow, widget: string }
+          - { label: H1 Hero, name: heroTitle, widget: text, hint: Có thể dùng <br> và <span class="accent">...</span> }
+          - { label: Mô tả Hero, name: heroLead, widget: text }
+          - { label: Nút xem năng lực, name: explore, widget: string }
+          - { label: Nút trao đổi dự án, name: talk, widget: string }
+          - { label: Nhãn cuộn, name: scroll, widget: string, required: false }
+          - { label: Nhãn phần bài toán, name: problemK, widget: string }
+          - { label: Tiêu đề phần bài toán, name: problemH, widget: text }
+          - { label: Mô tả phần bài toán, name: problemP, widget: text }
+          - label: Danh sách bài toán
+            name: problems
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Tiêu đề, name: title, widget: string }
+              - { label: Mô tả, name: description, widget: text }
+          - { label: Nhãn năng lực, name: capK, widget: string }
+          - { label: Tiêu đề năng lực, name: capH, widget: text }
+          - { label: Mô tả năng lực, name: capP, widget: text }
+          - label: Kỹ năng và công nghệ
+            name: capabilities
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Tên nhóm, name: title, widget: string }
+              - { label: Công cụ, name: tools, widget: string }
+              - { label: Mô tả, name: description, widget: text }
+          - { label: Nhãn Portfolio, name: workK, widget: string }
+          - { label: Tiêu đề Portfolio, name: workH, widget: text }
+          - { label: Mô tả Portfolio, name: workP, widget: text }
+          - { label: Nút xem dự án, name: viewCase, widget: string }
+          - { label: Nhãn phương pháp, name: methodsK, widget: string }
+          - { label: Tiêu đề phương pháp, name: methodsH, widget: text }
+          - { label: Mô tả phương pháp, name: methodsP, widget: text }
+          - label: Quy trình làm việc
+            name: methods
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Tên bước, name: title, widget: string }
+              - { label: Mô tả, name: description, widget: text }
+          - { label: Nhãn Insights, name: insK, widget: string }
+          - { label: Tiêu đề Insights, name: insH, widget: text }
+          - { label: Mô tả Insights, name: insP, widget: text }
+          - { label: Nút xem Insights, name: readAll, widget: string }
+          - { label: CTA cuối trang, name: ctaH, widget: text }
+          - { label: Nút CTA, name: ctaBtn, widget: string }
+      - label: Portfolio
+        name: portfolioPage
+        widget: object
+        collapsed: true
+        fields:
+          - { label: H1, name: hero, widget: text }
+          - { label: Mô tả, name: lead, widget: text }
+          - { label: Nhãn khóa, name: gateK, widget: string }
+          - { label: Tiêu đề khóa, name: gateH, widget: string }
+          - { label: Mô tả khóa, name: gateP, widget: text }
+          - { label: Nhãn mật khẩu, name: password, widget: string }
+          - { label: Nút mở, name: unlock, widget: string }
+      - label: Báo giá
+        name: pricingPage
+        widget: object
+        collapsed: true
+        fields:
+          - { label: H1, name: hero, widget: text }
+          - { label: Mô tả, name: lead, widget: text }
+          - { label: Nhãn phạm vi, name: scope, widget: string }
+          - label: Gói dịch vụ
+            name: packages
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Tên gói, name: title, widget: string }
+              - { label: Mô tả, name: note, widget: text }
+              - { label: Hạng mục, name: items, widget: list, field: { label: Hạng mục, name: item, widget: string } }
+          - { label: Tiêu đề quy trình, name: processTitle, widget: string }
+          - label: Các bước
+            name: steps
+            widget: list
+            summary: "{{fields.number}} · {{fields.title}}"
+            fields:
+              - { label: Số, name: number, widget: string }
+              - { label: Tên bước, name: title, widget: string }
+              - { label: Mô tả, name: description, widget: text }
+      - label: Insights
+        name: insightsPage
+        widget: object
+        collapsed: true
+        fields:
+          - { label: H1, name: hero, widget: text }
+          - { label: Mô tả, name: lead, widget: text }
+          - { label: Nhãn thị trường, name: market, widget: string }
+          - { label: Nhãn bài viết, name: articles, widget: string }
+          - { label: Tiêu đề bài nổi bật, name: featuredTitle, widget: string }
+          - { label: Mô tả bài nổi bật, name: featuredText, widget: text }
+          - { label: Nút đọc, name: read, widget: string }
+      - label: Liên hệ
+        name: contactPage
+        widget: object
+        collapsed: true
+        fields:
+          - { label: H1, name: hero, widget: text }
+          - { label: Mô tả, name: lead, widget: text }
+          - { label: Họ tên, name: name, widget: string }
+          - { label: Doanh nghiệp, name: company, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Điện thoại, name: phone, widget: string }
+          - { label: Nhu cầu, name: need, widget: string }
+          - { label: Ngân sách, name: budget, widget: string }
+          - { label: Thời điểm, name: timeline, widget: string }
+          - { label: Bài toán, name: problem, widget: string }
+          - { label: Nút gửi, name: send, widget: string }
+          - { label: Chưa xác định, name: select, widget: string }
+          - { label: Thông báo thành công, name: success, widget: string }
+      - label: Footer
+        name: footer
+        widget: object
+        collapsed: true
+        fields:
+          - { label: Mô tả, name: description, widget: text }
+          - { label: Bản quyền, name: rights, widget: string }
+          - { label: Địa điểm, name: location, widget: string }
+
+  - name: posts
+    label: Bài viết
+    label_singular: Bài viết
+    folder: content/posts
+    create: true
+    delete: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    summary: "{{title}} · {{status}}"
+    sortable_fields: [date, title, status]
+    fields:
+      - { label: Tên bài trong Admin, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, pattern: ['^[a-z0-9-]+$', 'Chỉ dùng chữ thường, số và dấu gạch ngang'] }
+      - { label: Ngày đăng, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss.SSSZ" }
+      - { label: Trạng thái, name: status, widget: select, options: [{ label: Đã đăng, value: published }, { label: Bản nháp, value: draft }] }
+      - { label: Bài nổi bật, name: featured, widget: boolean, default: false }
+      - { label: Ảnh đại diện, name: cover, widget: image, choose_url: false }
+      - label: Tiếng Việt
+        name: vi
+        widget: object
+        fields:
+          - { label: Chuyên mục, name: category, widget: string }
+          - { label: Tiêu đề, name: title, widget: string }
+          - { label: Tóm tắt, name: excerpt, widget: text }
+          - { label: Nội dung, name: body, widget: markdown }
+      - label: English
+        name: en
+        widget: object
+        collapsed: true
+        fields:
+          - { label: Category, name: category, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Excerpt, name: excerpt, widget: text }
+          - { label: Content, name: body, widget: markdown }
+      - label: 中文
+        name: zh
+        widget: object
+        collapsed: true
+        fields:
+          - { label: 分类, name: category, widget: string }
+          - { label: 标题, name: title, widget: string }
+          - { label: 摘要, name: excerpt, widget: text }
+          - { label: 内容, name: body, widget: markdown }
+
+  - name: portfolio
+    label: Dự án Portfolio
+    label_singular: Dự án
+    folder: content/portfolio
+    create: true
+    delete: true
+    extension: json
+    format: json
+    slug: "{{fields.id}}"
+    summary: "{{order}} · {{title}}"
+    fields:
+      - { label: Tên dự án trong Admin, name: title, widget: string }
+      - { label: ID, name: id, widget: string, pattern: ['^[a-z0-9-]+$', 'Chỉ dùng chữ thường, số và dấu gạch ngang'] }
+      - { label: Thứ tự, name: order, widget: number, value_type: int, min: 1 }
+      - { label: Năm, name: year, widget: string }
+      - label: Hình ảnh
+        name: images
+        widget: list
+        field: { label: Ảnh, name: image, widget: image, choose_url: false }
+      - label: Tiếng Việt
+        name: vi
+        widget: object
+        fields:
+          - { label: Tên dự án, name: title, widget: string }
+          - { label: Ngành, name: industry, widget: string }
+          - { label: Bối cảnh, name: context, widget: text }
+          - { label: Vai trò, name: role, widget: text }
+          - { label: Bài toán, name: problem, widget: text }
+          - { label: Hướng triển khai, name: approach, widget: text }
+          - { label: Hạng mục, name: deliverables, widget: list, field: { label: Hạng mục, name: item, widget: string } }
+      - label: English
+        name: en
+        widget: object
+        collapsed: true
+        fields:
+          - { label: Project title, name: title, widget: string }
+          - { label: Industry, name: industry, widget: string }
+          - { label: Context, name: context, widget: text }
+          - { label: Role, name: role, widget: text }
+          - { label: Problem, name: problem, widget: text }
+          - { label: Approach, name: approach, widget: text }
+          - { label: Deliverables, name: deliverables, widget: list, field: { label: Item, name: item, widget: string } }
+      - label: 中文
+        name: zh
+        widget: object
+        collapsed: true
+        fields:
+          - { label: 项目名称, name: title, widget: string }
+          - { label: 行业, name: industry, widget: string }
+          - { label: 背景, name: context, widget: text }
+          - { label: 角色, name: role, widget: text }
+          - { label: 问题, name: problem, widget: text }
+          - { label: 方法, name: approach, widget: text }
+          - { label: 交付成果, name: deliverables, widget: list, field: { label: 项目, name: item, widget: string } }
+
+  - name: settings
+    label: Cài đặt website
+    files:
+      - label: Giao diện & nhận diện
+        name: theme
+        file: content/theme.json
+        format: json
+        fields:
+          - { label: Nền sáng, name: paper, widget: color, allowInput: true }
+          - { label: Nền phụ, name: paper2, widget: color, allowInput: true }
+          - { label: Màu tối, name: ink, widget: color, allowInput: true }
+          - { label: Nền Hero, name: navy, widget: color, allowInput: true }
+          - { label: Màu chữ, name: text, widget: color, allowInput: true }
+          - { label: Màu chữ phụ, name: muted, widget: color, allowInput: true }
+          - { label: Màu thương hiệu chính, name: primary, widget: color, allowInput: true }
+          - { label: Màu thương hiệu phụ, name: primarySoft, widget: color, allowInput: true }
+          - { label: Màu secondary, name: secondary, widget: color, allowInput: true }
+          - { label: Màu accent, name: accent, widget: color, allowInput: true }
+          - { label: Màu ấm, name: warm, widget: color, allowInput: true }
+          - { label: Màu vàng, name: gold, widget: color, allowInput: true }
+          - { label: Độ rộng nội dung, name: containerWidth, widget: number, value_type: int, min: 960, max: 1480, step: 20 }
+          - { label: Khoảng cách section, name: sectionSpacing, widget: number, value_type: int, min: 64, max: 160, step: 4 }
+          - { label: H1 Hero desktop, name: heroDesktop, widget: number, value_type: int, min: 52, max: 100 }
+          - { label: H1 Hero mobile, name: heroMobile, widget: number, value_type: int, min: 38, max: 68 }
+          - { label: Bo góc card, name: radius, widget: number, value_type: int, min: 8, max: 48 }
+          - { label: Hiệu ứng, name: animation, widget: select, options: [{ label: Bình thường, value: normal }, { label: Nhẹ, value: soft }, { label: Tắt, value: off }] }
+      - label: Thông tin liên hệ
+        name: site
+        file: content/site.json
+        format: json
+        fields:
+          - label: Tiếng Việt
+            name: vi
+            widget: object
+            fields:
+              - label: Trang chủ
+                name: home
+                widget: object
+                fields:
+                  - { label: H1, name: heroTitle, widget: text }
+                  - { label: Mô tả Hero, name: heroLead, widget: text }
+                  - { label: Tiêu đề giới thiệu, name: aboutTitle, widget: text }
+                  - { label: Mô tả giới thiệu, name: aboutText, widget: text }
+              - label: Liên hệ
+                name: contact
+                widget: object
+                fields:
+                  - { label: Email, name: email, widget: string }
+                  - { label: Điện thoại, name: phone, widget: string, required: false }
+                  - { label: Zalo URL, name: zalo, widget: string }
+          - label: English
+            name: en
+            widget: object
+            collapsed: true
+            fields:
+              - label: Home
+                name: home
+                widget: object
+                fields:
+                  - { label: H1, name: heroTitle, widget: text }
+                  - { label: Hero description, name: heroLead, widget: text }
+                  - { label: About title, name: aboutTitle, widget: text }
+                  - { label: About text, name: aboutText, widget: text }
+              - label: Contact
+                name: contact
+                widget: object
+                fields:
+                  - { label: Email, name: email, widget: string }
+                  - { label: Phone, name: phone, widget: string, required: false }
+                  - { label: Zalo URL, name: zalo, widget: string }
+          - label: 中文
+            name: zh
+            widget: object
+            collapsed: true
+            fields:
+              - label: 首页
+                name: home
+                widget: object
+                fields:
+                  - { label: H1, name: heroTitle, widget: text }
+                  - { label: 描述, name: heroLead, widget: text }
+                  - { label: 关于标题, name: aboutTitle, widget: text }
+                  - { label: 关于内容, name: aboutText, widget: text }
+              - label: 联系
+                name: contact
+                widget: object
+                fields:
+                  - { label: Email, name: email, widget: string }
+                  - { label: Phone, name: phone, widget: string, required: false }
+                  - { label: Zalo URL, name: zalo, widget: string }
+          - label: Cài đặt kỹ thuật
+            name: settings
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Hiện Portfolio ở Trang chủ, name: showHomePortfolio, widget: boolean, default: false }

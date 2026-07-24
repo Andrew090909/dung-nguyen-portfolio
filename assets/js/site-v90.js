@@ -263,6 +263,38 @@
       });
   }
 
+  function renderPostBody(value = '') {
+    const source = String(value || '').trim();
+    if (!source) return '';
+    if (/^\s*</.test(source)) return source;
+    const escaped = escapeHtml(source).replace(/\r\n?/g, '\n');
+    const lines = escaped.split('\n');
+    const html = [];
+    let list = null;
+    const inline = text => text
+      .replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, '<img src="$2" alt="$1" loading="lazy">')
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/__([^_]+)__/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>');
+    const closeList = () => { if (list) { html.push(`</${list}>`); list = null; } };
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) { closeList(); continue; }
+      const heading = line.match(/^(#{1,4})\s+(.+)$/);
+      if (heading) { closeList(); const level = heading[1].length + 1; html.push(`<h${level}>${inline(heading[2])}</h${level}>`); continue; }
+      const unordered = line.match(/^[-*+]\s+(.+)$/);
+      if (unordered) { if (list !== 'ul') { closeList(); list = 'ul'; html.push('<ul>'); } html.push(`<li>${inline(unordered[1])}</li>`); continue; }
+      const ordered = line.match(/^\d+\.\s+(.+)$/);
+      if (ordered) { if (list !== 'ol') { closeList(); list = 'ol'; html.push('<ol>'); } html.push(`<li>${inline(ordered[1])}</li>`); continue; }
+      if (line.startsWith('&gt; ')) { closeList(); html.push(`<blockquote>${inline(line.slice(5))}</blockquote>`); continue; }
+      closeList(); html.push(`<p>${inline(line)}</p>`);
+    }
+    closeList();
+    return html.join('');
+  }
+
   const postRoot = $('[data-post-root]');
   if (postRoot) {
     const slug = new URLSearchParams(location.search).get('slug');
@@ -274,7 +306,7 @@
         const lang = document.documentElement.lang?.startsWith('zh') ? 'zh' : document.documentElement.lang?.startsWith('en') ? 'en' : 'vi';
         const t = post[lang] || post.vi;
         document.title = t.title + ' — Dũng Nguyễn';
-        postRoot.innerHTML = `<span class="pill">${escapeHtml(t.category || 'Insight')}</span><h1>${escapeHtml(t.title)}</h1><p class="hero-lead">${escapeHtml(t.excerpt || '')}</p><div class="post-body">${t.body || ''}</div>`;
+        postRoot.innerHTML = `<span class="pill">${escapeHtml(t.category || 'Insight')}</span><h1>${escapeHtml(t.title)}</h1><p class="hero-lead">${escapeHtml(t.excerpt || '')}</p><div class="post-body">${renderPostBody(t.body || '')}</div>`;
       }).catch(() => postRoot.innerHTML = '<h1>Không tìm thấy bài viết.</h1>');
   }
 

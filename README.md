@@ -1,54 +1,32 @@
-# Dũng Nguyễn Portfolio V9
+# Dũng Nguyễn Portfolio V10 — Content Studio
 
-## Bản V9
+## Quản trị mới
 
-- Thiết kế lại Trang chủ theo hướng AI-enabled marketing system: visual local, Canvas animation, parallax nhẹ và bố cục không còn khoảng trống vô nghĩa.
-- Typography dùng **Be Vietnam Pro + Manrope**, có fallback hỗ trợ tiếng Việt; H1 được giới hạn theo desktop/mobile.
-- Insights được xây thành intelligence hub: market snapshot, mini chart, ảnh tin nổi bật, tín hiệu đáng chú ý, nguồn tin trực tiếp và bài viết từ Admin.
-- Portfolio sử dụng 23 ảnh dự án lưu local; không còn phụ thuộc Framer.
-- Portfolio Việt / Anh / Trung được mã hóa AES-GCM và mở bằng mật khẩu `999999`.
-- Sau khi mở khóa, form mật khẩu biến mất ngay và nội dung Portfolio xuất hiện từ đầu trang.
-- `/admin/` không xuất hiện trong menu hoặc footer; chỉ truy cập bằng cách tự gõ URL.
-- Netlify build chỉ **validate** source, không tái sinh HTML cũ; việc đăng từ Admin không thể ghi đè thiết kế V9.
+Trang quản trị: `https://dung-nguyen.netlify.app/admin/`
 
-## Deploy chính thức
+V10 dùng Decap CMS theo kiểu WordPress nhẹ:
 
-1. Giải nén ZIP và đưa toàn bộ nội dung lên GitHub.
-2. Kết nối repository với đúng project Netlify hiện tại.
-3. Netlify đọc cấu hình trong `netlify.toml`:
+- Tạo, sửa, xóa bài viết.
+- Lưu nháp, review và publish.
+- Upload và chọn ảnh trong Media.
+- Chỉnh nội dung Việt / Anh / Trung.
+- Thêm, sắp xếp và sửa dự án Portfolio.
+- Chỉnh màu sắc, kích thước H1, độ rộng website, khoảng cách section, bo góc và hiệu ứng.
+- Chỉnh email, điện thoại và Zalo.
 
-```text
-Build command: python scripts/validate_site.py
-Publish directory: .
-Functions directory: netlify/functions
-```
+## Cài đặt một lần trên Netlify
 
-4. Bật Netlify Identity, chọn `Invite only`, rồi mời email quản trị.
-5. Thêm biến môi trường:
+1. Upload toàn bộ source V10 lên GitHub và chờ Netlify deploy thành công.
+2. Netlify → Project configuration → Identity → Services → Git Gateway → Enable Git Gateway.
+3. Identity → External providers → bật GitHub.
+4. Mở `/admin/` và đăng nhập bằng GitHub.
 
-```text
-ADMIN_EMAIL=nguyendhungdung@gmail.com
-GITHUB_REPO=github-username/repository-name
-GITHUB_BRANCH=main
-GITHUB_TOKEN=github_pat_xxx
-```
+## Lưu ý bảo mật Portfolio
 
-6. Truy cập Admin bằng URL:
+Source CMS có thư mục `content/portfolio/` để quản trị dự án. Build Netlify không xuất bản thư mục này; website công khai chỉ nhận file Portfolio đã mã hóa. Tuy nhiên, repository GitHub hiện của bạn đang Public. Hãy đổi repository sang **Private** để nội dung nguồn Portfolio không bị đọc trực tiếp trên GitHub.
 
-```text
-https://dung-nguyen.netlify.app/admin/
-```
+Mật khẩu Portfolio mặc định trong build là `999999`. Có thể thay bằng biến môi trường Netlify `PORTFOLIO_PASSWORD`.
 
-## Portfolio
+## Cách hoạt động
 
-```text
-Mật khẩu: 999999
-```
-
-Áp dụng cho `/portfolio.html`, `/en/portfolio.html`, `/zh/portfolio.html`.
-
-## Lưu ý bảo mật
-
-- Không đưa `GITHUB_TOKEN` vào source code.
-- Chỉ lưu token trong Netlify Environment variables.
-- File Portfolio bản rõ không nằm trong source; website chỉ chứa payload mã hóa.
+Decap CMS commit nội dung vào GitHub. Netlify chạy `scripts/build_cms.mjs`, tạo thư mục `_site`, tổng hợp bài viết và nội dung đa ngôn ngữ, mã hóa Portfolio rồi publish.

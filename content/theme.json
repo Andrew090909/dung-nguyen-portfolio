@@ -1,0 +1,20 @@
+{
+  "paper": "#f6f4ef",
+  "paper2": "#ece9e1",
+  "ink": "#0b0d13",
+  "navy": "#07101f",
+  "text": "#151821",
+  "muted": "#686c78",
+  "primary": "#705cff",
+  "primarySoft": "#9c8dff",
+  "secondary": "#4988ff",
+  "accent": "#75e5ff",
+  "warm": "#ff9c74",
+  "gold": "#e9b85b",
+  "containerWidth": 1240,
+  "sectionSpacing": 112,
+  "heroDesktop": 74,
+  "heroMobile": 56,
+  "radius": 28,
+  "animation": "normal"
+}

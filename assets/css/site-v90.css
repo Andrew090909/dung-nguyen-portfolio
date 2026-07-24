@@ -146,3 +146,11 @@ p{margin-top:0}
 .problem-intro h2{font-size:clamp(42px,4.6vw,64px)}
 .site-header.hero-header:not(.is-scrolled) .contact-chip{background:#fff;color:#0b0d13!important}
 @media(max-width:760px){.hero h1{font-size:clamp(42px,11.6vw,56px)}.problem-intro h2,.process-copy h2{font-size:clamp(38px,10.4vw,50px)}}
+
+/* CMS-controlled design system */
+.section{padding:var(--cms-section-space,112px) 0}
+.hero h1{font-size:clamp(52px,6vw,var(--cms-hero-desktop,74px))}
+html[data-motion="soft"] .reveal{transition-duration:.25s!important}
+html[data-motion="soft"] .hero-system,html[data-motion="soft"] .cap-card{transition-duration:.25s!important}
+html[data-motion="off"] *,html[data-motion="off"] *:before,html[data-motion="off"] *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:760px){.hero h1{font-size:clamp(38px,11vw,var(--cms-hero-mobile,56px))}.section{padding:calc(var(--cms-section-space,112px) * .72) 0}}

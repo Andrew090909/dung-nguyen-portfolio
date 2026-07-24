@@ -1,12 +1,9 @@
 {
-  "name": "dung-nguyen-portfolio-v9",
-  "version": "9.0.0",
+  "name": "dung-nguyen-portfolio-v10-cms",
+  "version": "10.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "python scripts/validate_site.py"
-  },
-  "dependencies": {
-    "@netlify/identity": "latest"
+    "build": "node scripts/build_cms.mjs && python scripts/validate_site.py _site"
   }
 }
