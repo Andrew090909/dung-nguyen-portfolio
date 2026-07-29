@@ -5,7 +5,8 @@
     "phuc-dai-nam-01.webp",
     "phuc-dai-nam-03.webp",
     "phuc-dai-nam-04.webp",
-    "phuc-dai-nam-05.webp"
+    "phuc-dai-nam-05.webp",
+    "phuc-dai-nam-06.webp"
   ],
   "vi": {
     "title": "Phúc Đại Nam",
@@ -56,5 +57,6 @@
     ]
   },
   "title": "Phúc Đại Nam",
-  "order": 5
+  "order": 5,
+  "gallery": []
 }
