@@ -139,7 +139,7 @@ fs.mkdirSync(out, { recursive: true });
 
 const publicRootFiles = [
   'index.html','portfolio.html','pricing.html','insights.html','contact.html','success.html','404.html',
-  '_redirects','_headers','robots.txt','sitemap.xml'
+  '_redirects','_headers','robots.txt','sitemap.xml','.nojekyll'
 ];
 for (const file of publicRootFiles) {
   const src = path.join(root, file);

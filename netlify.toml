@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/build_cms.mjs && python scripts/validate_site.py _site"
+  command = "npm run build"
   publish = "_site"
   functions = "netlify/functions"
 
@@ -27,17 +27,14 @@
   from = "/portfolio"
   to = "/portfolio.html"
   status = 301
-
 [[redirects]]
   from = "/pricing"
   to = "/pricing.html"
   status = 301
-
 [[redirects]]
   from = "/insights"
   to = "/insights.html"
   status = 301
-
 [[redirects]]
   from = "/contact"
   to = "/contact.html"

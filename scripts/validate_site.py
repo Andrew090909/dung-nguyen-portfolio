@@ -42,8 +42,8 @@ def main():
             errors.append(f'{page.relative_to(ROOT)} exposes Admin in public navigation')
 
     for required in [
-        'assets/css/site-v90.css',
-        'assets/js/site-v90.js',
+        'assets/css/site-v11.css',
+        'assets/js/site-v11.js',
         'assets/js/theme-settings.js',
         'assets/js/portfolio-v90.js',
         'content/portfolio-v72.enc.json',
@@ -68,7 +68,7 @@ def main():
         print('\n'.join('ERROR: ' + error for error in errors))
         sys.exit(1)
 
-    print(f'Validated {len(html_files)} HTML pages, {len(portfolio_images)} local portfolio images, and V10 CMS output.')
+    print(f'Validated {len(html_files)} HTML pages, {len(portfolio_images)} local portfolio images, and V11.1 static output.')
 
 if __name__ == '__main__':
     main()
