@@ -12,7 +12,7 @@ for (const stage of stages) {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.8));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.2;
+    renderer.toneMappingExposure = 1.55;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
@@ -34,7 +34,7 @@ for (const stage of stages) {
       map: earthMap,
       emissiveMap: nightMap,
       emissive: new THREE.Color(0x82ffbd),
-      emissiveIntensity: 0.48,
+      emissiveIntensity: 1.15,
       roughness: 0.72,
       metalness: 0.03,
     });
@@ -43,7 +43,7 @@ for (const stage of stages) {
 
     const wire = new THREE.Mesh(
       new THREE.SphereGeometry(1.485, 42, 28),
-      new THREE.MeshBasicMaterial({ color: 0x39e89a, wireframe: true, transparent: true, opacity: 0.11, depthWrite: false })
+      new THREE.MeshBasicMaterial({ color: 0x39e89a, wireframe: true, transparent: true, opacity: 0.18, depthWrite: false })
     );
     root.add(wire);
 
@@ -56,14 +56,14 @@ for (const stage of stages) {
         depthWrite: false,
         uniforms: { glowColor: { value: new THREE.Color(0x2cff9a) } },
         vertexShader: `varying vec3 vNormal; void main(){vNormal=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
-        fragmentShader: `uniform vec3 glowColor; varying vec3 vNormal; void main(){float i=pow(0.72-dot(vNormal,vec3(0.0,0.0,1.0)),2.3);gl_FragColor=vec4(glowColor,i*0.52);}`,
+        fragmentShader: `uniform vec3 glowColor; varying vec3 vNormal; void main(){float i=pow(0.72-dot(vNormal,vec3(0.0,0.0,1.0)),2.3);gl_FragColor=vec4(glowColor,i*0.82);}`,
       })
     );
     root.add(atmosphere);
 
     const nodes = new THREE.Group();
     root.add(nodes);
-    const nodeMat = new THREE.MeshBasicMaterial({ color: 0x5affad });
+    const nodeMat = new THREE.MeshBasicMaterial({ color: 0x8affc4 });
     const pulseMat = new THREE.MeshBasicMaterial({ color: 0xbaffdc, transparent: true, opacity: 0.24, blending: THREE.AdditiveBlending, depthWrite: false });
     const latLon = [[12,15],[28,52],[-4,88],[40,115],[-28,135],[50,-52],[2,-82],[-34,-20],[18,168]];
     const toVec = (lat, lon, radius=1.51) => {
@@ -79,7 +79,7 @@ for (const stage of stages) {
       return p;
     });
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x54f3a3, transparent: true, opacity: 0.32, blending: THREE.AdditiveBlending });
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x54f3a3, transparent: true, opacity: 0.48, blending: THREE.AdditiveBlending });
     const links = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,0],[1,6],[3,8]];
     for(const [a,b] of links){
       const p1=nodePositions[a], p2=nodePositions[b];
@@ -89,11 +89,50 @@ for (const stage of stages) {
       nodes.add(line);
     }
 
-    const ambient = new THREE.AmbientLight(0xffffff, 0.78);
+
+    // Dense AI city lights and data particles hugging the globe surface
+    const sparkCount = 1250;
+    const sparkGeo = new THREE.BufferGeometry();
+    const sparkPos = new Float32Array(sparkCount * 3);
+    const sparkSize = new Float32Array(sparkCount);
+    for (let i = 0; i < sparkCount; i++) {
+      const u = Math.random();
+      const v = Math.random();
+      const theta = 2 * Math.PI * u;
+      const phi = Math.acos(2 * v - 1);
+      const r = 1.492 + Math.random() * 0.012;
+      sparkPos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+      sparkPos[i * 3 + 1] = r * Math.cos(phi);
+      sparkPos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+      sparkSize[i] = 0.8 + Math.random() * 1.8;
+    }
+    sparkGeo.setAttribute('position', new THREE.BufferAttribute(sparkPos, 3));
+    sparkGeo.setAttribute('aSize', new THREE.BufferAttribute(sparkSize, 1));
+    const sparkMat = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      uniforms: { uTime: { value: 0 }, uColor: { value: new THREE.Color(0x7dffc1) } },
+      vertexShader: `attribute float aSize; uniform float uTime; varying float vPulse; void main(){vPulse=.55+.45*sin(uTime*2.2+position.x*9.0+position.y*7.0);vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=aSize*(65.0/-mv.z);gl_Position=projectionMatrix*mv;}`,
+      fragmentShader: `uniform vec3 uColor; varying float vPulse; void main(){float d=distance(gl_PointCoord,vec2(.5));float a=smoothstep(.5,0.02,d)*vPulse;gl_FragColor=vec4(uColor,a);}`
+    });
+    const sparks = new THREE.Points(sparkGeo, sparkMat);
+    root.add(sparks);
+
+    // Moving packets along selected AI routes
+    const packets = [];
+    for (let i = 0; i < Math.min(links.length, 8); i++) {
+      const [a,b] = links[i];
+      const p1=nodePositions[a], p2=nodePositions[b];
+      const mid=p1.clone().add(p2).multiplyScalar(.5).normalize().multiplyScalar(1.9);
+      const curve=new THREE.QuadraticBezierCurve3(p1,mid,p2);
+      const packet=new THREE.Mesh(new THREE.SphereGeometry(.028,12,12),new THREE.MeshBasicMaterial({color:0xd9ffe9,transparent:true,opacity:.95,blending:THREE.AdditiveBlending}));
+      packet.userData.curve=curve;packet.userData.offset=i/8;nodes.add(packet);packets.push(packet);
+    }
+
+    const ambient = new THREE.AmbientLight(0xffffff, 1.05);
     scene.add(ambient);
-    const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(-3,2,4); scene.add(key);
-    const rim = new THREE.PointLight(0x29ff9b, 22, 9); rim.position.set(2.4,-1.2,3); scene.add(rim);
-    const cool = new THREE.PointLight(0x6fd9ff, 15, 8); cool.position.set(-3.2,1.4,1); scene.add(cool);
+    const key = new THREE.DirectionalLight(0xffffff, 2.9); key.position.set(-3,2,4); scene.add(key);
+    const rim = new THREE.PointLight(0x29ff9b, 38, 10); rim.position.set(2.4,-1.2,3); scene.add(rim);
+    const cool = new THREE.PointLight(0x6fd9ff, 24, 9); cool.position.set(-3.2,1.4,1); scene.add(cool);
 
     const starGeo = new THREE.BufferGeometry();
     const starCount = 450;
@@ -138,7 +177,7 @@ for (const stage of stages) {
       camera.position.y += ((-currentX*0.32)-camera.position.y)*0.045;
       camera.lookAt(0,0,0);
       nodes.children.forEach(obj=>{if(obj.userData.phase!==undefined){const s=1+Math.sin(t*2.2+obj.userData.phase)*.35;obj.scale.setScalar(s);obj.material.opacity=.14+(s-1)*.18;}});
-      stars.rotation.z=t*.006;
+      sparkMat.uniforms.uTime.value=t; packets.forEach((packet,i)=>packet.position.copy(packet.userData.curve.getPoint((t*.12+packet.userData.offset)%1))); stars.rotation.z=t*.006;
       renderer.render(scene,camera);
     };
     loop();
