@@ -1,0 +1,60 @@
+{
+  "id": "phe-ly",
+  "year": "2024",
+  "images": [
+    "phe-ly-01.webp",
+    "phe-ly-02.webp",
+    "phe-ly-03.webp",
+    "phe-ly-04.webp"
+  ],
+  "vi": {
+    "title": "Phê Ly Coffee",
+    "industry": "F&B · Coffee shop",
+    "context": "Thương hiệu được xây dựng từ con số không, cần một câu chuyện, trải nghiệm và hệ thống nội dung đủ khác biệt để tạo kết nối.",
+    "role": "Brand strategy · Storytelling · Social content · Customer experience",
+    "problem": "Một quán cà phê nhỏ khó cạnh tranh bằng quy mô; cần tạo lý do cảm xúc và trải nghiệm để khách hàng ghi nhớ và quay lại.",
+    "approach": "Định hình thương hiệu quanh câu chuyện và sự kết nối, xây giọng nói, phong cách hình ảnh, nội dung social và trải nghiệm tại điểm bán.",
+    "deliverables": [
+      "Chiến lược thương hiệu từ số 0",
+      "Định vị dựa trên trải nghiệm",
+      "Storytelling marketing",
+      "Hệ thống nội dung social",
+      "Hình ảnh và video",
+      "Trải nghiệm tại điểm bán"
+    ]
+  },
+  "en": {
+    "title": "Phe Ly Coffee",
+    "industry": "F&B · Coffee Shop",
+    "context": "The brand was built from zero and needed a distinctive story, experience and content system that could create emotional connection.",
+    "role": "Brand strategy · Storytelling · Social content · Customer experience",
+    "problem": "A small coffee shop cannot win through scale alone; it needs an emotional and experiential reason for customers to remember and return.",
+    "approach": "I shaped the brand around stories and connection, then developed its voice, visual direction, social content and in-store experience.",
+    "deliverables": [
+      "Zero-to-one brand strategy",
+      "Experience-led positioning",
+      "Storytelling marketing",
+      "Social content system",
+      "Photo and video direction",
+      "In-store experience"
+    ]
+  },
+  "zh": {
+    "title": "Phê Ly Coffee",
+    "industry": "餐饮 · 咖啡店",
+    "context": "品牌从零开始，需要独特的故事、体验和内容体系来建立情感连接。",
+    "role": "品牌战略 · 故事营销 · 社交内容 · 客户体验",
+    "problem": "小型咖啡店无法仅靠规模竞争，需要创造让顾客记住并再次光顾的情感与体验理由。",
+    "approach": "围绕故事与连接塑造品牌，并建立品牌语气、视觉方向、社交内容和门店体验。",
+    "deliverables": [
+      "从零到一的品牌战略",
+      "体验驱动定位",
+      "故事营销",
+      "社交内容体系",
+      "图片与视频方向",
+      "门店体验"
+    ]
+  },
+  "title": "Phê Ly Coffee",
+  "order": 3
+}

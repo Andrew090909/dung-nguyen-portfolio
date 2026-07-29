@@ -1,0 +1,60 @@
+{
+  "id": "koi-service",
+  "year": "2024",
+  "images": [
+    "koi-service-01.webp",
+    "koi-service-03.webp",
+    "koi-service-04.webp",
+    "koi-service-05.webp"
+  ],
+  "vi": {
+    "title": "Koi Service",
+    "industry": "Koi Nhật & thi công hồ Koi",
+    "context": "Website và fanpage chưa khai thác hiệu quả nhu cầu tìm kiếm cá Koi Nhật, thiết kế hồ Koi và dịch vụ chăm sóc.",
+    "role": "Branding · Content production · Lead generation · Sales operations",
+    "problem": "Thương hiệu có sản phẩm và công trình thật nhưng thiếu hệ thống nội dung, quảng cáo và quản lý lead để biến uy tín chuyên môn thành nhu cầu.",
+    "approach": "Xây nhận diện, sản xuất hình ảnh và video tại trại/công trình, tổ chức nội dung theo ý định tìm kiếm và thiết lập quy trình tiếp nhận, tư vấn, chăm sóc lead.",
+    "deliverables": [
+      "Branding cho Koi Service Đà Nẵng",
+      "Hình ảnh và video thực tế",
+      "Quảng cáo tìm kiếm khách hàng",
+      "Nội dung cho cá Koi và hồ Koi",
+      "Quy trình quản lý lead",
+      "Chuẩn hóa tư vấn và chăm sóc"
+    ]
+  },
+  "en": {
+    "title": "Koi Service",
+    "industry": "Japanese Koi & Pond Construction",
+    "context": "The website and social channels were not capturing enough demand for Japanese Koi, pond design and maintenance services.",
+    "role": "Branding · Content production · Lead generation · Sales operations",
+    "problem": "The company had real products and completed projects but lacked a content, advertising and lead-management system to translate expertise into demand.",
+    "approach": "I developed the brand direction, produced on-site visual content, structured messaging around search intent and designed a lead intake and follow-up process.",
+    "deliverables": [
+      "Koi Service brand direction",
+      "On-site photo and video",
+      "Demand generation campaigns",
+      "Koi and pond content system",
+      "Lead management workflow",
+      "Consultation and follow-up standards"
+    ]
+  },
+  "zh": {
+    "title": "Koi Service",
+    "industry": "日本锦鲤与锦鲤池施工",
+    "context": "网站和社交渠道没有充分获取日本锦鲤、锦鲤池设计和维护服务的需求。",
+    "role": "品牌 · 内容制作 · 线索获取 · 销售运营",
+    "problem": "企业拥有真实产品和项目，但缺少把专业能力转化为需求的内容、广告和线索管理体系。",
+    "approach": "建立品牌方向，制作现场视觉内容，围绕搜索意图组织信息，并设计线索接收、咨询和跟进流程。",
+    "deliverables": [
+      "Koi Service 品牌方向",
+      "现场图片与视频",
+      "获客广告",
+      "锦鲤与鱼池内容体系",
+      "线索管理流程",
+      "咨询与跟进标准"
+    ]
+  },
+  "title": "Koi Service",
+  "order": 2
+}

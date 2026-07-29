@@ -1,0 +1,102 @@
+[
+  {
+    "key": "home",
+    "slug": {
+      "vi": "trang-chu",
+      "en": "home",
+      "zh": "主页"
+    },
+    "title": {
+      "vi": "Trang chủ",
+      "en": "Home",
+      "zh": "主页"
+    },
+    "content": {
+      "vi": "",
+      "en": "",
+      "zh": ""
+    },
+    "settings": {},
+    "is_published": true
+  },
+  {
+    "key": "pricing",
+    "slug": {
+      "vi": "bao-gia",
+      "en": "pricing",
+      "zh": "报价"
+    },
+    "title": {
+      "vi": "Báo giá",
+      "en": "Pricing",
+      "zh": "报价"
+    },
+    "content": {
+      "vi": "",
+      "en": "",
+      "zh": ""
+    },
+    "settings": {},
+    "is_published": true
+  },
+  {
+    "key": "portfolio",
+    "slug": {
+      "vi": "portfolio",
+      "en": "portfolio",
+      "zh": "作品集"
+    },
+    "title": {
+      "vi": "Portfolio",
+      "en": "Portfolio",
+      "zh": "作品集"
+    },
+    "content": {
+      "vi": "",
+      "en": "",
+      "zh": ""
+    },
+    "settings": {},
+    "is_published": true
+  },
+  {
+    "key": "insights",
+    "slug": {
+      "vi": "insights",
+      "en": "insights",
+      "zh": "洞察"
+    },
+    "title": {
+      "vi": "Insights",
+      "en": "Insights",
+      "zh": "洞察"
+    },
+    "content": {
+      "vi": "",
+      "en": "",
+      "zh": ""
+    },
+    "settings": {},
+    "is_published": true
+  },
+  {
+    "key": "contact",
+    "slug": {
+      "vi": "lien-he",
+      "en": "contact",
+      "zh": "联系"
+    },
+    "title": {
+      "vi": "Liên hệ",
+      "en": "Contact",
+      "zh": "联系"
+    },
+    "content": {
+      "vi": "",
+      "en": "",
+      "zh": ""
+    },
+    "settings": {},
+    "is_published": true
+  }
+]

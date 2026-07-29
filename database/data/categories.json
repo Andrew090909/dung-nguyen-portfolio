@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "strategy",
+    "type": "post",
+    "sort_order": 1,
+    "name": {
+      "vi": "Chiến lược",
+      "en": "Strategy",
+      "zh": "战略"
+    },
+    "description": {
+      "vi": "Chiến lược thương mại và tăng trưởng.",
+      "en": "Commercial and growth strategy.",
+      "zh": "商业与增长战略。"
+    }
+  },
+  {
+    "slug": "brand",
+    "type": "post",
+    "sort_order": 2,
+    "name": {
+      "vi": "Thương hiệu",
+      "en": "Brand",
+      "zh": "品牌"
+    },
+    "description": {
+      "vi": "Định vị, niềm tin và trải nghiệm.",
+      "en": "Positioning, trust and experience.",
+      "zh": "定位、信任与体验。"
+    }
+  },
+  {
+    "slug": "ai-operations",
+    "type": "post",
+    "sort_order": 3,
+    "name": {
+      "vi": "AI & Vận hành",
+      "en": "AI & Operations",
+      "zh": "AI 与运营"
+    },
+    "description": {
+      "vi": "AI, dữ liệu và hệ thống vận hành.",
+      "en": "AI, data and operating systems.",
+      "zh": "AI、数据与运营系统。"
+    }
+  },
+  {
+    "slug": "commercial-services",
+    "type": "product",
+    "sort_order": 1,
+    "name": {
+      "vi": "Dịch vụ Commercial Growth",
+      "en": "Commercial Growth Services",
+      "zh": "商业增长服务"
+    },
+    "description": {
+      "vi": "Chẩn đoán, xây hệ thống và vận hành tăng trưởng.",
+      "en": "Diagnosis, system building and growth operations.",
+      "zh": "诊断、系统建设与增长运营。"
+    }
+  }
+]

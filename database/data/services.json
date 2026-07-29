@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "commercial-diagnostic",
+    "sort_order": 1,
+    "is_featured": true,
+    "price_from": 15000000,
+    "price_unit": "VND / engagement",
+    "name": {
+      "vi": "Commercial Diagnostic",
+      "en": "Commercial Diagnostic",
+      "zh": "商业增长诊断"
+    },
+    "summary": {
+      "vi": "Chẩn đoán 10–15 ngày để xác định chính xác điểm thất thoát doanh thu, nút thắt funnel và ưu tiên 90 ngày.",
+      "en": "A 10–15 day diagnostic to identify revenue leakage, funnel constraints and the highest-leverage 90-day priorities.",
+      "zh": "用 10–15 天识别收入流失、漏斗瓶颈与未来 90 天的最高优先级。"
+    },
+    "description": {
+      "vi": "Audit định vị, offer, lead flow, CRM, sales handoff, dữ liệu và cách doanh nghiệp ra quyết định.",
+      "en": "Audit positioning, offer, lead flow, CRM, sales handoff, data and decision routines.",
+      "zh": "审计定位、价值主张、线索流、CRM、销售交接、数据与决策机制。"
+    },
+    "features": {
+      "vi": [
+        "Báo cáo chẩn đoán",
+        "Funnel đề xuất",
+        "Danh sách điểm mất doanh thu",
+        "KPI và roadmap 90 ngày"
+      ],
+      "en": [
+        "Diagnostic report",
+        "Recommended funnel",
+        "Revenue leakage map",
+        "90-day KPI roadmap"
+      ],
+      "zh": [
+        "诊断报告",
+        "建议漏斗",
+        "收入流失地图",
+        "90 天 KPI 路线图"
+      ]
+    }
+  },
+  {
+    "slug": "revenue-system-build",
+    "sort_order": 2,
+    "is_featured": true,
+    "price_from": 60000000,
+    "price_unit": "VND / project",
+    "name": {
+      "vi": "Revenue System Build",
+      "en": "Revenue System Build",
+      "zh": "收入系统建设"
+    },
+    "summary": {
+      "vi": "Xây hệ thống tăng trưởng 8–12 tuần: offer, funnel, CRM, tracking, dashboard, SOP và chiến dịch thực tế.",
+      "en": "An 8–12 week build covering offer, funnel, CRM, tracking, dashboards, SOPs and live campaigns.",
+      "zh": "8–12 周搭建价值主张、漏斗、CRM、追踪、仪表板、SOP 与实战活动。"
+    },
+    "description": {
+      "vi": "Dành cho doanh nghiệp đã xác định nút thắt và cần biến chiến lược thành năng lực vận hành có thể đo lường.",
+      "en": "For businesses that know the constraint and need a measurable operating system, not another disconnected campaign.",
+      "zh": "适合已明确瓶颈并需要可衡量运营系统的企业，而不是再做一次孤立活动。"
+    },
+    "features": {
+      "vi": [
+        "Định vị và offer",
+        "Lead stages & CRM",
+        "Tracking và dashboard",
+        "SOP, automation và đào tạo"
+      ],
+      "en": [
+        "Positioning and offer",
+        "Lead stages and CRM",
+        "Tracking and dashboards",
+        "SOPs, automation and training"
+      ],
+      "zh": [
+        "定位与价值主张",
+        "线索阶段与 CRM",
+        "追踪与仪表板",
+        "SOP、自动化与培训"
+      ]
+    }
+  },
+  {
+    "slug": "fractional-commercial-operator",
+    "sort_order": 3,
+    "is_featured": true,
+    "price_from": 25000000,
+    "price_unit": "VND / month",
+    "name": {
+      "vi": "Fractional Commercial Operator",
+      "en": "Fractional Commercial Operator",
+      "zh": "分时商业增长负责人"
+    },
+    "summary": {
+      "vi": "Đồng hành tối thiểu 6 tháng để vận hành pipeline, chất lượng lead, conversion, chiến dịch và nhịp cải tiến hàng tuần.",
+      "en": "A minimum six-month operating partnership covering pipeline, lead quality, conversion, campaigns and weekly improvement loops.",
+      "zh": "至少六个月的运营合作，覆盖管道、线索质量、转化、活动与每周改进循环。"
+    },
+    "description": {
+      "vi": "Vai trò điều hành thương mại bán thời gian, tập trung vào hệ thống và kết quả thay vì chỉ sản xuất đầu việc marketing.",
+      "en": "A fractional commercial leadership role focused on system performance and outcomes, not output volume alone.",
+      "zh": "以系统绩效与结果为中心的分时商业领导角色，而非只追求营销产出数量。"
+    },
+    "features": {
+      "vi": [
+        "Họp vận hành hàng tuần",
+        "Pipeline & conversion review",
+        "Campaign và offer experiments",
+        "Coaching, dashboard và roadmap"
+      ],
+      "en": [
+        "Weekly operating review",
+        "Pipeline and conversion review",
+        "Campaign and offer experiments",
+        "Coaching, dashboards and roadmap"
+      ],
+      "zh": [
+        "每周运营复盘",
+        "管道与转化审查",
+        "活动与价值主张实验",
+        "辅导、仪表板与路线图"
+      ]
+    }
+  }
+]

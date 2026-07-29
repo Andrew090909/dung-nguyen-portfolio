@@ -1,0 +1,62 @@
+{
+  "id": "phong-cach-moc",
+  "year": "2024",
+  "images": [
+    "phong-cach-moc-01.webp",
+    "phong-cach-moc-02.webp",
+    "phong-cach-moc-03.webp",
+    "phong-cach-moc-04.webp",
+    "phong-cach-moc-05.webp",
+    "phong-cach-moc-06.webp"
+  ],
+  "vi": {
+    "title": "Phong Cách Mộc",
+    "industry": "Thiết kế & xây dựng",
+    "context": "Doanh nghiệp cần chuẩn hóa thương hiệu, nội dung và cách phối hợp nội bộ để tiến gần hơn đến mô hình vận hành số.",
+    "role": "Chiến lược thương hiệu · Digital marketing · Marketing operations",
+    "problem": "Nhận diện và nội dung thiếu nhất quán; dữ liệu, quy trình và vai trò trong đội ngũ chưa được chuẩn hóa.",
+    "approach": "Audit toàn bộ điểm chạm, tái cấu trúc thông điệp, xây lịch nội dung, chuẩn hóa hệ thống quản trị và đào tạo nhân sự marketing nội bộ.",
+    "deliverables": [
+      "Chuẩn hóa nhận diện trên nền tảng số",
+      "Chiến lược nội dung và định hướng truyền thông",
+      "Hệ thống phối hợp và quản trị công việc",
+      "Tuyển dụng, đào tạo đội ngũ marketing",
+      "Quy trình liên phòng ban",
+      "Hỗ trợ chuyển đổi số"
+    ]
+  },
+  "en": {
+    "title": "Phong Cach Moc",
+    "industry": "Design & Construction",
+    "context": "The business needed a more consistent brand, content system and internal collaboration model to support digital operations.",
+    "role": "Brand strategy · Digital marketing · Marketing operations",
+    "problem": "Brand assets and content were inconsistent, while data, process and ownership across the team lacked standardisation.",
+    "approach": "I audited key touchpoints, reframed messaging, built a content operating rhythm, standardised collaboration and trained the internal marketing team.",
+    "deliverables": [
+      "Digital brand consistency",
+      "Content strategy and communication direction",
+      "Marketing collaboration system",
+      "Marketing recruitment and training",
+      "Cross-functional workflow",
+      "Digital transformation support"
+    ]
+  },
+  "zh": {
+    "title": "Phong Cách Mộc",
+    "industry": "设计与施工",
+    "context": "企业需要统一品牌、内容和内部协作方式，以支持数字化运营。",
+    "role": "品牌战略 · 数字营销 · 营销运营",
+    "problem": "品牌资产和内容不一致，团队的数据、流程与职责缺乏标准化。",
+    "approach": "审计关键触点，重构信息体系，建立内容节奏，标准化协作并培训内部营销团队。",
+    "deliverables": [
+      "数字品牌统一",
+      "内容战略与传播方向",
+      "营销协作体系",
+      "营销招聘与培训",
+      "跨部门流程",
+      "数字化转型支持"
+    ]
+  },
+  "title": "Phong Cách Mộc",
+  "order": 4
+}

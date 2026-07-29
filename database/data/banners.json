@@ -1,0 +1,23 @@
+[
+  {
+    "key": "home-cta",
+    "title": {
+      "vi": "Sẵn sàng xây cỗ máy tăng trưởng dành riêng cho doanh nghiệp?",
+      "en": "Ready to build a growth engine designed for your business?",
+      "zh": "准备好打造专属于企业的增长引擎了吗？"
+    },
+    "subtitle": {
+      "vi": "Bắt đầu bằng một Commercial Assessment để xác định đúng vấn đề và phạm vi cần triển khai.",
+      "en": "Start with a Commercial Assessment to define the real problem and the right delivery scope.",
+      "zh": "先通过商业评估明确真实问题与正确实施范围。"
+    },
+    "cta_label": {
+      "vi": "Đặt lịch tư vấn",
+      "en": "Book an assessment",
+      "zh": "预约评估"
+    },
+    "cta_url": "/vi/lien-he",
+    "is_active": true,
+    "sort_order": 1
+  }
+]
