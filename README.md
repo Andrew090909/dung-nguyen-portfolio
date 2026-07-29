@@ -1,19 +1,15 @@
-# Dũng Nguyễn Portfolio v12
+# Dũng Nguyễn Portfolio v12.1
 
-## Local
-Open `index.html` or run `npx serve .`.
+Static website for GitHub Pages and Netlify.
+
+## Changes
+- Real interactive Three.js/WebGL globe on Home.
+- Globe auto-rotates, follows pointer and eases back on pointer leave.
+- Unified centered container across all sections.
+- Existing Portfolio, Pricing, Insights and Contact layouts preserved.
 
 ## Build
 ```bash
 npm run build
 ```
-Output: `_site`.
-
-## GitHub Pages
-Push to `main`, then Settings → Pages → Source: GitHub Actions.
-
-## Netlify
-Build command: `npm run build`
-Publish directory: `_site`
-
-Portfolio password: `999999`.
+Netlify publish directory: `_site`.
