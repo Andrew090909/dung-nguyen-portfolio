@@ -1,0 +1,59 @@
+{
+  "id": "adeva",
+  "year": "2023–2024",
+  "images": [
+    "adeva-01.webp",
+    "adeva-04.webp",
+    "adeva-05.webp"
+  ],
+  "vi": {
+    "title": "ADEVA Việt Nam",
+    "industry": "Phân phối dược mỹ phẩm",
+    "context": "Doanh nghiệp chưa có bộ phận truyền thông hoàn chỉnh nhưng cần xây nền tảng digital, thương mại và đo lường.",
+    "role": "Digital foundation · E-commerce · Performance marketing · Team setup",
+    "problem": "Thiếu website và nền tảng đo lường đồng bộ; nội dung, quảng cáo và hoạt động thương mại điện tử chưa được quản trị như một hệ thống.",
+    "approach": "Audit thương hiệu và kênh bán, thiết lập tài sản số, tracking, quảng cáo, dashboard và quy trình để hình thành năng lực marketing nội bộ.",
+    "deliverables": [
+      "Audit hệ thống hiện tại",
+      "Website và landing page",
+      "Tracking chuyển đổi",
+      "Meta Ads và Google Ads",
+      "Dashboard hiệu suất",
+      "Tuyển dụng và đào tạo"
+    ]
+  },
+  "en": {
+    "title": "ADEVA Vietnam",
+    "industry": "Cosmeceutical Distribution",
+    "context": "The company did not yet have a complete communications team but needed a stronger digital, commerce and measurement foundation.",
+    "role": "Digital foundation · E-commerce · Performance marketing · Team setup",
+    "problem": "Website, measurement, content, media and e-commerce activities were not managed as one connected system.",
+    "approach": "I audited the brand and sales channels, set up digital assets, tracking, advertising and dashboards, and helped build internal marketing capability.",
+    "deliverables": [
+      "Current-state audit",
+      "Website and landing pages",
+      "Conversion tracking",
+      "Meta Ads and Google Ads",
+      "Performance dashboard",
+      "Recruitment and training"
+    ]
+  },
+  "zh": {
+    "title": "ADEVA 越南",
+    "industry": "功效护肤品分销",
+    "context": "企业尚未拥有完整的传播团队，但需要建立更强的数字、商业和衡量基础。",
+    "role": "数字基础 · 电商 · 效果营销 · 团队搭建",
+    "problem": "网站、衡量、内容、广告和电商没有作为一个连接的系统进行管理。",
+    "approach": "审计品牌与销售渠道，建立数字资产、追踪、广告和仪表板，并帮助企业形成内部营销能力。",
+    "deliverables": [
+      "现状审计",
+      "网站与落地页",
+      "转化追踪",
+      "Meta Ads 与 Google Ads",
+      "绩效仪表板",
+      "招聘与培训"
+    ]
+  },
+  "title": "ADEVA Việt Nam",
+  "order": 1
+}

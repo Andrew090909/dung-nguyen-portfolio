@@ -1,0 +1,16 @@
+/portfolio /portfolio.html 301
+/pricing /pricing.html 301
+/insights /insights.html 301
+/contact /contact.html 301
+/en/portfolio /en/portfolio.html 301
+/en/pricing /en/pricing.html 301
+/en/insights /en/insights.html 301
+/en/contact /en/contact.html 301
+/zh/portfolio /zh/portfolio.html 301
+/zh/pricing /zh/pricing.html 301
+/zh/insights /zh/insights.html 301
+/zh/contact /zh/contact.html 301
+/scripts/* /404.html 404
+/netlify/* /404.html 404
+/package.json /404.html 404
+/netlify.toml /404.html 404

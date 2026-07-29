@@ -1,0 +1,194 @@
+{
+  "code": "en",
+  "title": "Dung Nguyen — Marketing Strategist, AI & Growth Systems",
+  "navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "homePage": {
+    "heroEyebrow": "Marketing strategist · AI-enabled growth",
+    "heroTitle": "Clear strategy.<br><span class=\"accent\">Scalable growth systems.</span>",
+    "heroLead": "I combine brand strategy, digital marketing, data and AI to turn scattered activities into a measurable, operable and scalable growth system.",
+    "explore": "Explore capabilities",
+    "talk": "Discuss a project",
+    "scroll": "Scroll to explore",
+    "problemK": "What I solve",
+    "problemH": "Do not start with tools.<br>Start with the growth constraint.",
+    "problemP": "A polished website, a media campaign or an AI workflow only matters when it solves the right business problem and improves operating capability.",
+    "problems": [
+      {
+        "title": "Unclear positioning",
+        "description": "Customers cannot clearly understand why they should choose you over alternatives."
+      },
+      {
+        "title": "Disconnected marketing",
+        "description": "Content, media, website, sales and data do not operate as one system."
+      },
+      {
+        "title": "Unmeasurable growth",
+        "description": "Many activities exist, but tracking, dashboards and decision standards are missing."
+      }
+    ],
+    "capK": "Capabilities & technology",
+    "capH": "From strategy to execution.<br>No gap between idea and operation.",
+    "capP": "I use tools as parts of a system: research, brand building, content, distribution, measurement and automation.",
+    "capabilities": [
+      {
+        "title": "AI · Research · Strategy",
+        "tools": "ChatGPT · Gemini · Claude",
+        "description": "Market research, insight development, strategy, messaging and knowledge workflows."
+      },
+      {
+        "title": "Brand · Design System",
+        "tools": "Photoshop · Canva · CorelDRAW",
+        "description": "Brand identity, key visuals, sales assets and consistent design systems."
+      },
+      {
+        "title": "Video · Storytelling",
+        "tools": "CapCut · Premiere Pro · DaVinci Resolve",
+        "description": "Scripting, production, editing, colour and storytelling for social, web and campaigns."
+      },
+      {
+        "title": "Growth · Measurement",
+        "tools": "GA4 · GTM · Meta Ads · Google Ads · SEO · WordPress · n8n",
+        "description": "Tracking, media, dashboards and automation that make marketing manageable."
+      }
+    ],
+    "workK": "Selected work",
+    "workH": "Real business contexts.",
+    "workP": "Each project started from a real constraint: data loss, inconsistent brand systems, missing internal capability or a business built from zero.",
+    "viewCase": "View case study",
+    "methodsK": "How I work",
+    "methodsH": "Diagnose first.<br>Design the system second.",
+    "methodsP": "I do not sell a fixed package before understanding the problem. Scope is designed around priority, resources and risk.",
+    "methods": [
+      {
+        "title": "Research",
+        "description": "Market, customer, competitor and existing data."
+      },
+      {
+        "title": "Diagnosis",
+        "description": "Identify constraints instead of treating symptoms."
+      },
+      {
+        "title": "Architecture",
+        "description": "Design messaging, touchpoints, data and workflows."
+      },
+      {
+        "title": "Execution",
+        "description": "Turn strategy into websites, content, media, tracking and process."
+      },
+      {
+        "title": "Measurement",
+        "description": "Create standards, dashboards and optimisation loops."
+      }
+    ],
+    "insK": "Insights",
+    "insH": "Thinking, tools and market signals.",
+    "insP": "Analysis of marketing, AI, consumer behaviour and practical growth systems.",
+    "readAll": "Explore Insights",
+    "ctaH": "Do you have a marketing problem that has not been solved correctly?",
+    "ctaBtn": "Share your project context"
+  },
+  "portfolioPage": {
+    "hero": "Execution evidence.<br>Not a tool list.",
+    "lead": "Five business contexts presented through the problem, role, approach and real project assets.",
+    "gateK": "Restricted area",
+    "gateH": "Portfolio is protected.",
+    "gateP": "Enter the password to view project case studies and imagery.",
+    "password": "Password",
+    "unlock": "Unlock Portfolio"
+  },
+  "pricingPage": {
+    "hero": "Pricing follows diagnosis.<br>Not the other way around.",
+    "lead": "Investment depends on complexity, organisational readiness and implementation scope. These packages are reference structures, not rigid quotations.",
+    "scope": "Reference scope",
+    "packages": [
+      {
+        "title": "Brand Foundation",
+        "note": "For businesses that need clearer positioning and brand foundations.",
+        "items": [
+          "Brand and customer audit",
+          "Positioning, messaging and brand architecture",
+          "Visual direction and application guidelines",
+          "90-day content plan"
+        ]
+      },
+      {
+        "title": "Growth Campaign",
+        "note": "For businesses with a foundation that need measurable demand generation.",
+        "items": [
+          "Landing page and conversion flow",
+          "GA4, GTM and Pixel tracking",
+          "Meta Ads / Google Ads",
+          "Dashboard and optimisation cycle"
+        ]
+      },
+      {
+        "title": "Marketing System",
+        "note": "For businesses that need integrated, standardised marketing operations.",
+        "items": [
+          "Strategy and content system",
+          "Website, tracking and lead workflow",
+          "Management dashboard",
+          "Team training and handover"
+        ]
+      }
+    ],
+    "processTitle": "From brief to proposal",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Receive context",
+        "description": "Goals, data, resources and current issues."
+      },
+      {
+        "number": "02",
+        "title": "Diagnose",
+        "description": "Identify constraints and priorities."
+      },
+      {
+        "number": "03",
+        "title": "Design scope",
+        "description": "Select the right work, deliverables and acceptance criteria."
+      },
+      {
+        "number": "04",
+        "title": "Send proposal",
+        "description": "Timeline, investment, responsibilities and delivery plan."
+      }
+    ]
+  },
+  "insightsPage": {
+    "hero": "Marketing intelligence.<br>AI, markets and behaviour.",
+    "lead": "Track signals, interpret trends and turn them into decisions for brand and growth.",
+    "market": "Market overview",
+    "articles": "Latest articles",
+    "featuredTitle": "Build the marketing system before increasing ad spend.",
+    "featuredText": "A practical view of positioning, conversion and measurement before a business scales media investment.",
+    "read": "Read article"
+  },
+  "contactPage": {
+    "hero": "Talk about the real problem.",
+    "lead": "You do not need a perfect brief. Describe the context, objective, what is not working and the desired timing.",
+    "name": "Full name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone / Zalo",
+    "need": "Primary need",
+    "budget": "Expected budget",
+    "timeline": "Desired timing",
+    "problem": "Problem to solve",
+    "send": "Send inquiry",
+    "select": "Not determined",
+    "success": "Sent. I will respond as soon as possible."
+  },
+  "footer": {
+    "description": "Brand strategy · Digital marketing · AI · Growth systems",
+    "rights": "© 2026 Dung Nguyen. All rights reserved.",
+    "location": "Da Nang · Vietnam"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "ai-workflow-for-marketing-team",
+  "status": "published",
+  "cover": "/assets/images/portfolio/adeva-04.webp",
+  "vi": {
+    "category": "AI & Vận hành",
+    "title": "AI nên đi vào quy trình marketing ở đâu trước?",
+    "excerpt": "Không bắt đầu bằng việc mua thật nhiều công cụ. Hãy bắt đầu ở những điểm lặp lại, tốn thời gian và có dữ liệu đầu vào rõ ràng.",
+    "body": "<p>AI có giá trị nhất khi nó giảm ma sát trong một quy trình đã được xác định rõ. Nghiên cứu sơ bộ, chuẩn hóa brief, phân loại lead, tổng hợp báo cáo và tái sử dụng nội dung là những điểm khởi đầu thực tế.</p><h2>Nguyên tắc triển khai</h2><p>Chọn một workflow, xác định đầu vào và đầu ra, đặt tiêu chuẩn kiểm tra chất lượng, sau đó mới tự động hóa. Không tự động hóa sự hỗn loạn.</p>"
+  },
+  "en": {
+    "category": "AI & Operations",
+    "title": "Where should AI enter a marketing workflow first?",
+    "excerpt": "Do not begin by buying many tools. Begin with repetitive, time-consuming tasks that have clear inputs.",
+    "body": "<p>AI is most valuable when it removes friction from a clearly defined process. Early research, brief standardisation, lead classification, reporting and content repurposing are practical starting points.</p><h2>Implementation rule</h2><p>Select one workflow, define inputs and outputs, set quality checks and only then automate. Do not automate chaos.</p>"
+  },
+  "zh": {
+    "category": "AI 与运营",
+    "title": "人工智能应该首先进入营销流程的哪个环节？",
+    "excerpt": "不要从购买大量工具开始，而要从重复、耗时且输入清晰的任务开始。",
+    "body": "<p>当流程已经被清晰定义时，AI 才最有价值。初步研究、简报标准化、线索分类、报告汇总和内容再利用都是实际的起点。</p><h2>实施原则</h2><p>选择一个流程，定义输入和输出，建立质量检查，然后再自动化。不要自动化混乱。</p>"
+  },
+  "date": "2026-07-19T08:00:00.000Z",
+  "featured": false,
+  "title": "AI nên đi vào quy trình marketing ở đâu trước?"
+}

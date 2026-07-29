@@ -1,0 +1,62 @@
+{
+  "id": "phuc-dai-nam",
+  "year": "2024",
+  "images": [
+    "phuc-dai-nam-01.webp",
+    "phuc-dai-nam-03.webp",
+    "phuc-dai-nam-04.webp",
+    "phuc-dai-nam-05.webp",
+    "phuc-dai-nam-06.webp"
+  ],
+  "vi": {
+    "title": "Phúc Đại Nam",
+    "industry": "Thiết kế & xây dựng",
+    "context": "Hệ thống marketing thuê ngoài gặp lỗi, mất dữ liệu và thiếu khả năng kiểm soát hiệu suất.",
+    "role": "Growth strategy · Tracking · Paid media · Team building",
+    "problem": "Website, tracking và quảng cáo không tạo thành một hệ thống đo lường đáng tin cậy; doanh nghiệp phụ thuộc vào nhà cung cấp ngoài.",
+    "approach": "Audit toàn bộ tài sản số, xây lại website và landing page, thiết lập GA4, GTM, Meta Pixel, conversion tracking và dashboard hiệu suất.",
+    "deliverables": [
+      "Audit thương hiệu và website",
+      "Website và landing page",
+      "GA4 · GTM · Meta Pixel",
+      "Meta Ads và Google Ads",
+      "Dashboard đo lường",
+      "Tuyển dụng và quản lý nhân sự"
+    ]
+  },
+  "en": {
+    "title": "Phuc Dai Nam",
+    "industry": "Design & Construction",
+    "context": "An outsourced marketing setup had failed, causing data loss and limited visibility into performance.",
+    "role": "Growth strategy · Tracking · Paid media · Team building",
+    "problem": "The website, tracking and media stack did not form a reliable measurement system, leaving the company dependent on external vendors.",
+    "approach": "I audited the digital stack, rebuilt website and landing page foundations, and implemented GA4, GTM, Meta Pixel, conversion tracking and reporting dashboards.",
+    "deliverables": [
+      "Brand and website audit",
+      "Website and landing pages",
+      "GA4 · GTM · Meta Pixel",
+      "Meta Ads and Google Ads",
+      "Performance dashboard",
+      "Marketing team recruitment"
+    ]
+  },
+  "zh": {
+    "title": "Phúc Đại Nam",
+    "industry": "设计与施工",
+    "context": "外包营销系统出现故障，导致数据丢失和绩效不可控。",
+    "role": "增长战略 · 数据追踪 · 付费媒体 · 团队建设",
+    "problem": "网站、追踪和广告没有形成可靠的衡量系统，企业过度依赖外部供应商。",
+    "approach": "审计数字资产，重建网站和落地页，并部署 GA4、GTM、Meta Pixel、转化追踪和绩效仪表板。",
+    "deliverables": [
+      "品牌与网站审计",
+      "网站与落地页",
+      "GA4 · GTM · Meta Pixel",
+      "Meta Ads 与 Google Ads",
+      "绩效仪表板",
+      "营销团队招聘"
+    ]
+  },
+  "title": "Phúc Đại Nam",
+  "order": 5,
+  "gallery": []
+}
