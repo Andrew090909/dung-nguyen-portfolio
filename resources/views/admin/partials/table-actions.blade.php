@@ -1,0 +1,1 @@
+<div class="table-actions"><a href="{{ $editUrl }}">Sửa</a><form method="post" action="{{ $deleteUrl }}" onsubmit="return confirm('Xóa dữ liệu này?')">@csrf @method('DELETE')<button type="submit">Xóa</button></form></div>

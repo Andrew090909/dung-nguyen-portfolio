@@ -1,0 +1,23 @@
+@mixin container {
+  width: min(#{$container}, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+@mixin glass {
+  background: $surface;
+  border: 1px solid $line;
+  box-shadow: $shadow-sm;
+  backdrop-filter: blur(22px);
+}
+
+@mixin gradient-text {
+  background: linear-gradient(100deg, $emerald-dark 0%, $emerald 42%, $cyan 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin focus-ring {
+  outline: 3px solid rgba($cyan, 0.38);
+  outline-offset: 3px;
+}
