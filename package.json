@@ -1,11 +1,8 @@
 {
-  "name": "dung-nguyen-portfolio-v11-1",
-  "version": "11.1.0",
+  "name": "dung-nguyen-portfolio-v12",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "node scripts/build_cms.mjs && python scripts/validate_site.py _site && node scripts/rewrite-base.mjs",
-    "check": "npm run build"
+    "build": "node scripts/build-static.mjs"
   },
   "engines": {
     "node": ">=20"

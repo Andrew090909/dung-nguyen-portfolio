@@ -1,0 +1,1 @@
+import fs from 'fs'; import path from 'path'; const out='_site'; fs.rmSync(out,{recursive:true,force:true}); fs.mkdirSync(out); for(const f of fs.readdirSync('.')){if(!['_site','node_modules','.git'].includes(f)) fs.cpSync(f,path.join(out,f),{recursive:true});} console.log('Built _site');
