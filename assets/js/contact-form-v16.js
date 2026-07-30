@@ -21,7 +21,7 @@
   }
 
   const endpoint = String(cfg.form_endpoint || '').trim();
-  const fallbackEmail = cfg.email || 'dungnguyen.mkt@gmail.com';
+  const fallbackEmail = cfg.email || 'nguyendhungdung@gmail.com';
   const isConfigured = /^https:\/\/script\.google\.com\/macros\/s\/.+\/exec(?:\?.*)?$/.test(endpoint)
     || /^https:\/\/formspree\.io\/f\/.+/.test(endpoint);
 
