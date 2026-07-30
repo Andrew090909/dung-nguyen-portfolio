@@ -1,0 +1,17 @@
+{
+  "version": "17.2.0",
+  "status": "validated_with_limits",
+  "fixed": [
+    "contact script v16 loaded on all pages",
+    "old Netlify sitemap removed",
+    "EN/ZH portfolio UI labels localized",
+    "stale Netlify/CMS JS removed",
+    "hero globe blue photorealistic art direction",
+    "mobile safe-area and overflow hardening"
+  ],
+  "manual_checks_required": [
+    "Google Apps Script /exec endpoint must be inserted",
+    "real-device Safari/Chrome rendering",
+    "visual project image ownership verification"
+  ]
+}
