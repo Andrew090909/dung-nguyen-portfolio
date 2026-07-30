@@ -16,7 +16,7 @@ for (const stage of stages) {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
-    camera.position.set(0, 0, 5.1);
+    camera.position.set(0, 0, 4.85);
 
     const root = new THREE.Group();
     root.rotation.x = -0.12;
@@ -29,11 +29,11 @@ for (const stage of stages) {
     const nightMap = textureLoader.load('https://threejs.org/examples/textures/planets/earth_lights_2048.png');
     nightMap.colorSpace = THREE.SRGBColorSpace;
 
-    const globeGeo = new THREE.SphereGeometry(1.46, 96, 96);
+    const globeGeo = new THREE.SphereGeometry(1.55, 112, 112);
     const globeMat = new THREE.MeshStandardMaterial({
       map: earthMap,
       emissiveMap: nightMap,
-      emissive: new THREE.Color(0x82ffbd),
+      emissive: new THREE.Color(0x78c9ff),
       emissiveIntensity: 1.15,
       roughness: 0.72,
       metalness: 0.03,
@@ -42,19 +42,19 @@ for (const stage of stages) {
     root.add(globe);
 
     const wire = new THREE.Mesh(
-      new THREE.SphereGeometry(1.485, 42, 28),
-      new THREE.MeshBasicMaterial({ color: 0x39e89a, wireframe: true, transparent: true, opacity: 0.18, depthWrite: false })
+      new THREE.SphereGeometry(1.575, 48, 32),
+      new THREE.MeshBasicMaterial({ color: 0x2f9fff, wireframe: true, transparent: true, opacity: 0.18, depthWrite: false })
     );
     root.add(wire);
 
     const atmosphere = new THREE.Mesh(
-      new THREE.SphereGeometry(1.57, 64, 64),
+      new THREE.SphereGeometry(1.67, 72, 72),
       new THREE.ShaderMaterial({
         transparent: true,
         side: THREE.BackSide,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
-        uniforms: { glowColor: { value: new THREE.Color(0x2cff9a) } },
+        uniforms: { glowColor: { value: new THREE.Color(0x55bfff) } },
         vertexShader: `varying vec3 vNormal; void main(){vNormal=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
         fragmentShader: `uniform vec3 glowColor; varying vec3 vNormal; void main(){float i=pow(0.72-dot(vNormal,vec3(0.0,0.0,1.0)),2.3);gl_FragColor=vec4(glowColor,i*0.82);}`,
       })
@@ -63,10 +63,10 @@ for (const stage of stages) {
 
     const nodes = new THREE.Group();
     root.add(nodes);
-    const nodeMat = new THREE.MeshBasicMaterial({ color: 0x8affc4 });
-    const pulseMat = new THREE.MeshBasicMaterial({ color: 0xbaffdc, transparent: true, opacity: 0.24, blending: THREE.AdditiveBlending, depthWrite: false });
+    const nodeMat = new THREE.MeshBasicMaterial({ color: 0xa9ddff });
+    const pulseMat = new THREE.MeshBasicMaterial({ color: 0xd8f1ff, transparent: true, opacity: 0.24, blending: THREE.AdditiveBlending, depthWrite: false });
     const latLon = [[12,15],[28,52],[-4,88],[40,115],[-28,135],[50,-52],[2,-82],[-34,-20],[18,168]];
-    const toVec = (lat, lon, radius=1.51) => {
+    const toVec = (lat, lon, radius=1.60) => {
       const phi = THREE.MathUtils.degToRad(90-lat);
       const theta = THREE.MathUtils.degToRad(lon+180);
       return new THREE.Vector3(-radius*Math.sin(phi)*Math.cos(theta), radius*Math.cos(phi), radius*Math.sin(phi)*Math.sin(theta));
@@ -79,7 +79,7 @@ for (const stage of stages) {
       return p;
     });
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x54f3a3, transparent: true, opacity: 0.48, blending: THREE.AdditiveBlending });
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x69c4ff, transparent: true, opacity: 0.48, blending: THREE.AdditiveBlending });
     const links = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,0],[1,6],[3,8]];
     for(const [a,b] of links){
       const p1=nodePositions[a], p2=nodePositions[b];
@@ -100,7 +100,7 @@ for (const stage of stages) {
       const v = Math.random();
       const theta = 2 * Math.PI * u;
       const phi = Math.acos(2 * v - 1);
-      const r = 1.492 + Math.random() * 0.012;
+      const r = 1.582 + Math.random() * 0.012;
       sparkPos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
       sparkPos[i * 3 + 1] = r * Math.cos(phi);
       sparkPos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
@@ -110,7 +110,7 @@ for (const stage of stages) {
     sparkGeo.setAttribute('aSize', new THREE.BufferAttribute(sparkSize, 1));
     const sparkMat = new THREE.ShaderMaterial({
       transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-      uniforms: { uTime: { value: 0 }, uColor: { value: new THREE.Color(0x7dffc1) } },
+      uniforms: { uTime: { value: 0 }, uColor: { value: new THREE.Color(0xa5dcff) } },
       vertexShader: `attribute float aSize; uniform float uTime; varying float vPulse; void main(){vPulse=.55+.45*sin(uTime*2.2+position.x*9.0+position.y*7.0);vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=aSize*(65.0/-mv.z);gl_Position=projectionMatrix*mv;}`,
       fragmentShader: `uniform vec3 uColor; varying float vPulse; void main(){float d=distance(gl_PointCoord,vec2(.5));float a=smoothstep(.5,0.02,d)*vPulse;gl_FragColor=vec4(uColor,a);}`
     });
@@ -131,7 +131,7 @@ for (const stage of stages) {
     const ambient = new THREE.AmbientLight(0xffffff, 1.05);
     scene.add(ambient);
     const key = new THREE.DirectionalLight(0xffffff, 2.9); key.position.set(-3,2,4); scene.add(key);
-    const rim = new THREE.PointLight(0x29ff9b, 38, 10); rim.position.set(2.4,-1.2,3); scene.add(rim);
+    const rim = new THREE.PointLight(0x2b9dff, 38, 10); rim.position.set(2.4,-1.2,3); scene.add(rim);
     const cool = new THREE.PointLight(0x6fd9ff, 24, 9); cool.position.set(-3.2,1.4,1); scene.add(cool);
 
     const starGeo = new THREE.BufferGeometry();
@@ -142,7 +142,7 @@ for (const stage of stages) {
       starPos[i*3]=Math.cos(a)*r; starPos[i*3+1]=Math.sin(a)*r; starPos[i*3+2]=z;
     }
     starGeo.setAttribute('position',new THREE.BufferAttribute(starPos,3));
-    const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:0x61e7ae,size:.017,transparent:true,opacity:.42,depthWrite:false}));
+    const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:0x78c8ff,size:.017,transparent:true,opacity:.42,depthWrite:false}));
     scene.add(stars);
 
     let targetX=0,targetY=0,currentX=0,currentY=0;
