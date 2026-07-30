@@ -1,6 +1,6 @@
 const SETTINGS = {
   SHEET_NAME: 'Leads',
-  EMAIL_TO: 'dungnguyen.mkt@gmail.com'
+  EMAIL_TO: 'nguyendhungdung@gmail.com'
 };
 
 function doGet() {

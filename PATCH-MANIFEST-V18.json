@@ -1,0 +1,47 @@
+{
+  "changed": [
+    "SETUP-CONTACT-FORM.md",
+    "VERSION",
+    "assets/css/site-v12.css",
+    "assets/js/contact-form-v16.js",
+    "contact.html",
+    "content/site-config.json",
+    "en/contact.html",
+    "en/index.html",
+    "en/insights.html",
+    "en/portfolio.html",
+    "en/pricing-marketing.html",
+    "en/pricing-video.html",
+    "en/pricing.html",
+    "index.html",
+    "insights.html",
+    "portfolio.html",
+    "pricing-marketing.html",
+    "pricing-video.html",
+    "pricing.html",
+    "scripts/google-apps-script-contact.gs",
+    "scripts/validate_site.py",
+    "zh/contact.html",
+    "zh/index.html",
+    "zh/insights.html",
+    "zh/portfolio.html",
+    "zh/pricing-marketing.html",
+    "zh/pricing-video.html",
+    "zh/pricing.html"
+  ],
+  "added": [
+    "404.html",
+    "CHANGE-SCOPE-V18.md",
+    "FORM-CONNECTION-STATUS.md",
+    "QA-REPORT-V18.json",
+    "REMOVE-ADMIN-FROM-LIVE.md",
+    "assets/images/hero/digital-global-globe-640.webp",
+    "assets/images/hero/digital-global-globe-960.webp",
+    "assets/images/hero/digital-global-globe.png"
+  ],
+  "deleted": [
+    "assets/js/globe-three.js",
+    "admin/index.html (live repository)",
+    "admin/admin.css (live repository)"
+  ]
+}

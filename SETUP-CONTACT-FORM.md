@@ -23,7 +23,7 @@ Mở `content/site-config.json` và điền URL `/exec`:
 {
   "phone": "0377348008",
   "zalo": "https://zalo.me/0377348008",
-  "email": "dungnguyen.mkt@gmail.com",
+  "email": "nguyendhungdung@gmail.com",
   "calendar_url": "",
   "form_endpoint": "https://script.google.com/macros/s/XXXXXXXX/exec",
   "show_unverified_kpis": false
@@ -36,7 +36,7 @@ Chỉ cần upload lại đúng file `content/site-config.json` lên GitHub.
 1. Mở URL `/exec` trực tiếp. Phải thấy JSON có `"ok":true`.
 2. Gửi form thử trên website.
 3. Kiểm tra tab `Leads` trong Google Sheet.
-4. Kiểm tra email `dungnguyen.mkt@gmail.com`, kể cả Spam.
+4. Kiểm tra email `nguyendhungdung@gmail.com`, kể cả Spam.
 5. Trong Apps Script, mở **Executions** để kiểm tra lỗi nếu Sheet hoặc email chưa nhận dữ liệu.
 
 ## Lưu ý

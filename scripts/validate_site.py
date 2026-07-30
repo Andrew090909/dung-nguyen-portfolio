@@ -32,13 +32,13 @@ def main():
         if duplicates: errors.append(f'{page.relative_to(ROOT)} duplicate IDs: {sorted(duplicates)}')
         if 'admin/' in text.lower() or 'netlify identity' in text.lower():
             errors.append(f'{page.relative_to(ROOT)} still exposes admin/Netlify identity')
-        if page.parent in (ROOT,ROOT/'en',ROOT/'zh') and page.name!='post.html':
+        if page.parent in (ROOT,ROOT/'en',ROOT/'zh') and page.name not in ('post.html','404.html'):
             for cls in required_mobile:
                 if cls not in text: errors.append(f'{page.relative_to(ROOT)} missing {cls}')
             if 'tel:0377348008' not in text: errors.append(f'{page.relative_to(ROOT)} missing phone CTA')
             if 'https://zalo.me/0377348008' not in text: errors.append(f'{page.relative_to(ROOT)} missing Zalo CTA')
 
-    for required in ['assets/css/site-v12.css','assets/js/site-v12.js','assets/js/mobile-nav.js','assets/js/globe-three.js','assets/js/contact-form-v16.js','content/site-config.json','content/portfolio-image-map.json','content/portfolio-v72.enc.json']:
+    for required in ['assets/css/site-v12.css','assets/js/site-v12.js','assets/js/mobile-nav.js','assets/images/hero/digital-global-globe-640.webp','assets/images/hero/digital-global-globe-960.webp','assets/js/contact-form-v16.js','content/site-config.json','content/portfolio-image-map.json','content/portfolio-v72.enc.json']:
         if not (ROOT/required).exists(): errors.append(f'missing required file: {required}')
     for forbidden in ['admin','netlify','scripts/build_cms.mjs','netlify.toml','assets/js/site-v11.js','assets/js/contact-form-v15.js']:
         if (ROOT/forbidden).exists(): errors.append(f'forbidden legacy path remains: {forbidden}')
@@ -53,7 +53,7 @@ def main():
 
     if errors:
         print('\n'.join('ERROR: '+e for e in errors)); sys.exit(1)
-    # Regression checks added in v17.2
+    # Regression checks carried into v18
     all_text = '\n'.join(p.read_text(encoding='utf-8', errors='ignore') for p in ROOT.rglob('*') if p.is_file() and '_site' not in p.parts and p.suffix.lower() in {'.html','.js','.json','.xml','.txt','.md'})
     if ('dung-nguyen' + '.netlify.app') in all_text:
         errors.append('Old Netlify domain still exists')
@@ -67,8 +67,11 @@ def main():
         errors.append('English portfolio still contains Vietnamese UI labels')
     if zh_portfolio.exists() and any(x in zh_portfolio.read_text(encoding='utf-8') for x in ['Mật khẩu','Ảnh trước','Ảnh tiếp','Đóng']):
         errors.append('Chinese portfolio still contains Vietnamese UI labels')
+    if cfg.get('email') != 'nguyendhungdung@gmail.com': errors.append('site-config lead email is incorrect')
+    if (ROOT/'assets/js/globe-three.js').exists(): errors.append('Legacy Three.js globe remains')
+    if any('globe-three.js' in p.read_text(encoding='utf-8', errors='ignore') for p in html_files): errors.append('A page still loads the legacy Three.js globe')
     if errors:
         raise SystemExit('\n'.join(errors))
-    print(f'Validated v17.2: {len(html_files)} pages, {len(portfolio_images)} portfolio images, contact v16, language UI, mobile CTA/menu, no old domain/admin/Netlify remnants.')
+    print(f'Validated v18: {len(html_files)} pages, {len(portfolio_images)} portfolio images, contact v16, local transparent globe, language UI, mobile CTA/menu, no old domain/admin/Netlify remnants.')
 
 if __name__=='__main__': main()

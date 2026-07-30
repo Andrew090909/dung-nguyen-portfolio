@@ -1,0 +1,76 @@
+{
+  "version": "18.0.0",
+  "release_status": "PASS_WITH_EXTERNAL_DEPENDENCIES",
+  "scope_lock": {
+    "changed": [
+      "Homepage digital-global globe on VI/EN/ZH",
+      "Removal of legacy Three.js globe dependency",
+      "Removal of admin directory from source and build",
+      "Lead/contact email changed to nguyendhungdung@gmail.com",
+      "Added 404 page for deleted routes"
+    ],
+    "unchanged": [
+      "Navigation and mobile menu structure",
+      "Homepage copy and CTA labels",
+      "Portfolio, pricing, insights and skills content",
+      "Brand typography, base color system and page layout"
+    ]
+  },
+  "qa_checks": [
+    {
+      "check": "Source validation",
+      "result": "PASS",
+      "detail": "23 HTML pages and 22 portfolio images validated"
+    },
+    {
+      "check": "Build validation",
+      "result": "PASS",
+      "detail": "_site clean build validated"
+    },
+    {
+      "check": "Admin directory absent",
+      "result": "PASS",
+      "detail": "No admin/ in source or _site"
+    },
+    {
+      "check": "Legacy globe removed",
+      "result": "PASS",
+      "detail": "No globe-three.js file or page reference"
+    },
+    {
+      "check": "Hero black rectangle",
+      "result": "PASS",
+      "detail": "Computed globe-stage background is transparent"
+    },
+    {
+      "check": "Horizontal overflow desktop",
+      "result": "PASS",
+      "detail": "0 px at 1440 px viewport"
+    },
+    {
+      "check": "Horizontal overflow mobile",
+      "result": "PASS",
+      "detail": "0 px at 390 px viewport"
+    },
+    {
+      "check": "Language-specific visual labels",
+      "result": "PASS",
+      "detail": "VI/EN/ZH labels are localized"
+    },
+    {
+      "check": "Lead email configuration",
+      "result": "PASS",
+      "detail": "Source, fallback JS and Apps Script target use nguyendhungdung@gmail.com"
+    },
+    {
+      "check": "Google Sheet end-to-end submission",
+      "result": "BLOCKED",
+      "detail": "form_endpoint is empty; no deployed Apps Script /exec URL was available for a real submission test"
+    },
+    {
+      "check": "Live GitHub /admin deletion",
+      "result": "NOT_DEPLOYED",
+      "detail": "The release removes it, but the connected GitHub permission is read-only and cannot delete live files"
+    }
+  ]
+}
