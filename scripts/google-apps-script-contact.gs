@@ -26,7 +26,7 @@ function doPost(e) {
   ]);
 
   MailApp.sendEmail({
-    to: 'dungnguyen.mkt@gmail.com',
+    to: 'nguyendhungdung@gmail.com',
     subject: 'Lead mới từ Nguyen Studio',
     htmlBody:
       '<b>Họ tên:</b> ' + (p.name || '') + '<br>' +
