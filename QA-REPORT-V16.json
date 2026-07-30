@@ -1,0 +1,60 @@
+{
+  "version": "16.0.0-full-audit",
+  "audit_scope": {
+    "html_pages_checked": 22,
+    "languages": [
+      "vi",
+      "en",
+      "zh"
+    ],
+    "skills_pages_checked": 6,
+    "pricing_pages_checked": 9
+  },
+  "checks": {
+    "missing_internal_links": {
+      "pass": true,
+      "issues": []
+    },
+    "missing_assets": {
+      "pass": true,
+      "issues": []
+    },
+    "duplicate_ids": {
+      "pass": true,
+      "issues": []
+    },
+    "missing_alt": {
+      "pass": true,
+      "issues": []
+    },
+    "language_leftovers": {
+      "pass": true,
+      "issues": []
+    },
+    "skills_structure": {
+      "pass": true,
+      "issues": []
+    },
+    "pricing_language_switch": {
+      "pass": true,
+      "issues": []
+    },
+    "desktop_zalo": {
+      "pass": true,
+      "issues": []
+    },
+    "mobile_menu": {
+      "pass": true,
+      "issues": []
+    },
+    "contact_form": {
+      "pass": true,
+      "issues": []
+    }
+  },
+  "known_external_setup_required": [
+    "Direct form submission requires a Google Apps Script Web App URL in content/site-config.json.",
+    "A true WordPress-style server CMS cannot run on GitHub Pages alone; /admin remains a safe static JSON editor/exporter."
+  ],
+  "overall_pass": true
+}

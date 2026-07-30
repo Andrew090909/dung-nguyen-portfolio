@@ -1,0 +1,52 @@
+{
+  "version": "15.0.0-production-static",
+  "checks": {
+    "no_vietnamese_in_en_zh": {
+      "pass": true,
+      "issues": []
+    },
+    "pricing_language_switch": {
+      "pass": true,
+      "issues": []
+    },
+    "desktop_zalo_call": {
+      "pass": true,
+      "missing": []
+    },
+    "unverified_kpis_hidden": {
+      "pass": true,
+      "issues": []
+    },
+    "contact_form_frontend": {
+      "pass": true,
+      "details": [
+        {
+          "file": "contact.html",
+          "has_form": true,
+          "has_status": true,
+          "has_script": true,
+          "mailto_removed": true
+        },
+        {
+          "file": "en/contact.html",
+          "has_form": true,
+          "has_status": true,
+          "has_script": true,
+          "mailto_removed": true
+        },
+        {
+          "file": "zh/contact.html",
+          "has_form": true,
+          "has_status": true,
+          "has_script": true,
+          "mailto_removed": true
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Google Apps Script URL must be pasted into content/site-config.json to enable direct form submission.",
+    "GitHub Pages cannot provide a true WordPress-style database CMS without a separate authenticated backend."
+  ],
+  "overall_pass": true
+}
