@@ -1,0 +1,13 @@
+# Checklist v13
+- [ ] Trang VI: Home, Portfolio, Pricing hub, Marketing pricing, Video pricing, Insights, Contact.
+- [ ] Trang EN có đủ 7 trang và không điều hướng về VI.
+- [ ] Trang ZH có đủ 7 trang và không điều hướng về VI.
+- [ ] Mobile có nút ☰; X/backdrop/Escape đóng được.
+- [ ] Không khóa scroll sau khi đóng menu.
+- [ ] Không tràn ngang.
+- [ ] Gọi điện mở 0377348008.
+- [ ] Zalo mở https://zalo.me/0377348008.
+- [ ] Skills và toàn bộ asset cũ vẫn hiển thị.
+- [ ] Portfolio không nhầm ảnh.
+- [ ] /admin/ mở và export JSON được.
+- [ ] Canonical không còn dungnguyen.example.
