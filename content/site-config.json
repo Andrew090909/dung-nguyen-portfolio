@@ -1,8 +1,8 @@
 {
   "phone": "0377348008",
   "zalo": "https://zalo.me/0377348008",
-  "email": "nguyendhungdung@gmail.com",
+  "email": "dungnguyen.mkt@gmail.com",
   "calendar_url": "",
-  "form_endpoint": "https://script.google.com/macros/s/AKfycbym0D7MV4jsiYE_27H1bnkLK3VOMiVFw0HDAil2UcZHI--NsqfEuPvBm2b2cMkiPM5ocA/exec",
+  "form_endpoint": "",
   "show_unverified_kpis": false
 }
