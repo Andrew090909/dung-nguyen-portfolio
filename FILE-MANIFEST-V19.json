@@ -1,0 +1,651 @@
+{
+  "version": "19.0.0",
+  "file_count": 129,
+  "files": [
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "size_bytes": 666,
+      "sha256": "a7b7798395eacf731969964f29c6458e9786734e9e24740ff422a162fbe411ab"
+    },
+    {
+      "path": ".nojekyll",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "404.html",
+      "size_bytes": 799,
+      "sha256": "f9f8edc18c059c88450f05869e320e2e02be108b06c70d17016f7d05b5b54b61"
+    },
+    {
+      "path": "BROWSER-QA-V19-DESKTOP.json",
+      "size_bytes": 8132,
+      "sha256": "4bf159dba05e462f1bfedb27f0f630dec240be0c9da5c32e86a7f8d6063204a7"
+    },
+    {
+      "path": "BROWSER-QA-V19-MOBILE.json",
+      "size_bytes": 8026,
+      "sha256": "346b9fcafd4d14f25ee02d6243e2e219209a91d25d2faef6a58080eab001b4e7"
+    },
+    {
+      "path": "CHANGE-SCOPE-V18.md",
+      "size_bytes": 1243,
+      "sha256": "812ea10396f377891fb730bee512826d3001be39e75737a94565c0c05fb32750"
+    },
+    {
+      "path": "CHECKLIST-V13.md",
+      "size_bytes": 659,
+      "sha256": "08e085380ec7d1ec05d6b6f1ac39bc50de9a032a6574e9e655965540230ce67a"
+    },
+    {
+      "path": "FORM-CONNECTION-STATUS.md",
+      "size_bytes": 456,
+      "sha256": "0ffb025748794924586455abd1d614a25b10e44812a40e7fdba75a53b7bd22c9"
+    },
+    {
+      "path": "FORM-SETUP-V19.md",
+      "size_bytes": 1554,
+      "sha256": "cb40b1dd3385db42e53ee2c663e38938ea2d8cbae28fbbfaa13cbc6d0a1036e9"
+    },
+    {
+      "path": "GITHUB-DEPLOY-V19.md",
+      "size_bytes": 1347,
+      "sha256": "81c900aa125d99f4265f82d9314614f7980610a1b6e27011690afb6ed06dc2df"
+    },
+    {
+      "path": "KNOWN-LIMITATIONS-V19.md",
+      "size_bytes": 1393,
+      "sha256": "c676dc79e3bdbd8d0738d1b5669cc600c92f04ba97de9c43fb85dfbfb8616336"
+    },
+    {
+      "path": "PATCH-MANIFEST-V18.json",
+      "size_bytes": 1205,
+      "sha256": "4ab81ba02d3c98a35fdcf3bf31ff6fc16440957eb0d4db5b833e6b1b57fb031f"
+    },
+    {
+      "path": "PATCH-MANIFEST-V19.json",
+      "size_bytes": 1457,
+      "sha256": "ac1bdb866b4fc072a506b01fcbf244d6189179f35b68d5dc2667bc0e799bb9ec"
+    },
+    {
+      "path": "PERFORMANCE-V19.json",
+      "size_bytes": 890,
+      "sha256": "567a1dd7ac3db66eb7bfb6b947d3f5f30de29e5265c00b3db7792c8d81267e04"
+    },
+    {
+      "path": "QA-REPORT-V14.json",
+      "size_bytes": 1563,
+      "sha256": "c4c633a6c288d62b3f53a0114ed05cf06ffc40ce25874402c1ea0db76c75dfe0"
+    },
+    {
+      "path": "QA-REPORT-V15.json",
+      "size_bytes": 1257,
+      "sha256": "31a9eb22509d0bbdd1e6369b417b346ba0569dab27d44a93040d8288ecf4c7d1"
+    },
+    {
+      "path": "QA-REPORT-V16.json",
+      "size_bytes": 1235,
+      "sha256": "138bc50aee9f4b3449747a8539de29d5e8516d05297aabe287a458095245d041"
+    },
+    {
+      "path": "QA-REPORT-V17.2.json",
+      "size_bytes": 524,
+      "sha256": "dfd46a6556f9b092af709e27290faf1fd4049e28f1e009e7d5d46866a591de37"
+    },
+    {
+      "path": "QA-REPORT-V18.json",
+      "size_bytes": 2279,
+      "sha256": "65caf80a18f793418f5e7caf07785eba96e6069010b79e63053cb7fa5cc6d6c8"
+    },
+    {
+      "path": "QA-REPORT-V19.json",
+      "size_bytes": 1314,
+      "sha256": "b6214c72ac7123082e07b8760dcdbf35695246c012f7cd08977403bdf33eaeb1"
+    },
+    {
+      "path": "QA-SUMMARY-V19.md",
+      "size_bytes": 1838,
+      "sha256": "71ad48200812ee78c56c8132c54ed4c3eacd9abdcc88866bd476b0d95eecce47"
+    },
+    {
+      "path": "README-V13.md",
+      "size_bytes": 1125,
+      "sha256": "c765b6b752c32e779548e69d300b9aaa888932e755cb3f85e7da91659992e25a"
+    },
+    {
+      "path": "README-V15.md",
+      "size_bytes": 1253,
+      "sha256": "ce8e165ecaf35748937d39c2c15754b91b629772212a4d005be6eb7beeba8dee"
+    },
+    {
+      "path": "README-V16.md",
+      "size_bytes": 1316,
+      "sha256": "8594e71e4e65bab97bed9631c62d259b34b7817dbcc00916b2af9e87e6ff8e28"
+    },
+    {
+      "path": "README-V17.md",
+      "size_bytes": 1175,
+      "sha256": "9cfdad9ca4520849749ab0211dbb85cb93e1bcb1aa23ebb1ab9879d3d18ed30b"
+    },
+    {
+      "path": "README-V19.md",
+      "size_bytes": 2828,
+      "sha256": "19d874a73423d7ad3cde12ef68f4f01b488fc26ed8f12b43652046388e270ea8"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 878,
+      "sha256": "1bb807eef98d5392c4ea933e501f201c9bc4f4a752ba6bda706f4b16e8d94012"
+    },
+    {
+      "path": "RELEASE-NOTES-V19.md",
+      "size_bytes": 2216,
+      "sha256": "530ba3db934770b172478886d353024d55e28653ee46ea9fd45fe38a71a47abd"
+    },
+    {
+      "path": "REMOVE-ADMIN-FROM-LIVE.md",
+      "size_bytes": 622,
+      "sha256": "08677773e47e970d5f59a1f41fe8d52aec24b07979f115fc157da1831035ed59"
+    },
+    {
+      "path": "SETUP-CONTACT-FORM.md",
+      "size_bytes": 1634,
+      "sha256": "506cc9a815cf2b1514bf8eabe6762fcc9d5b16bc35756823c52b651015e302f6"
+    },
+    {
+      "path": "VERSION",
+      "size_bytes": 7,
+      "sha256": "a8a00744aade5d590bb835aca14a22b45b389d086f9e8689536517614951f249"
+    },
+    {
+      "path": "assets/css/digital-system-v19.css",
+      "size_bytes": 11076,
+      "sha256": "4578a73c1e53c502f355bcb4bbd09eb8cb5f1985b72407f8ace53a14e348e9ce"
+    },
+    {
+      "path": "assets/css/site-v12.css",
+      "size_bytes": 36298,
+      "sha256": "ba1ade91b45281e575d5947abea4aab628ae31c2d9d5d36558c84792708cbe5b"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-earth-640.webp",
+      "size_bytes": 79452,
+      "sha256": "a9abbb51e61edd7df2ce09c9ee2445becc9732ac52af554b6469cb87c2fea99f"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-earth-960.webp",
+      "size_bytes": 159430,
+      "sha256": "6a9a1da069f80e71f13dda9b566821ab5a33c7e023422948e545894d2438221e"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-earth-source.png",
+      "size_bytes": 3312096,
+      "sha256": "16e370adc6a550f41b4d2343bcb64f47126cc52d28fc1051dfc1c1c9dce6f09b"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-earth.png",
+      "size_bytes": 3312096,
+      "sha256": "16e370adc6a550f41b4d2343bcb64f47126cc52d28fc1051dfc1c1c9dce6f09b"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-earth.webp",
+      "size_bytes": 286840,
+      "sha256": "dfb779e1981d2194c944ad0a2e23103270c2981a610f4fc606525daf7250ae00"
+    },
+    {
+      "path": "assets/images/hero/ai-marketing-globe-reference.png",
+      "size_bytes": 3742341,
+      "sha256": "301b0d8c934b6a75864f7ce21d583d8bd9ae8875050d459be293ca195576dbea"
+    },
+    {
+      "path": "assets/images/hero/digital-global-globe-640.webp",
+      "size_bytes": 121598,
+      "sha256": "cdf8dbc061053cb23accc4c68853e652f31ba51a59dff93ef2e8118ca4eb5928"
+    },
+    {
+      "path": "assets/images/hero/digital-global-globe-960.webp",
+      "size_bytes": 254142,
+      "sha256": "28005fbe077e8f0d953d67c08cd973571aa8c688cd056a363fb73b8c0842319f"
+    },
+    {
+      "path": "assets/images/hero/digital-global-globe.png",
+      "size_bytes": 1490795,
+      "sha256": "0c70ab75d36d5ee0d210fc45fb5929ad1097aae307dcb91e719b50e8326f8b10"
+    },
+    {
+      "path": "assets/images/hero/earth-approved-style-360.jpg",
+      "size_bytes": 907718,
+      "sha256": "fa51a38e4f40cfbd62fd3813f6b25277b02d6d4d18e5f8dc12a8eb8962696b16"
+    },
+    {
+      "path": "assets/images/hero/earth-digital-360.jpg",
+      "size_bytes": 454586,
+      "sha256": "25f3229b8ea96f046bb30e04606438d7c022b8245a05be72686b33b62637da33"
+    },
+    {
+      "path": "assets/images/hero/hero-ai-system.webp",
+      "size_bytes": 108350,
+      "sha256": "93285339956e7797ef479ba421b38bd7eb6a05bb86cb2264d805a8cccdb116b3"
+    },
+    {
+      "path": "assets/images/insights/ai-product.webp",
+      "size_bytes": 30762,
+      "sha256": "57d572d65995b62584a6d9aa37d3cf7672dafd4122e2796806442629b6b30b4d"
+    },
+    {
+      "path": "assets/images/insights/consumer-ai.webp",
+      "size_bytes": 16932,
+      "sha256": "438b807634273c62c3edb0134e06d2a74f1b826322b97cc096497e08d96e459c"
+    },
+    {
+      "path": "assets/images/insights/gold-market.webp",
+      "size_bytes": 23366,
+      "sha256": "984071a55f0e5a388b7d47ff9f8665ae31812e935ca2510255eb844fbfff4316"
+    },
+    {
+      "path": "assets/images/insights/market-selloff.webp",
+      "size_bytes": 34846,
+      "sha256": "6b2183ae0e1d16ed6a6b8e4cfa863a0b0ed42df087885899779750823f50bbc9"
+    },
+    {
+      "path": "assets/images/portfolio/adeva-01.webp",
+      "size_bytes": 160268,
+      "sha256": "30c2eac864640d8982d5bd95df674b691d5d86c68d740f662c5186b89d828064"
+    },
+    {
+      "path": "assets/images/portfolio/adeva-04.webp",
+      "size_bytes": 46090,
+      "sha256": "7cd518eaed230149b53bd059f8a76a59c301964d3c01facf1c31f7369ddbc94b"
+    },
+    {
+      "path": "assets/images/portfolio/adeva-05.webp",
+      "size_bytes": 132010,
+      "sha256": "bcd1b6ba785349a981eb13e87f36e8fd38ff52844ca9180575949e76e17f8f29"
+    },
+    {
+      "path": "assets/images/portfolio/koi-service-01.webp",
+      "size_bytes": 245086,
+      "sha256": "d4e21e1448c41c865e63ef864bb1be8126f8d7d334a67f93a92a7c8c4a897a5b"
+    },
+    {
+      "path": "assets/images/portfolio/koi-service-03.webp",
+      "size_bytes": 25100,
+      "sha256": "9de92adb2b9a4fc6e3a7f5b2b1867654deffde2f613026e282325dbc4b4709f4"
+    },
+    {
+      "path": "assets/images/portfolio/koi-service-04.webp",
+      "size_bytes": 67672,
+      "sha256": "268d57205a187e8cf0102f65515c4fe3e097fb434561ec0ca2b7102eeca3255a"
+    },
+    {
+      "path": "assets/images/portfolio/koi-service-05.webp",
+      "size_bytes": 54172,
+      "sha256": "77699703d5e4897d04af638c9e8b10e7cffae5480bba5fc4ea13f9dccc5ddd67"
+    },
+    {
+      "path": "assets/images/portfolio/phe-ly-01.webp",
+      "size_bytes": 257180,
+      "sha256": "75b61b2b6044c68d7ca290889d757c3b3626d825361045559a6013115519743d"
+    },
+    {
+      "path": "assets/images/portfolio/phe-ly-02.webp",
+      "size_bytes": 31840,
+      "sha256": "a27e2783a463200cdf115e24de61617877804bdf7d818024922ef07c682dca18"
+    },
+    {
+      "path": "assets/images/portfolio/phe-ly-03.jpg",
+      "size_bytes": 363279,
+      "sha256": "a1f345cee0438717ea4282ebd921634cb05674c9e9a3d5e61d780eeb43737124"
+    },
+    {
+      "path": "assets/images/portfolio/phe-ly-04.jpg",
+      "size_bytes": 164855,
+      "sha256": "1b1a5aa751e24a7a293656858116307fd19c752ee3be0701dd22b4b9475e1477"
+    },
+    {
+      "path": "assets/images/portfolio/phe-ly-05.webp",
+      "size_bytes": 98678,
+      "sha256": "353203023b261acea355a7fc80ca156dabdb95eea72962dd4d8def941f2e5e79"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-01.webp",
+      "size_bytes": 266976,
+      "sha256": "ab43916c597e7c718f2957aa702cc7a6a6a118c5a44323606ca612548de3f1d1"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-02.webp",
+      "size_bytes": 195654,
+      "sha256": "d68ae73f6a10c8b17f7a5a8248eebdd5367cf6d0d57046388f1b43640d85acdb"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-03.webp",
+      "size_bytes": 159578,
+      "sha256": "52463141095779b1b440784187b5ae4b008aef2985b25c6e1d6818ea32078ad4"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-04.webp",
+      "size_bytes": 53568,
+      "sha256": "76b4cc7860937142000e6ad96918180ac7b596017b294f1c4186c1ed89d33ad4"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-05.webp",
+      "size_bytes": 73494,
+      "sha256": "2f64de086f3c7b4f38b5ccec834981e348999770709ac8ab2f3d4ee14bdd7515"
+    },
+    {
+      "path": "assets/images/portfolio/phong-cach-moc-06.webp",
+      "size_bytes": 214924,
+      "sha256": "28daf61b4ae9305dac3c87939ab741edddf182db148673adc6a4b3843b8422de"
+    },
+    {
+      "path": "assets/images/portfolio/phuc-dai-nam-01.webp",
+      "size_bytes": 110336,
+      "sha256": "ed0b48c53c8f17594eff2f8bf591f661dd0c59a0b57b5dc59e5f75e532032e45"
+    },
+    {
+      "path": "assets/images/portfolio/phuc-dai-nam-03.webp",
+      "size_bytes": 37854,
+      "sha256": "bd64cf5858e3ead2dba9636830c198f19a1af762f6ffd96c0c8042a9a48d88ec"
+    },
+    {
+      "path": "assets/images/portfolio/phuc-dai-nam-04.webp",
+      "size_bytes": 150390,
+      "sha256": "9f4ed9f918ecd211e80588bb402485efbb72e229822b79b10827c0145cefe618"
+    },
+    {
+      "path": "assets/images/portfolio/phuc-dai-nam-05.webp",
+      "size_bytes": 224286,
+      "sha256": "bd01feb4c218c8d6aa1867a2d71582b8bfb063450a6f58211744b8bea0740b5f"
+    },
+    {
+      "path": "assets/images/ui/og-cover.png",
+      "size_bytes": 75755,
+      "sha256": "02e16f7b1f32b3f9f0008ed8cbc810e2ff0c7d61310b653441faa040fb8a8504"
+    },
+    {
+      "path": "assets/images/ui/zalo-qr.webp",
+      "size_bytes": 59950,
+      "sha256": "025f9d1673c1d0981edc9f16ee907d6da7da84ce5a5a0932c65ec1182cf8b4eb"
+    },
+    {
+      "path": "assets/js/contact-form-v16.js",
+      "size_bytes": 2838,
+      "sha256": "fbbb5f265586bd12546869dc95d62bfa7eaa216ae3f10991bf1d12fdff9e14af"
+    },
+    {
+      "path": "assets/js/contact-form-v19.js",
+      "size_bytes": 6044,
+      "sha256": "32ec8d748f628c82faf6e86e23ccebcc8246477d22ef0d521664160b2775b4f7"
+    },
+    {
+      "path": "assets/js/digital-background-v19.js",
+      "size_bytes": 5414,
+      "sha256": "e71b7dff33b6439e12306331e93ca12c572658deadc791569afcd13bc29724fe"
+    },
+    {
+      "path": "assets/js/globe-v5-core.js",
+      "size_bytes": 16624,
+      "sha256": "0ad1d99298bb0044cd292ce0498729096e03828446a268a51e41d8ff1d2dc1ad"
+    },
+    {
+      "path": "assets/js/mobile-nav.js",
+      "size_bytes": 2008,
+      "sha256": "112b03ae3d9e8d8fe0550123e4e439d2342a1b9243f1bb6d78ca42afa85e9ac2"
+    },
+    {
+      "path": "assets/js/portfolio-v90.js",
+      "size_bytes": 6424,
+      "sha256": "873b38e1881ab5d77ddfbc4d34100493fef35ec8db36fbe2aaa8ec38a789426c"
+    },
+    {
+      "path": "assets/js/site-v12.js",
+      "size_bytes": 2067,
+      "sha256": "f7ec64059961d14e5be45f8bc6bf3227ec58d2aca7d9633bbc29971bd30901e3"
+    },
+    {
+      "path": "assets/js/theme-settings.js",
+      "size_bytes": 1769,
+      "sha256": "086eeec9e38f5e58d2b28269609ff186436bdc463c18a503e5586711335aa06c"
+    },
+    {
+      "path": "contact.html",
+      "size_bytes": 8893,
+      "sha256": "7072cb0d2b0e8539fef670579c44ae4cb091d3418427a907074baa747f963e16"
+    },
+    {
+      "path": "content/pages/en.json",
+      "size_bytes": 7779,
+      "sha256": "2ca8516c8bdb4dc8bebc5e5db16e50fa603da8cb50773531ed218c21ed6c20d3"
+    },
+    {
+      "path": "content/pages/vi.json",
+      "size_bytes": 9404,
+      "sha256": "922b055715030233b0a305b4d331b2ce9f7ee86bb8bb30d146fcbb0abd6c8c20"
+    },
+    {
+      "path": "content/pages/zh.json",
+      "size_bytes": 7101,
+      "sha256": "583f71e0679a10cfc6d115f870b548370f3e7eca1d0c2a5ff20ba5230470416b"
+    },
+    {
+      "path": "content/portfolio-image-map.json",
+      "size_bytes": 681,
+      "sha256": "e41ced18319a576585bb44824f9d45c1874c6a6b948e7f4df502c836530cc20e"
+    },
+    {
+      "path": "content/portfolio-v72.enc.json",
+      "size_bytes": 18341,
+      "sha256": "daa1d44493aef46454697d672c0dbfc5158b2b909e6a908ef3efc85038d84828"
+    },
+    {
+      "path": "content/portfolio/adeva.json",
+      "size_bytes": 2691,
+      "sha256": "bb00b74fc0ee6bd5bfc3d990b50ad05d7ae8f1f5222ce8edb859912045446d17"
+    },
+    {
+      "path": "content/portfolio/koi-service.json",
+      "size_bytes": 2947,
+      "sha256": "724642584865af3b1fbd41a135d8e2c6a80e2dafffc97076fdbb47e5800c0bd9"
+    },
+    {
+      "path": "content/portfolio/phe-ly.json",
+      "size_bytes": 2788,
+      "sha256": "3bf52b1d983071a8c40a790c21456cf536bee1354cdd23877321afb3aa4075f3"
+    },
+    {
+      "path": "content/portfolio/phong-cach-moc.json",
+      "size_bytes": 2930,
+      "sha256": "0ec429695e93857e4e675e09310d2ec3949fc209d5764fb28d2f83f144ebd95c"
+    },
+    {
+      "path": "content/portfolio/phuc-dai-nam.json",
+      "size_bytes": 2722,
+      "sha256": "6e9abb2e88a3f10a36c6041031d333b1006cfbf41acd2a5bf3d63c879fd10e7a"
+    },
+    {
+      "path": "content/posts.json",
+      "size_bytes": 7027,
+      "sha256": "f557f2c8b3d2d73777d0596531b7eb86f1e3b363bc6905e02606b19e3a94b690"
+    },
+    {
+      "path": "content/posts/ai-workflow-for-marketing-team.json",
+      "size_bytes": 2259,
+      "sha256": "22340ba882f4fb468d64ad2acfb232d5d98d15fe300c2e30fd32c462e6911090"
+    },
+    {
+      "path": "content/posts/brand-trust-in-b2b.json",
+      "size_bytes": 2210,
+      "sha256": "7eb6a9bc762212f2083871182351bb98dabd24e59d6fe8262ed7a412bf4c390e"
+    },
+    {
+      "path": "content/posts/marketing-system-before-ad-spend.json",
+      "size_bytes": 2706,
+      "sha256": "20c0abe9552e92d24cea10ca6f52f5ac1ccc46ef5c165b4bf70c1d2a412d1ecb"
+    },
+    {
+      "path": "content/site-config.json",
+      "size_bytes": 186,
+      "sha256": "4b0436e73a6935cd53b88d1c3a8b6c8b347571be2e2eadcc7c7c18b69c3c3259"
+    },
+    {
+      "path": "content/site.json",
+      "size_bytes": 2085,
+      "sha256": "a27ac1137acfa5253d8e6eebf50744456d772019b6141f52ee81e605e5d8d944"
+    },
+    {
+      "path": "content/theme.json",
+      "size_bytes": 407,
+      "sha256": "99d608f83fb1f1d2cc1814ea5ea56eba937f6f0e317d57fb3a1716c082bb944d"
+    },
+    {
+      "path": "content/translations.json",
+      "size_bytes": 22501,
+      "sha256": "21abb497b961fabdc16f894bd07ee62c8f686c7cb8e6449b1b14d360bd15f76f"
+    },
+    {
+      "path": "en/contact.html",
+      "size_bytes": 8663,
+      "sha256": "1f08f025baf62c7c2b330ea5fd48edaae2045cb81cbd8695e2dbf1de650e474d"
+    },
+    {
+      "path": "en/index.html",
+      "size_bytes": 14956,
+      "sha256": "9855506ee826b748641b9082d50294470be940672f8cba334d30dd41bb4ae8b4"
+    },
+    {
+      "path": "en/insights.html",
+      "size_bytes": 9653,
+      "sha256": "0ec02f4cb0340d682ae89b4e687975cffca3daabb87e98a24a4b290f0d50f358"
+    },
+    {
+      "path": "en/portfolio.html",
+      "size_bytes": 21476,
+      "sha256": "580010a847e49cc685edf85e4cb292a3c8db0e68e890a1d98a920ed0ef748a7b"
+    },
+    {
+      "path": "en/pricing-marketing.html",
+      "size_bytes": 7304,
+      "sha256": "250e49ff32e7d509285df5eaccae5081a66448ce715cd630f8e3641ded1d6b87"
+    },
+    {
+      "path": "en/pricing-video.html",
+      "size_bytes": 7737,
+      "sha256": "d9b9d292834aebb8476831e23375a93bfcd20ab346d3df31c8569ae58c062d50"
+    },
+    {
+      "path": "en/pricing.html",
+      "size_bytes": 6212,
+      "sha256": "34e9b253f08639e9859478910a2cf82b27c89a2ad8dbd9f6ea40d5bd788fda76"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 15827,
+      "sha256": "8829cc95f0e10f130e13f55906675c456f68bb44456ff66a1b1c84c753d2239a"
+    },
+    {
+      "path": "insights.html",
+      "size_bytes": 9951,
+      "sha256": "cb19889d337906dad0aa357bff146fde6d197f0db550302dfbe08b5b7d767e37"
+    },
+    {
+      "path": "package.json",
+      "size_bytes": 319,
+      "sha256": "a707d3a335a4315e51cd5b4f024cd1732af0e85c9f6b6979b4246ef3965f17ce"
+    },
+    {
+      "path": "portfolio.html",
+      "size_bytes": 22087,
+      "sha256": "c5efa8ffa039c87fe02b19325b885be1f04f50d510b037439b1db8a15d87564e"
+    },
+    {
+      "path": "posts/post.html",
+      "size_bytes": 5722,
+      "sha256": "8957d7032d3b9b0bb972e06b39cc3e66cd88a2737821de0c13e949ec81ce8227"
+    },
+    {
+      "path": "pricing-marketing.html",
+      "size_bytes": 7594,
+      "sha256": "901e173ea2c173f6f4d5035a849fc02495b91ae52df21e8170024f421dae73b7"
+    },
+    {
+      "path": "pricing-video.html",
+      "size_bytes": 8135,
+      "sha256": "e97aa4e00d314bc9a0ceb0ae3289b6b33285e92b3695afcb51401432ee567b8b"
+    },
+    {
+      "path": "pricing.html",
+      "size_bytes": 6296,
+      "sha256": "dddf7669fcbd0849db340cfe7364e5b46fe8c4a8c5af608926660d23dcc1a461"
+    },
+    {
+      "path": "robots.txt",
+      "size_bytes": 94,
+      "sha256": "9058813ea801014f483bf7268280e48f3354dbf2c10a71bbbbbdf7388f9117df"
+    },
+    {
+      "path": "scripts/build-static.mjs",
+      "size_bytes": 289,
+      "sha256": "9d21565db04d75e5d35824a6812f35b401cae61c8b7889e32221c81d3c2c0b49"
+    },
+    {
+      "path": "scripts/google-apps-script-contact.gs",
+      "size_bytes": 3828,
+      "sha256": "0c9873722df34011539b566870e3ec446a757d1fcaccd62ae4347bbfe1649a2b"
+    },
+    {
+      "path": "scripts/rewrite-base.mjs",
+      "size_bytes": 1041,
+      "sha256": "cf3890e3ffb06886573b998bdaefa3064df947210853d99fd490782139f49d37"
+    },
+    {
+      "path": "scripts/validate_site.py",
+      "size_bytes": 5959,
+      "sha256": "b804599fda23deef8e8e25a8b4012092bd4ea47e127c062870adebbbf3d5174a"
+    },
+    {
+      "path": "scripts/validate_v19.py",
+      "size_bytes": 10282,
+      "sha256": "54ce4cb1a010e55de6e62c3a66014391f63d33b7330f0be38d8411446002152e"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 1117,
+      "sha256": "80afaf07393c466c9d357a27f33e06a4c5ec6b53b914379d18a734fa2b57e920"
+    },
+    {
+      "path": "zh/contact.html",
+      "size_bytes": 8575,
+      "sha256": "eb4320d86d2f5b43b49ab451b623ec5a454038eb04317b0666f9a670328a00c4"
+    },
+    {
+      "path": "zh/index.html",
+      "size_bytes": 14644,
+      "sha256": "409ec101d28328c1c68896f5a51634ac4965e44e516f100f470a12780b35c8ed"
+    },
+    {
+      "path": "zh/insights.html",
+      "size_bytes": 9573,
+      "sha256": "bb4636176a2c18602b19d6f82eb6d67639beda744058b45efda3111d1ce2fcae"
+    },
+    {
+      "path": "zh/portfolio.html",
+      "size_bytes": 21079,
+      "sha256": "e0ffd9d36e34ea35c77efd09000fee0920340e2cb4564fb06eebcad8b45a908a"
+    },
+    {
+      "path": "zh/pricing-marketing.html",
+      "size_bytes": 7198,
+      "sha256": "f633ce334126a73c1a8ba95c4ed963aadd31b9491600c2ee9b4e45b5ab20df13"
+    },
+    {
+      "path": "zh/pricing-video.html",
+      "size_bytes": 7756,
+      "sha256": "0cbeff60ea493e92ad3dfcf57374184581012dffe300f574a5f965cd9233b03b"
+    },
+    {
+      "path": "zh/pricing.html",
+      "size_bytes": 6200,
+      "sha256": "41cb99be7dd55427fd8a6ed1fbd66ab9a6c93831e272a64969b47cf37698a470"
+    }
+  ]
+}

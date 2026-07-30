@@ -1,6 +1,12 @@
-# Trạng thái kết nối form
+# Contact Form Connection Status — V19
 
-- Email đích trong source và Apps Script: `nguyendhungdung@gmail.com`.
-- Mã Apps Script ghi lead vào tab `Leads` và gửi email đã có tại `scripts/google-apps-script-contact.gs`.
-- `content/site-config.json` hiện chưa có `form_endpoint`, vì gói source và repository đang dùng đều để trống URL Apps Script.
-- Vì chưa có URL Web App `/exec`, không được tuyên bố form đã gửi thành công vào Google Sheet. Khi có URL đã deploy, dán vào `form_endpoint`, deploy sạch và gửi một lead thật để kiểm tra cả Sheet lẫn Inbox/Spam.
+Status: **CODE READY, ENDPOINT NOT CONFIGURED, END-TO-END NOT VERIFIED**
+
+- Recipient configured in Apps Script: `nguyendhungdung@gmail.com`
+- Sheet tab expected: `Website Leads`
+- Website config: `content/site-config.json`
+- Current `form_endpoint`: empty
+- Live Sheet row verification: not performed
+- Live email receipt verification: not performed
+
+Follow `FORM-SETUP-V19.md` to deploy and verify the receiver.

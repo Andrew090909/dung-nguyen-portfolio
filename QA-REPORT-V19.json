@@ -1,0 +1,41 @@
+{
+  "version": "19.0.0",
+  "status": "PASS_WITH_BLOCKER",
+  "checks": {
+    "performance_reference": {
+      "environment": "Local headless Chromium reference only; not a Lighthouse or real-device benchmark.",
+      "desktop_avg_frame_ms": 53.07105263157895,
+      "mobile_avg_frame_ms": 16.665289256198346
+    },
+    "main_page_count": 21,
+    "globe_page_count": 21,
+    "digital_background_html_count": 23,
+    "admin_absent": true,
+    "form_endpoint_configured": false,
+    "browser_desktop": {
+      "status": "PASS",
+      "count": 21,
+      "failure_count": 0
+    },
+    "browser_mobile": {
+      "status": "PASS",
+      "count": 21,
+      "failure_count": 0
+    },
+    "error_count": 0,
+    "warning_count": 2
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "FORM_ENDPOINT_NOT_CONFIGURED",
+      "file": "content/site-config.json",
+      "detail": "End-to-end Google Sheet/email submission cannot be verified until a deployed /exec URL is supplied."
+    },
+    {
+      "code": "HEADLESS_DESKTOP_FRAME_BUDGET_RISK",
+      "file": "PERFORMANCE-V19.json",
+      "detail": "Local CPU/headless reference exceeded a 30 FPS frame budget. This is not a real-device benchmark; production performance still requires Chrome DevTools/Lighthouse and physical-device verification after deployment."
+    }
+  ]
+}
