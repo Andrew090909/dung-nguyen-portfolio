@@ -44,7 +44,7 @@
       '@context':'https://schema.org', '@type':'Article', headline:title, description:summary,
       datePublished:article.published, dateModified:article.updated || article.published,
       author:{ '@type':'Person', name:ui.author }, publisher:{ '@type':'Person', name:ui.author },
-      image: new URL(`${root}${article.cover}`, baseUrl).href, mainEntityOfPage: /^https?:/.test(location.href) ? location.href : baseUrl
+      mainEntityOfPage: /^https?:/.test(location.href) ? location.href : baseUrl
     };
     const script = document.createElement('script'); script.type='application/ld+json'; script.textContent=JSON.stringify(schema); document.head.appendChild(script);
   }
@@ -63,7 +63,7 @@
       const takeaways = field(article,'takeaways') || [];
       const evidence = field(article,'evidence_note');
       const sources = Array.isArray(article.sources) ? article.sources : [];
-      articleRoot.innerHTML = `<a class="article-back" href="insights.html">${ui.back}</a><article class="article-shell"><p class="article-lead">${escapeHtml(field(article,'summary'))}</p><div class="article-body">${sanitize(field(article,'body'))}</div></article>${takeaways.length ? `<aside class="article-takeaways"><h3>${ui.takeaways}</h3><ul>${takeaways.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></aside>`:''}<aside class="article-sources"><h3>${ui.sources}</h3>${evidence ? `<p>${escapeHtml(evidence)}</p>`:''}${sources.length ? `<ol>${sources.map(source=>`<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(source.label)}</a></li>`).join('')}</ol>`:''}</aside>`;
+      articleRoot.innerHTML = `<a class="article-back" href="insights.html">${ui.back}</a><article class="article-shell"><div class="article-body">${sanitize(field(article,'body'))}</div></article>${takeaways.length ? `<aside class="article-takeaways"><h3>${ui.takeaways}</h3><ul>${takeaways.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></aside>`:''}<aside class="article-sources"><h3>${ui.sources}</h3>${evidence ? `<p>${escapeHtml(evidence)}</p>`:''}${sources.length ? `<ol>${sources.map(source=>`<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(source.label)}</a></li>`).join('')}</ol>`:''}</aside>`;
     } catch (error) {
       console.error(error);
       heroTitle.textContent = ui.notFound;

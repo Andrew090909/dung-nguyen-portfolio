@@ -1,0 +1,102 @@
+{
+  "version": "19.4",
+  "scope": "Full-site content integrity cleanup",
+  "status": "PASS_WITH_EXISTING_V19_BLOCKERS",
+  "changed_file_count": 16,
+  "checks": {
+    "main_pages_audited": 21,
+    "html_pages_changed": 12,
+    "dead_javascript_links_remaining": 0,
+    "hidden_fabricated_kpi_blocks_remaining_on_home": 0,
+    "insights_decorative_article_images_rendered": 0,
+    "portfolio_duplicate_skills_sections_remaining": 0,
+    "contact_unverified_response_sla_remaining": 0,
+    "v19_validator_errors": 0
+  },
+  "existing_blockers_not_changed": [
+    "Contact form endpoint is not configured",
+    "Desktop headless performance reference remains a risk"
+  ],
+  "files": [
+    {
+      "path": "UPLOAD-INSTRUCTIONS.txt",
+      "bytes": 751,
+      "sha256": "5df26e79fe1baebfb390c6e4fa6d8f5e199cd6c24fd0008e59474670b93e5e94"
+    },
+    {
+      "path": "assets/css/insights-hub-v20.css",
+      "bytes": 7330,
+      "sha256": "46a71f18f23d8160a6edd7d2e887337ecfa0101c2eee7e386cfd086a9fcfeb23"
+    },
+    {
+      "path": "assets/js/insight-detail-v20.js",
+      "bytes": 6001,
+      "sha256": "c9e2f1ba986b8618ef712d9361e0667aaac771fee46964aaaa8c9103d7b1c06c"
+    },
+    {
+      "path": "assets/js/insights-hub-v20.js",
+      "bytes": 5255,
+      "sha256": "ac1af5f38d7589240fd5389e9586c1018affb437a7c395aef880890b1d15c615"
+    },
+    {
+      "path": "contact.html",
+      "bytes": 8599,
+      "sha256": "eef02edb3226589504128fe0d5a6f226c58991c1fc16d148143b32bb8ce8715c"
+    },
+    {
+      "path": "en/contact.html",
+      "bytes": 8381,
+      "sha256": "6e497bd6922048e7dfeb549739a7c26a73ca8fe87cc788925dd3e2c3535fcf6e"
+    },
+    {
+      "path": "en/index.html",
+      "bytes": 15651,
+      "sha256": "e9387033003b72fd9bdbf5fbb8572ba7944c9426d066b0f7b22d1fabd725bf77"
+    },
+    {
+      "path": "en/insights.html",
+      "bytes": 9850,
+      "sha256": "00066cf64df0e7db82272355393dd3a72b3031278e29cc1cf96714652ebe4928"
+    },
+    {
+      "path": "en/portfolio.html",
+      "bytes": 17439,
+      "sha256": "9341d5e1ca1e2b9dc4fd0b30ec30b7592e00c9a01962198f2fb1ca3717cf876c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 16632,
+      "sha256": "0db12ca6285b299f6e312a6cb6bda8962dfe62c278c317efe4486f6a4a0af53f"
+    },
+    {
+      "path": "insights.html",
+      "bytes": 10174,
+      "sha256": "ae686a617688bc65b8cd664be00461e3cbbd929148abb7cbf5737f6c05233782"
+    },
+    {
+      "path": "portfolio.html",
+      "bytes": 17885,
+      "sha256": "a18e65829e0b5114a874875d63db47646c9999e4e5c0cd72d18efecc16303160"
+    },
+    {
+      "path": "zh/contact.html",
+      "bytes": 8304,
+      "sha256": "2f12a9d4f9edd1bd01cfd985e18e86334f1fb34d8abfd1322da3dcdfbbd8f53e"
+    },
+    {
+      "path": "zh/index.html",
+      "bytes": 15213,
+      "sha256": "c9dbb21476990470538c204555c1ee0b309e7927ef15205ae55c2327e3407f3e"
+    },
+    {
+      "path": "zh/insights.html",
+      "bytes": 9723,
+      "sha256": "c43dcb7ec1c02d8c66987b5052c6bc6b9986fbfe62d8dc607cd833ac27d410f1"
+    },
+    {
+      "path": "zh/portfolio.html",
+      "bytes": 17206,
+      "sha256": "d102ae48e2c7563b747dab86023ff3d1690166903c1cea8945c9cb3a3dfc3a9a"
+    }
+  ]
+}

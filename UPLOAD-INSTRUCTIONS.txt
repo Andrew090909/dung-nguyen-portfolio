@@ -1,0 +1,13 @@
+V19.4 FULL SITE CLEANUP PATCH
+
+Upload the CONTENTS of this folder to the repository root and overwrite matching files.
+Do not upload the ZIP itself.
+
+Changed areas:
+- Home VI/EN/ZH: removed hidden fabricated KPIs and internal cleanup commentary; replaced with professional copy.
+- Insights VI/EN/ZH: removed filler paragraphs and editorial disclaimer block; article cards are now text-only.
+- Insight detail: removed repeated summary and decorative article image dependency from schema.
+- Portfolio VI/EN/ZH: removed unverified hero claim and duplicated Skills section.
+- Contact VI/EN/ZH: removed dead Appointment/LinkedIn buttons and unverified response-time claim; kept real Email/Zalo/Phone links.
+
+Upload order does not matter inside this patch.

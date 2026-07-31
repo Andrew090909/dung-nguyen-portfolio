@@ -10,7 +10,6 @@
   }[lang];
   const field = (article, key) => article[`${key}_${lang}`] || article[`${key}_en`] || article[`${key}_vi`] || '';
   const detailHref = slug => `insight.html?slug=${encodeURIComponent(slug)}`;
-  const imageHref = src => /^(https?:|data:|\/)/.test(src || '') ? src : `${root}${src}`;
   const formatDate = value => {
     if (!value) return '';
     const date = new Date(`${value}T00:00:00`);
@@ -18,7 +17,7 @@
   };
   const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' }[ch]));
   const metaHtml = article => `<div class="insight-meta"><span class="insight-category">${escapeHtml(article.category)}</span><span>${formatDate(article.updated || article.published)}</span><span>${Number(article.read_time || 0)} ${copy.read}</span></div>`;
-  const card = article => `<a class="insight-card" href="${detailHref(article.slug)}" data-category="${escapeHtml(article.category)}"><img loading="lazy" src="${escapeHtml(imageHref(article.cover))}" alt="${escapeHtml(field(article,'title'))}"><div class="insight-card-copy">${metaHtml(article)}<h3>${escapeHtml(field(article,'title'))}</h3><p>${escapeHtml(field(article,'summary'))}</p><span class="insight-link">${copy.open} →</span></div></a>`;
+  const card = article => `<a class="insight-card" href="${detailHref(article.slug)}" data-category="${escapeHtml(article.category)}"><div class="insight-card-copy">${metaHtml(article)}<h3>${escapeHtml(field(article,'title'))}</h3><p>${escapeHtml(field(article,'summary'))}</p><span class="insight-link">${copy.open} →</span></div></a>`;
 
   let articles = [];
   let activeCategory = 'all';
@@ -29,7 +28,7 @@
     const featured = articles.filter(a => a.featured).slice(0, 3);
     if (!featured.length) { holder.innerHTML = `<div class="insights-empty">${copy.empty}</div>`; return; }
     const [main, ...side] = featured;
-    holder.innerHTML = `<a class="insights-featured-main" href="${detailHref(main.slug)}"><img src="${escapeHtml(imageHref(main.cover))}" alt="${escapeHtml(field(main,'title'))}"><div class="insights-featured-copy">${metaHtml(main)}<h3>${escapeHtml(field(main,'title'))}</h3><p>${escapeHtml(field(main,'summary'))}</p><span class="insight-link">${copy.open} →</span></div></a><div class="insights-featured-side">${side.map(a => `<a href="${detailHref(a.slug)}">${metaHtml(a)}<h3>${escapeHtml(field(a,'title'))}</h3><span class="insight-link">${copy.open} →</span></a>`).join('')}</div>`;
+    holder.innerHTML = `<a class="insights-featured-main" href="${detailHref(main.slug)}"><div class="insights-featured-copy">${metaHtml(main)}<h3>${escapeHtml(field(main,'title'))}</h3><p>${escapeHtml(field(main,'summary'))}</p><span class="insight-link">${copy.open} →</span></div></a><div class="insights-featured-side">${side.map(a => `<a href="${detailHref(a.slug)}">${metaHtml(a)}<h3>${escapeHtml(field(a,'title'))}</h3><span class="insight-link">${copy.open} →</span></a>`).join('')}</div>`;
   }
 
   function renderFilters() {
