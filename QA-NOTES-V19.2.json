@@ -1,0 +1,51 @@
+{
+  "desktop": {
+    "innerWidth": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "serviceCards": 4,
+    "methodCards": 3,
+    "articleCards": 3,
+    "oldChart": false,
+    "fakeImages": 0
+  },
+  "mobile": {
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "serviceCards": 4,
+    "methodCards": 3,
+    "articleCards": 3,
+    "oldChart": false,
+    "fakeImages": 0
+  },
+  "files": {
+    "index.html": {
+      "has_home_css": true,
+      "has_old_chart": false,
+      "has_placeholder_link": false,
+      "has_fake_insight_images": false,
+      "service_cards": 4,
+      "method_cards": 3,
+      "article_cards": 3
+    },
+    "en/index.html": {
+      "has_home_css": true,
+      "has_old_chart": false,
+      "has_placeholder_link": false,
+      "has_fake_insight_images": false,
+      "service_cards": 4,
+      "method_cards": 3,
+      "article_cards": 3
+    },
+    "zh/index.html": {
+      "has_home_css": true,
+      "has_old_chart": false,
+      "has_placeholder_link": false,
+      "has_fake_insight_images": false,
+      "service_cards": 4,
+      "method_cards": 3,
+      "article_cards": 3
+    }
+  }
+}
