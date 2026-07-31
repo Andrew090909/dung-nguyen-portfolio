@@ -1,0 +1,122 @@
+{
+  "base_version": "V19",
+  "patch_version": "V19.1 Insights Hub",
+  "file_count_excluding_manifest": 23,
+  "files": [
+    {
+      "path": ".pages.yml",
+      "bytes": 2933,
+      "sha256": "db802139049374e285f16b16de8cf0fdbc3211386aed46d2367a5ab3c76d5297"
+    },
+    {
+      "path": "PATCH-INSTRUCTIONS-V19.1.md",
+      "bytes": 2079,
+      "sha256": "a26dc533fb8807832283fef65c23446550ffb798c1c9dab1c19d39564a7062fa"
+    },
+    {
+      "path": "QA-NOTES-V19.1.md",
+      "bytes": 1280,
+      "sha256": "5c773e0e8dfec0e08a270a9a616d3655cd7bb4ac56c22d2570d12920b19e51fd"
+    },
+    {
+      "path": "assets/css/insights-hub-v20.css",
+      "bytes": 8408,
+      "sha256": "3828dd127a815177be1437d9920e4852f0d6242f8b99c5ae764eefe1de412f6f"
+    },
+    {
+      "path": "assets/js/insight-detail-v20.js",
+      "bytes": 6125,
+      "sha256": "d0907ba80f1cb376b7d097aba0875115235b0840b3c8c471c68f679f1de5bb47"
+    },
+    {
+      "path": "assets/js/insights-hub-v20.js",
+      "bytes": 5544,
+      "sha256": "0c7b326dadb6228b1123badf755eddd5b88a2b3732cb3f1dfc7a188745bfd7fb"
+    },
+    {
+      "path": "assets/js/market-dashboard-v20.js",
+      "bytes": 2148,
+      "sha256": "bc41f9d2c897d3694f397b6a4a64b726271da26049e02bef95abcc1331e632cb"
+    },
+    {
+      "path": "content/insights-v20.json",
+      "bytes": 42331,
+      "sha256": "57fd5a615f9021af80f098de7dd4e5547cc9aba4c954964337676906ac186318"
+    },
+    {
+      "path": "downloads/en/90-day-growth-plan.csv",
+      "bytes": 1133,
+      "sha256": "c4a8ee7b54117a53bd55599adc7cbbdfa379aa1cf2243bfd637cfdb7daa08be8"
+    },
+    {
+      "path": "downloads/en/funnel-audit-checklist.csv",
+      "bytes": 1123,
+      "sha256": "620aadad937aa96c9a22ab9c6be1414b3ded3d2044f466610b4ba984efdf9678"
+    },
+    {
+      "path": "downloads/en/lead-management-sop.csv",
+      "bytes": 989,
+      "sha256": "1881ece8ae735d5aa9aacc98bfa1a6229df96d7f2a3db9a86a208d9f7ec7c055"
+    },
+    {
+      "path": "downloads/vi/90-day-growth-plan.csv",
+      "bytes": 1348,
+      "sha256": "36c086139a84ba9cf756d67a833841d1e31d4abc9441fb817fd0a61a99723c75"
+    },
+    {
+      "path": "downloads/vi/funnel-audit-checklist.csv",
+      "bytes": 1555,
+      "sha256": "5771299ff19c7f7a404db9bd810b36eeaea973d532d2d755b7a50143fdff2135"
+    },
+    {
+      "path": "downloads/vi/lead-management-sop.csv",
+      "bytes": 1232,
+      "sha256": "808c77ff8c450b582cf43990f0999e624c0cde27c52e15b5b47374399909674b"
+    },
+    {
+      "path": "downloads/zh/90-day-growth-plan.csv",
+      "bytes": 944,
+      "sha256": "45c6e642ee2eda229e1478bdefef33934454bfa6a95fe4136fb395a801ad8233"
+    },
+    {
+      "path": "downloads/zh/funnel-audit-checklist.csv",
+      "bytes": 1022,
+      "sha256": "caf7f8857fd1b1db2a3729af89f1083296ba040001fa3fb7cebfa76460a91ef4"
+    },
+    {
+      "path": "downloads/zh/lead-management-sop.csv",
+      "bytes": 944,
+      "sha256": "baeda92a3a159cefbd2e3026bd98f2f6de91a2b0be52c023af96f453cb778e28"
+    },
+    {
+      "path": "en/insight.html",
+      "bytes": 7013,
+      "sha256": "6607c9a974ae7627c98b9f7a81e4564d5d7785a1d68d0c5eb6f56c64018565ba"
+    },
+    {
+      "path": "en/insights.html",
+      "bytes": 10739,
+      "sha256": "b896d7d7fe96d915d7d0f7af29f00fdfa3cf13d3ebc09acf0c1b656d252611a7"
+    },
+    {
+      "path": "insight.html",
+      "bytes": 7162,
+      "sha256": "79ebfd3972916a9738888c38e06405cc479afa22c8cca9c5c93b1020f85a93d0"
+    },
+    {
+      "path": "insights.html",
+      "bytes": 11295,
+      "sha256": "7a567a210eccf13a216543700a920bbd185233a9b6894f12361e09daed2f51fa"
+    },
+    {
+      "path": "zh/insight.html",
+      "bytes": 6969,
+      "sha256": "7b55120398993892f9d83dd2430d6b12327b926e2131e396aadeb3cdea784ecf"
+    },
+    {
+      "path": "zh/insights.html",
+      "bytes": 10522,
+      "sha256": "4df5225018016062b6e8df016d3c9fd89e319e1c4a40a330e8b3933bd67be18a"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿Week,Commercial objective,Priority hypothesis,Experiment/Action,Input metric,Outcome metric,Owner,Deadline,Actual result,Next decision
+1,Data baseline,The baseline is unreliable,Audit tracking funnel and CRM,,,,,,
+2,Offer,The message is unclear,Interview customers and rewrite the offer,,,,,,
+3,Landing page,CTA and proof are weak,Improve hero CTA proof and form,,,,,,
+4,Lead response,Responses are too slow,Set owner SLA and alerts,,,,,,
+5,Follow-up,Leads disappear after first contact,Build a five-touch sequence,,,,,,
+6,Campaign 1,The new message improves qualified leads,Run a small-budget test,,,,,,
+7,Sales script,Qualification is inconsistent,Standardize discovery script,,,,,,
+8,CRM,Pipeline data is incomplete,Standardize stages required fields and lost reasons,,,,,,
+9,Campaign 2,One segment performs better,Separate campaigns by segment,,,,,,
+10,Content,Buyers lack comparison content,Create a deep-dive and checklist,,,,,,
+11,Optimization,The primary constraint has shifted,Improve the lowest-converting stage,,,,,,
+12,Review,The system needs the next roadmap,Compare before/after and build the next 90-day plan,,,,,,

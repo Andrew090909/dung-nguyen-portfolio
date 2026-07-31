@@ -1,0 +1,9 @@
+﻿Bước,Trigger,Owner,SLA,Hành động bắt buộc,Kết quả cần ghi,Trạng thái tiếp theo
+1,Lead mới vào hệ thống,Điều phối/Automation,Ngay lập tức,Kiểm tra trùng và gán owner,Owner + nguồn + thời gian nhận,Assigned
+2,Lead được gán,Sales,Theo SLA nội bộ,Kiểm tra thông tin và thực hiện liên hệ lần 1,Kênh + kết quả + ghi chú,Contacted hoặc No response
+3,Không liên hệ được,Sales,Theo sequence,Gửi tin nhắn xác nhận và đặt lịch gọi lại,Thời điểm follow-up,Follow-up scheduled
+4,Đã trao đổi,Sales,Trong cuộc trao đổi,Đánh giá fit nhu cầu thời điểm và khả năng mua,Qualification fields,Qualified hoặc Disqualified
+5,Qualified,Sales,Theo cam kết,Gửi đề xuất hoặc đặt meeting,Ngày meeting/proposal,Meeting hoặc Proposal
+6,Chưa quyết định,Sales,Theo next action,Follow-up bằng nội dung phù hợp giai đoạn,Next action + due date,Nurturing
+7,Won/Lost,Sales + Manager,Ngay khi đóng,Ghi kết quả giá trị và lý do,Revenue hoặc lost reason,Won hoặc Lost
+8,Hàng tuần,Marketing + Sales,30 phút,Đọc lead quality conversion và lost reason,Action list,Review complete

@@ -1,0 +1,13 @@
+﻿Tuần,Mục tiêu thương mại,Giả thuyết ưu tiên,Thử nghiệm/Việc thực hiện,Chỉ số đầu vào,Chỉ số kết quả,Owner,Deadline,Kết quả thực tế,Quyết định tiếp theo
+1,Baseline dữ liệu,Chưa có baseline đáng tin cậy,Audit tracking funnel và CRM,,,,,,
+2,Offer,Thông điệp chưa rõ,Phỏng vấn khách hàng và viết lại offer,,,,,,
+3,Landing page,CTA và bằng chứng yếu,Tối ưu hero CTA proof và form,,,,,,
+4,Lead response,Lead phản hồi chậm,Thiết lập owner SLA và alert,,,,,,
+5,Follow-up,Lead mất sau lần gọi đầu,Xây sequence 5 điểm chạm,,,,,,
+6,Campaign 1,Thông điệp mới tăng qualified lead,Chạy thử nghiệm ngân sách nhỏ,,,,,,
+7,Sales script,Khả năng qualification chưa đồng đều,Chuẩn hóa discovery script,,,,,,
+8,CRM,Dữ liệu pipeline thiếu,Chuẩn hóa stage required fields lost reason,,,,,,
+9,Campaign 2,Một phân khúc có hiệu quả cao hơn,Tách campaign theo phân khúc,,,,,,
+10,Content,Khách hàng thiếu nội dung so sánh,Tạo deep-dive và checklist,,,,,,
+11,Optimization,Điểm nghẽn lớn nhất đã thay đổi,Tối ưu bước conversion thấp nhất,,,,,,
+12,Review,Hệ thống cần roadmap vòng tiếp theo,Đánh giá trước sau và lập kế hoạch 90 ngày mới,,,,,,

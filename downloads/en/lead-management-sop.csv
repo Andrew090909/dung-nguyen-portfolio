@@ -1,0 +1,9 @@
+﻿Step,Trigger,Owner,SLA,Mandatory action,Required record,Next stage
+1,New lead enters system,Routing/Automation,Immediately,Deduplicate and assign owner,Owner source received time,Assigned
+2,Lead assigned,Sales,Internal SLA,Review context and make first contact,Channel outcome notes,Contacted or No response
+3,No response,Sales,Sequence schedule,Send confirmation and schedule next contact,Follow-up time,Follow-up scheduled
+4,Conversation completed,Sales,During conversation,Assess fit need timing and buying ability,Qualification fields,Qualified or Disqualified
+5,Qualified,Sales,As promised,Send proposal or book meeting,Meeting/proposal date,Meeting or Proposal
+6,No decision,Sales,Next-action date,Follow up with stage-relevant content,Next action due date,Nurturing
+7,Won/Lost,Sales + Manager,At closure,Record result value and reason,Revenue or lost reason,Won or Lost
+8,Weekly,Marketing + Sales,30 minutes,Review quality conversion and lost reasons,Action list,Review complete
