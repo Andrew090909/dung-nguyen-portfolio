@@ -1,177 +1,94 @@
 <!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Trang chủ | Dũng Nguyễn</title>
+<link rel="stylesheet" href="assets/css/digital-system-v19.css">
+<link rel="stylesheet" href="assets/css/dng-intelligence-v5.css">
+</head>
+<body class="booting">
+<div id="universe"><canvas id="particles"></canvas></div><div class="vignette"></div><div class="scanlines"></div>
 
-<html data-root="" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Trang chủ | Dũng Nguyễn</title><meta content="Commercial Growth Architect - Marketing, Sales, CRM and growth systems" name="description"/><link href="https://dngworks.github.io/" rel="canonical"/><meta content="Trang chủ | Dũng Nguyễn" property="og:title"/><meta content="website" property="og:type"/><meta content="assets/images/ui/og-cover.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><link href="assets/css/site-v12.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dũng Nguyễn","jobTitle":"Commercial Growth Architect"}</script><meta content="https://dngworks.github.io/" property="og:url"/><link href="https://dngworks.github.io/" hreflang="vi" rel="alternate"/><link href="https://dngworks.github.io/en/" hreflang="en" rel="alternate"/><link href="https://dngworks.github.io/zh/" hreflang="zh-CN" rel="alternate"/><link href="https://dngworks.github.io/" hreflang="x-default" rel="alternate"/><link href="assets/css/digital-system-v19.css" rel="stylesheet"/><link href="assets/css/home-truth-v19.2.css" rel="stylesheet"/><link id="dng-ai-global-style" rel="stylesheet" href="/assets/css/dng-ai-widget.css">
-<style id="home-hero-refine-v3">
-/* Minimal hero: only the role + two actions, balanced against the globe. */
-.hero.hero-minimal-v3{
-  grid-template-columns:minmax(330px,.78fr) minmax(510px,1.22fr);
-  gap:24px;
-  min-height:600px;
-  padding-top:40px;
-  padding-bottom:30px;
-}
-.home-hero-minimal{
-  position:relative;
-  align-self:center;
-  max-width:430px;
-  padding:34px 0 34px 30px;
-}
-.home-hero-minimal::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:34px;
-  bottom:34px;
-  width:3px;
-  border-radius:999px;
-  background:linear-gradient(180deg,#0b7b4b 0%,#29c17e 58%,rgba(41,193,126,.08) 100%);
-  box-shadow:0 0 26px rgba(17,168,99,.12);
-}
-.home-role-mark{
-  font-size:clamp(38px,4.1vw,56px);
-  line-height:.96;
-  letter-spacing:-.055em;
-  font-weight:820;
-  color:var(--ink);
-}
-.home-role-mark span{display:block}
-.home-role-mark .accent{color:var(--green)}
-.home-role-rule{
-  width:74px;
-  height:1px;
-  margin-top:25px;
-  background:linear-gradient(90deg,var(--green),rgba(8,116,67,.08));
-}
-.home-hero-actions{
-  margin-top:25px;
-  gap:10px;
-  align-items:center;
-}
-.home-hero-actions .btn{
-  min-height:46px;
-  padding:11px 17px;
-  border-radius:11px;
-  font-size:13px;
-  white-space:nowrap;
-}
-.home-hero-actions .btn:first-child{
-  min-width:154px;
-}
-.hero-minimal-v3 .page-globe-stage{
-  margin-left:0;
-  min-height:540px;
-}
-.hero-minimal-v3 .digital-global-visual{
-  width:min(555px,100%);
-}
-/* Fallback prevents a blank/broken globe if canvas/texture initialization fails. */
-.home-globe-fallback{
-  position:absolute;
-  left:8.8%;
-  top:8.8%;
-  width:82.4%;
-  height:82.4%;
-  object-fit:contain;
-  z-index:0;
-  opacity:1;
-  transition:opacity .35s ease;
-  pointer-events:none;
-  filter:saturate(1.03) brightness(1.02);
-}
-.digital-global-visual.globe-live .home-globe-fallback{opacity:0}
-/* Never allow canvas raster artifacts to bleed outside the sphere. */
-.hero-minimal-v3 .digital-globe-code-layer{
-  overflow:hidden;
-  clip-path:circle(50% at 50% 50%);
-}
-.hero-minimal-v3 .digital-globe-webgl,
-.hero-minimal-v3 .digital-globe-network{
-  clip-path:circle(50% at 50% 50%);
-}
-@media(max-width:1000px){
-  .hero.hero-minimal-v3{
-    grid-template-columns:minmax(290px,.72fr) minmax(450px,1.28fr);
-    gap:12px;
-  }
-  .home-role-mark{font-size:clamp(36px,4.5vw,48px)}
-  .hero-minimal-v3 .digital-global-visual{width:min(520px,100%)}
-}
-@media(max-width:900px){
-  .hero.hero-minimal-v3{
-    grid-template-columns:1fr;
-    min-height:auto;
-    gap:0;
-    padding-top:34px;
-  }
-  .home-hero-minimal{
-    max-width:580px;
-    padding:28px 0 24px 24px;
-  }
-  .home-role-mark span{display:inline}
-  .home-role-mark span+span::before{content:" "}
-  .hero-minimal-v3 .page-globe-stage{min-height:490px}
-  .hero-minimal-v3 .digital-global-visual{width:min(540px,100%)}
-}
-@media(max-width:560px){
-  .home-hero-minimal{padding:22px 0 16px 18px}
-  .home-role-mark{
-    font-size:34px;
-    line-height:1.02;
-    max-width:340px;
-  }
-  .home-role-mark span{display:block}
-  .home-role-mark span+span::before{content:""}
-  .home-hero-actions{align-items:stretch}
-  .home-hero-actions .btn{width:100%}
-  .hero-minimal-v3 .page-globe-stage{min-height:390px}
-}
-</style>
+<header class="topbar">
+  <a class="brand" href="index.html"><i></i><span>DNG INTELLIGENCE WORLD</span></a>
+  <nav class="desktop-nav">
+    <a href="index.html">Trang chủ</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Báo giá</a><a href="insights.html">Insights</a><a href="contact.html">Liên hệ</a>
+    <div class="langs"><a href="index.html" class="active">VI</a><a href="en/index.html" class="">EN</a><a href="zh/index.html" class="">中文</a></div>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
 
-</head><body class="grid-bg" data-page-key="index"><header class="header"><div class="container nav"><a class="logo" href="index.html">DŨNG NGUYỄN<i></i></a><nav class="menu"><a class="active" href="index.html">Trang chủ</a><a class="" href="portfolio.html">Portfolio</a><a class="" href="pricing.html">Báo giá</a><a class="" href="insights.html">Insights</a><a class="" href="contact.html">Liên hệ</a></nav><div class="langs"><a aria-current="page" href="index.html">VI</a><span>|</span><a href="en/index.html">EN</a><span>|</span><a href="zh/index.html">ZH</a></div><a class="btn" href="contact.html">Liên hệ</a><button aria-controls="mobileMenu" aria-expanded="false" aria-label="Mở menu" class="mobile-menu-toggle" type="button"><span></span><span></span><span></span></button></div></header><div class="mobile-menu-backdrop" data-mobile-menu-close=""></div><aside aria-hidden="true" aria-label="Mở menu" class="mobile-menu-panel" id="mobileMenu"><div class="mobile-menu-head"><strong>DŨNG NGUYỄN</strong><button aria-label="Đóng menu" class="mobile-menu-close" data-mobile-menu-close="" type="button">×</button></div><nav aria-label="Mở menu" class="mobile-menu-links"><a href="index.html">Trang chủ</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Báo giá</a><a href="insights.html">Insights</a><a href="contact.html">Liên hệ</a></nav><div aria-label="Language" class="mobile-menu-langs"><a aria-current="page" href="index.html">VI</a><a href="en/index.html">EN</a><a href="zh/index.html">ZH</a></div><div class="mobile-menu-actions"><a href="tel:0377348008">Gọi điện</a><a href="https://zalo.me/0377348008" rel="noopener noreferrer" target="_blank">Zalo</a><a href="contact.html#booking">Đặt lịch</a></div></aside><main><section class="container hero hero-minimal-v3">
-<div class="reveal home-hero-minimal">
-  <div class="home-role-mark" aria-label="Commercial Growth Architect">
-    <span>Commercial</span>
-    <span class="accent">Growth</span>
-    <span>Architect</span>
+<aside class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-links"><a href="index.html">Trang chủ</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Báo giá</a><a href="insights.html">Insights</a><a href="contact.html">Liên hệ</a></nav>
+  <div class="langs"><a href="index.html" class="active">VI</a><a href="en/index.html" class="">EN</a><a href="zh/index.html" class="">中文</a></div>
+</aside>
+
+<button class="skip" id="skip">BỎ QUA</button><div class="progress"><span id="progressBar"></span></div>
+
+<section class="story" id="story"><div class="sticky">
+<div class="shockwave"></div>
+
+<div class="globe-system" id="globeSystem">
+  <div class="globe-aura"></div><div class="globe-stage">
+    <div class="digital-global-visual" data-code-globe data-mode="index" data-texture="assets/images/hero/earth-digital-360.jpg">
+      <div class="digital-globe-halo"></div><div class="digital-orbit orbit-one"></div><div class="digital-orbit orbit-two"></div>
+      <img class="home-globe-fallback" src="assets/images/hero/digital-global-globe.png" alt="">
+      <div class="digital-globe-code-layer"><canvas class="digital-globe-webgl"></canvas><canvas class="digital-globe-network"></canvas></div>
+      <span class="digital-signal signal-one"></span><span class="digital-signal signal-two"></span><span class="digital-signal signal-three"></span><span class="digital-signal signal-four"></span>
+    </div>
   </div>
-  <div class="home-role-rule" aria-hidden="true"></div>
-  <div class="actions home-hero-actions">
-    <a class="btn" href="portfolio.html">Xem portfolio ↗</a>
-    <a class="btn outline" href="contact.html">Đặt lịch tư vấn</a>
+  <div class="core-id"><strong>DŨNG NGUYỄN</strong><span>AI COMMERCIAL ARCHITECT</span></div>
+  <div class="keywords">
+    <div class="keyword k1">AI STRATEGY</div><div class="keyword k2">TÂM LÝ HỌC</div><div class="keyword k3">MARKETING</div>
+    <div class="keyword k4">HỆ THỐNG SỐ</div><div class="keyword k5">VIDEO</div><div class="keyword k6">TĂNG TRƯỞNG THƯƠNG MẠI</div>
   </div>
 </div>
-<div class="globe-stage page-globe-stage reveal">
-<div aria-label="Digital global growth system" class="digital-global-visual" data-code-globe="" data-mode="index" data-texture="assets/images/hero/earth-digital-360.jpg" role="img">
-<div aria-hidden="true" class="digital-globe-halo"></div>
-<div aria-hidden="true" class="digital-orbit orbit-one"></div>
-<div aria-hidden="true" class="digital-orbit orbit-two"></div>
-<img aria-hidden="true" class="home-globe-fallback" src="assets/images/hero/digital-global-globe.png" alt=""/>
-<div aria-hidden="true" class="digital-globe-code-layer"><canvas class="digital-globe-webgl"></canvas><canvas class="digital-globe-network"></canvas></div>
-<div aria-hidden="true" class="digital-page-symbol"><strong>MARKETING</strong></div>
-<span aria-hidden="true" class="digital-signal signal-one"></span><span aria-hidden="true" class="digital-signal signal-two"></span><span aria-hidden="true" class="digital-signal signal-three"></span><span aria-hidden="true" class="digital-signal signal-four"></span>
-<div class="digital-capability cap-ai"><i aria-hidden="true"></i><span><b>AI &amp; Dữ liệu</b><small>Thấu hiểu</small></span></div>
-<div class="digital-capability cap-global"><i aria-hidden="true"></i><span><b>Marketing toàn cầu</b><small>Tiếp cận thị trường</small></span></div>
-<div class="digital-capability cap-crm"><i aria-hidden="true"></i><span><b>Sales &amp; CRM</b><small>Hệ thống doanh thu</small></span></div>
-<div class="digital-capability cap-auto"><i aria-hidden="true"></i><span><b>Tự động hóa</b><small>Vận hành</small></span></div>
-<div class="digital-capability cap-analytics"><i aria-hidden="true"></i><span><b>Phân tích tăng trưởng</b><small>Đo lường</small></span></div>
-</div>
-</div>
-</section><section class="section home-truth-section"><div class="container"><div class="section-intro"><div><div class="eyebrow">NĂNG LỰC CỐT LÕI</div><h2>Bốn hệ năng lực, bốn đầu ra khác nhau.</h2></div></div><div class="home-service-grid"><article class="home-service-card reveal"><span class="service-number">01</span><h3>AI &amp; Data Strategy</h3><p>Nghiên cứu thị trường, thiết kế hệ đo lường, dashboard và quy trình ứng dụng AI vào công việc có kiểm soát.</p><a href="pricing-marketing.html">Xem phạm vi tư vấn →</a></article><article class="home-service-card reveal"><span class="service-number">02</span><h3>Brand &amp; Positioning</h3><p>Làm rõ khách hàng, vấn đề, định vị, thông điệp và cấu trúc offer trước khi đẩy mạnh nội dung hoặc quảng cáo.</p><a href="pricing-marketing.html">Xem phạm vi tư vấn →</a></article><article class="home-service-card reveal"><span class="service-number">03</span><h3>Growth Marketing</h3><p>Thiết kế hệ thu hút khách hàng qua content, SEO, landing page, paid media và thí nghiệm tăng trưởng.</p><a href="pricing-marketing.html">Xem phạm vi tư vấn →</a></article><article class="home-service-card reveal"><span class="service-number">04</span><h3>Marketing Operations</h3><p>Chuẩn hóa lead stage, CRM, SLA phản hồi, follow-up, automation và báo cáo nối Marketing với Sales.</p><a href="pricing-marketing.html">Xem phạm vi tư vấn →</a></article></div><div class="home-experience-strip reveal"><span>B2B công nghiệp</span><span>F&amp;B</span><span>Dịch vụ địa phương</span><span>Thương hiệu cá nhân</span><span>Marketing Operations</span></div></div></section><section class="section home-truth-section"><div class="container home-method-wrap"><div class="home-method-copy reveal"><div class="eyebrow">MÔ HÌNH HỢP TÁC</div><h2>Ba hình thức hợp tác theo nhu cầu thực tế.</h2><p class="lead">Bắt đầu bằng chẩn đoán, tiếp tục bằng xây hệ thống hoặc đồng hành vận hành dài hạn.</p><a class="btn outline" href="pricing-marketing.html">Xem phạm vi tư vấn →</a></div><div class="home-method-grid"><article class="home-method-card reveal"><small>Giai đoạn 1 · 10–15 ngày</small><h3>Commercial Diagnostic</h3><p>Định vị, offer, funnel, CRM, phỏng vấn Sales và bản đồ điểm mất doanh thu.</p><ul><li>Diagnosis report</li><li>Baseline &amp; KPI</li><li>Roadmap 90 ngày</li></ul></article><article class="home-method-card reveal"><small>Giai đoạn 2 · 8–12 tuần</small><h3>Revenue System Build</h3><p>Xây offer, funnel, lead stages, CRM, SOP, dashboard và automation cơ bản.</p><ul><li>Hệ thống vận hành</li><li>Tài liệu bàn giao</li><li>Đào tạo &amp; đo trước–sau</li></ul></article><article class="home-method-card reveal"><small>Giai đoạn 3 · Từ 6 tháng</small><h3>Fractional Operator</h3><p>Theo dõi pipeline, chất lượng lead, tốc độ phản hồi, conversion và các thử nghiệm tăng trưởng.</p><ul><li>Họp vận hành tuần</li><li>Coaching đội ngũ</li><li>Báo cáo &amp; ưu tiên tiếp theo</li></ul></article></div></div></section><section class="section home-truth-section"><div class="container"><div class="home-insight-head"><div><div class="eyebrow">PHÂN TÍCH &amp; CÔNG CỤ</div><h2>Phân tích phục vụ quyết định thương mại.</h2></div><p>Mỗi bài tập trung vào một vấn đề cụ thể, đưa ra framework, giới hạn và hành động có thể áp dụng.</p></div><div class="home-editorial-grid"><a class="home-editorial-card reveal" href="insight.html?slug=revenue-leakage-marketing-sales-crm"><span class="article-index">01</span><span class="article-meta">Revenue System · 9 phút đọc</span><h3>7 điểm rò rỉ doanh thu giữa Marketing – Sales – CRM</h3><p>Một funnel thường mất doanh thu qua nhiều khe nhỏ: định nghĩa lead, phản hồi, bàn giao, follow-up và đo lường.</p><span class="read-link">Đọc bài đầy đủ →</span></a><a class="home-editorial-card reveal" href="insight.html?slug=ai-search-b2b-customer-journey"><span class="article-index">02</span><span class="article-meta">AI &amp; Data · 8 phút đọc</span><h3>AI Search đang thay đổi hành trình mua B2B như thế nào?</h3><p>Khách hàng đặt câu hỏi dài, yêu cầu so sánh và mong nhận câu trả lời đã được tổng hợp thay vì chỉ xem danh sách link.</p><span class="read-link">Đọc bài đầy đủ →</span></a><a class="home-editorial-card reveal" href="insight.html?slug=crm-vs-spreadsheet-decision"><span class="article-index">03</span><span class="article-meta">Sales &amp; CRM · 7 phút đọc</span><h3>Google Sheet hay CRM: khi nào doanh nghiệp nên chuyển?</h3><p>CRM chỉ đáng đầu tư khi dữ liệu, trách nhiệm và follow-up bắt đầu tạo chi phí ẩn mà Sheet không còn kiểm soát được.</p><span class="read-link">Đọc bài đầy đủ →</span></a></div><div class="home-insights-footer reveal"><a href="insights.html">Xem toàn bộ Insights →</a></div></div></section></main><div class="container cta reveal"><div><b>Sẵn sàng xây dựng cỗ máy tăng trưởng dành riêng cho doanh nghiệp?</b><p class="lead" style="font-size:13px;margin:5px 0 0">Commercial Assessment · Strategy · Revenue System</p></div><a class="btn" href="contact.html">Đặt lịch Commercial Assessment →</a></div><footer class="footer"><div class="container footer-grid"><div><div class="logo">DŨNG NGUYỄN<i></i></div><p>Commercial Growth Architect<br/>Marketing – Sales – CRM</p></div><div><h4>Điều hướng</h4><a href="index.html">Trang chủ</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Báo giá</a></div><div><h4>Dịch vụ</h4><p>AI &amp; Data Strategy</p><p>Brand &amp; Positioning</p><p>Growth Marketing</p><p>Marketing Operations</p></div><div><h4>Liên hệ</h4><p>nguyendhungdung@gmail.com</p><p>TP. Hồ Chí Minh, Việt Nam</p></div></div></footer><script defer="" src="assets/js/site-v12.js"></script><script defer="" src="assets/js/mobile-nav.js"></script><script defer="" src="assets/js/contact-form-v19.js"></script><nav aria-label="Liên hệ nhanh" class="mobile-contact-bar"><a class="mobile-call" href="tel:0377348008">Gọi điện</a><a class="mobile-zalo" href="https://zalo.me/0377348008" rel="noopener noreferrer" target="_blank">Zalo</a><a class="mobile-book" href="contact.html#booking">Đặt lịch</a></nav><div aria-label="Liên hệ nhanh" class="desktop-contact-float"><a class="zalo-float" href="https://zalo.me/0377348008" rel="noopener noreferrer" target="_blank">Zalo</a><a class="call-float" href="tel:0377348008">Gọi điện 0377348008</a></div><script defer="" src="assets/js/digital-background-v19.js"></script><script defer="" src="assets/js/globe-v5-core.js"></script><script id="dng-ai-global-config" src="/assets/js/dng-ai-config.js" defer></script><script id="dng-support-core" src="/assets/js/dng-support-core.js" defer></script><script id="dng-ai-global-script" src="/assets/js/dng-ai-widget.js" defer></script>
-<script id="home-globe-fallback-controller">
-document.addEventListener('DOMContentLoaded',()=>{
-  const globe=document.querySelector('.hero-minimal-v3 [data-code-globe]');
-  if(!globe)return;
-  let done=false;
-  const activate=()=>{
-    if(done||globe.dataset.textureReady!=='true')return;
-    done=true;
-    setTimeout(()=>globe.classList.add('globe-live'),650);
-  };
-  activate();
-  const mo=new MutationObserver(activate);
-  mo.observe(globe,{attributes:true,attributeFilter:['data-texture-ready']});
-  setTimeout(()=>{activate();if(done)mo.disconnect()},3000);
-});
-</script>
 
+<div class="boot-status"><div class="init">INITIALIZING DNG INTELLIGENCE…</div><div class="online-row"><i></i>SYSTEM ONLINE</div><p>HUMAN INSIGHT × ARTIFICIAL INTELLIGENCE × COMMERCIAL GROWTH</p></div>
+
+<article class="identity-copy" id="identityCopy"><span class="eyebrow">GIAI ĐOẠN 01 · IDENTITY CORE</span><h2>Một lõi trí tuệ đại diện cho Dũng.</h2><p>Quả cầu trở thành trung tâm sống, nơi AI, tâm lý học, nội dung, dữ liệu và tăng trưởng thương mại cùng tồn tại.</p></article>
+
+<section class="neural" id="neural">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="none">
+<path data-pair="marketing psychology" d="M800 450 C610 330 430 220 235 175"/><path data-pair="psychology content" d="M800 450 C995 320 1170 215 1390 175"/>
+<path data-pair="revenue marketing" d="M800 450 C590 575 420 690 220 740"/><path data-pair="automation data" d="M800 450 C1015 575 1200 690 1395 735"/>
+<path data-pair="content psychology" d="M800 450 C800 320 800 185 800 95"/><path data-pair="data automation" d="M800 450 C800 595 800 725 800 835"/>
+</svg>
+<article class="node n1" data-key="marketing" data-start="0.205"><small>NODE 01</small><strong>AI Marketing</strong><p>AI, nội dung và dữ liệu cùng điều khiển tăng trưởng.</p></article><article class="node n2" data-key="psychology" data-start="0.235"><small>NODE 02</small><strong>Consumer Psychology</strong><p>Giải mã động lực và hành vi lựa chọn.</p></article><article class="node n3" data-key="revenue" data-start="0.265"><small>NODE 03</small><strong>Revenue Systems</strong><p>Kết nối Marketing, Sales và CRM.</p></article><article class="node n4" data-key="automation" data-start="0.295"><small>NODE 04</small><strong>Automation</strong><p>Workflow và agent giúp hệ thống vận hành.</p></article><article class="node n5" data-key="content" data-start="0.325"><small>NODE 05</small><strong>Content Intelligence</strong><p>Biến dữ liệu thành câu chuyện và ảnh hưởng.</p></article><article class="node n6" data-key="data" data-start="0.355"><small>NODE 06</small><strong>Data Analysis</strong><p>Đọc tín hiệu, đo lường và hỗ trợ quyết định.</p></article>
+<div class="mobile-node-rail"><article class="mobile-chip"><small>NODE 01</small><strong>AI Marketing</strong><p>AI, nội dung và dữ liệu cùng điều khiển tăng trưởng.</p></article><article class="mobile-chip"><small>NODE 02</small><strong>Consumer Psychology</strong><p>Giải mã động lực và hành vi lựa chọn.</p></article><article class="mobile-chip"><small>NODE 03</small><strong>Revenue Systems</strong><p>Kết nối Marketing, Sales và CRM.</p></article><article class="mobile-chip"><small>NODE 04</small><strong>Automation</strong><p>Workflow và agent giúp hệ thống vận hành.</p></article><article class="mobile-chip"><small>NODE 05</small><strong>Content Intelligence</strong><p>Biến dữ liệu thành câu chuyện và ảnh hưởng.</p></article><article class="mobile-chip"><small>NODE 06</small><strong>Data Analysis</strong><p>Đọc tín hiệu, đo lường và hỗ trợ quyết định.</p></article></div>
+</section>
+
+<section class="agent-stage" id="agentStage"><div class="agent-copy"><span class="eyebrow">GIAI ĐOẠN 03 · AI AGENT NETWORK</span><h2>Một trung tâm điều hành luôn hoạt động.</h2><p>Các AI Agent liên tục nghiên cứu, xây giả thuyết, tạo nội dung, phân tích dữ liệu và đọc động lực khách hàng.</p></div>
+<div class="command"><div class="command-head"><span>DNG AGENT OPERATIONS CENTER</span><span class="live"><i></i>LIVE</span></div>
+<div class="agent-list"><div class="agent-row"><strong>RESEARCH AGENT</strong><span>Scanning market signals</span><em>RUNNING</em></div><div class="agent-row"><strong>STRATEGY AGENT</strong><span>Building growth hypothesis</span><em>RUNNING</em></div><div class="agent-row"><strong>CONTENT AGENT</strong><span>Generating communication systems</span><em>ACTIVE</em></div><div class="agent-row"><strong>ANALYTICS AGENT</strong><span>Reading performance data</span><em>SYNCING</em></div><div class="agent-row"><strong>PSYCHOLOGY AGENT</strong><span>Mapping customer motivations</span><em>ACTIVE</em></div></div>
+<div class="metrics"><div class="metric"><b>17</b><small>MARKET SIGNALS</small></div><div class="metric"><b>04</b><small>OPPORTUNITIES</small></div><div class="metric"><b>92%</b><small>CONFIDENCE</small></div></div></div></section>
+
+<section class="project-stage" id="projectStage"><div class="project-copy"><span class="eyebrow">GIAI ĐOẠN 04 · CAPABILITY UNIVERSE</span><h2>Mỗi năng lực là một hệ chuyên môn.</h2><p>Mỗi lõi thể hiện một năng lực cốt lõi của Dũng: từ tâm lý học, media, editor, chạy ads, AI & automation đến phân tích khách hàng và phân tích doanh nghiệp.</p></div>
+<div class="universe-map"><svg class="map-lines" viewBox="0 0 1000 700" preserveAspectRatio="none"><path d="M145 170 C330 260 490 220 560 105"/><path d="M560 105 C720 180 845 245 925 290"/><path d="M145 170 C220 420 285 525 345 610"/><path d="M345 610 C510 530 640 520 700 550"/><path d="M700 550 C820 565 900 610 955 655"/></svg>
+<button class="planet p1" data-project="psychology"><span><strong>Tâm lý học</strong><small>HUMAN INSIGHT</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p2" data-project="media"><span><strong>Media</strong><small>VISUAL COMMUNICATION</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p3" data-project="editor"><span><strong>Editor</strong><small>VIDEO EDITING</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p4" data-project="ads"><span><strong>Chạy Ads</strong><small>PERFORMANCE MARKETING</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p5" data-project="customer"><span><strong>Phân tích khách hàng</strong><small>CUSTOMER ANALYSIS</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p6" data-project="automation"><span><strong>AI & Automation</strong><small>SYSTEM AUTOMATION</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+<button class="planet p7" data-project="business"><span><strong>Phân tích doanh nghiệp</strong><small>BUSINESS ANALYSIS</small><i class="atmos a1"></i><i class="atmos a2"></i><i class="atmos a3"></i></span></button>
+</div></section>
+
+<section class="twin-stage" id="twinStage"><div class="twin-copy"><span class="eyebrow">GIAI ĐOẠN 05 · DIGITAL TWIN</span><h2>Bạn đang kết nối với Digital Twin của Dũng.</h2><p>Hỏi về công việc, tư duy, năng lực, dự án hoặc mô hình hợp tác mà không cần rời website.</p></div>
+<div class="twin-panel"><div class="chat-log" id="chatLog"><div class="bubble ai">Xin chào. Tôi là Digital Twin của Dũng. Bạn muốn khám phá năng lực, dự án hay cách hợp tác?</div><div class="bubble user">Dũng có thể hỗ trợ doanh nghiệp B2B của tôi như thế nào?</div><div class="bubble ai">Tôi có thể phân tích định vị, offer, funnel, CRM và thiết kế roadmap tăng trưởng 90 ngày.</div></div>
+<div class="chat-input"><input id="chatInput" placeholder="Hỏi về công việc, tư duy, năng lực hoặc mô hình hợp tác."><button id="sendChat">SEND</button></div>
+<div class="suggestions"><button>Xem dự án phù hợp</button><button>Mô hình hợp tác</button><button>Điểm mạnh nhất của Dũng</button></div></div></section>
+
+<div class="phase" id="phase"><b>00</b> / ORIGIN</div><div class="scroll-hint" id="scrollHint">CUỘN ĐỂ KHÁM PHÁ HỆ THỐNG</div>
+</div></section>
+
+<div class="contact-float"><a href="tel:0377348008"><i></i>GỌI</a><a href="https://zalo.me/0377348008" target="_blank" rel="noopener"><i></i>ZALO</a><a class="primary" href="contact.html#booking">ĐẶT LỊCH</a></div>
+<div class="mobile-contact"><a href="tel:0377348008"><i></i>GỌI</a><a href="https://zalo.me/0377348008" target="_blank" rel="noopener"><i></i>Zalo</a><a class="primary" href="contact.html#booking">ĐẶT LỊCH</a></div>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><span class="eyebrow" id="modalType">PROJECT UNIVERSE</span><h3 id="modalTitle">DNG Works</h3>
+<div class="modal-grid"><div class="modal-block"><b>VẤN ĐỀ</b><p id="modalProblem"></p></div><div class="modal-block"><b>CÁCH TIẾP CẬN</b><p id="modalApproach"></p></div><div class="modal-block"><b>HỆ THỐNG ĐÃ XÂY</b><p id="modalSystem"></p></div><div class="modal-block"><b>KẾT QUẢ / GIÁ TRỊ</b><p id="modalResult"></p></div></div></div></div>
+
+<script>window.DNG_PROJECTS={"psychology": {"title": "Tâm lý học", "type": "HUMAN INSIGHT", "problem": "Doanh nghiệp thường nhìn dữ liệu mà thiếu chiều sâu về động cơ, cảm xúc và hành vi ra quyết định của khách hàng.", "approach": "Kết hợp góc nhìn tâm lý học ứng dụng với quan sát hành vi để hiểu vì sao khách hàng chú ý, tin tưởng và mua.", "system": "Phân tích nhu cầu, pain point, động lực, niềm tin, rào cản và hành vi ra quyết định.", "result": "Tạo nền tảng cho nội dung, truyền thông và hệ thống bán hàng chạm đúng khách hàng hơn."}, "media": {"title": "Media", "type": "VISUAL COMMUNICATION", "problem": "Nhiều thương hiệu có sản phẩm tốt nhưng hình ảnh, video và cách thể hiện chưa đủ sức tạo niềm tin.", "approach": "Xây dựng ngôn ngữ hình ảnh rõ ràng, hiện đại, đúng tinh thần thương hiệu và đúng mục tiêu truyền thông.", "system": "Quay dựng, concept hình ảnh, visual direction, social media assets và nội dung truyền thông đa nền tảng.", "result": "Giúp thương hiệu chuyên nghiệp hơn, dễ ghi nhớ hơn và tạo cảm giác đáng tin hơn."}, "editor": {"title": "Editor", "type": "VIDEO EDITING", "problem": "Video thô có dữ liệu nhưng thiếu cảm xúc, nhịp điệu và điểm nhấn để giữ người xem.", "approach": "Biên tập theo tư duy marketing, storytelling và tối ưu retention thay vì chỉ cắt ghép đơn thuần.", "system": "Cutting, subtitle, motion, color, pacing, format dọc/ngang và tối ưu cho social/video ads.", "result": "Biến nội dung gốc thành video rõ ràng, cuốn hút và có khả năng chuyển đổi tốt hơn."}, "ads": {"title": "Chạy Ads", "type": "PERFORMANCE MARKETING", "problem": "Nhiều doanh nghiệp đốt ngân sách quảng cáo nhưng không kiểm soát được lead quality và hiệu quả thật.", "approach": "Thiết kế funnel phù hợp, thông điệp đúng insight và đo lường theo mục tiêu kinh doanh.", "system": "Meta/Google ads framework, angle test, creative test, tracking, lead flow và tối ưu từng giai đoạn.", "result": "Tăng khả năng tạo lead, giảm lãng phí ngân sách và đưa quảng cáo gần hơn với doanh thu thực."}, "customer": {"title": "Phân tích khách hàng", "type": "CUSTOMER ANALYSIS", "problem": "Nếu không hiểu khách hàng, doanh nghiệp dễ nói sai thông điệp và chọn sai cách tiếp cận.", "approach": "Phân tích chân dung khách hàng từ dữ liệu, hành vi, phản hồi và bối cảnh mua hàng.", "system": "Customer persona, segmentation, insight mining, behavior pattern và mapping hành trình khách hàng.", "result": "Giúp thương hiệu biết ai là khách hàng tốt nhất và nên giao tiếp thế nào để tạo chuyển đổi."}, "automation": {"title": "AI & Automation", "type": "SYSTEM AUTOMATION", "problem": "Nhiều quy trình marketing và vận hành đang làm thủ công, mất thời gian và khó mở rộng.", "approach": "Ứng dụng AI và automation để giảm tác vụ lặp lại, tăng tốc xử lý và tạo hệ thống làm việc thông minh hơn.", "system": "Workflow automation, AI support, content assist, lead handling, reporting và vận hành liên phòng ban.", "result": "Tiết kiệm thời gian, tăng tính nhất quán và nâng hiệu suất toàn hệ thống."}, "business": {"title": "Phân tích doanh nghiệp", "type": "BUSINESS ANALYSIS", "problem": "Doanh nghiệp thường chỉ thấy phần bề nổi: doanh số, lead hoặc content, nhưng chưa thấy cấu trúc gốc của vấn đề.", "approach": "Phân tích mô hình kinh doanh, offer, funnel, quy trình thương mại và điểm nghẽn tăng trưởng.", "system": "Commercial diagnostic, funnel review, offer analysis, sale flow, CRM flow và growth roadmap.", "result": "Giúp doanh nghiệp thấy rõ vấn đề cốt lõi, ưu tiên đúng việc và xây lộ trình tăng trưởng thực tế hơn."}};window.DNG_CHAT_REPLY="Dũng kết nối AI, tâm lý học, nội dung và hệ thống thương mại để giải quyết vấn đề theo một cấu trúc thống nhất.";</script>
+<script src="assets/js/globe-v5-core.js"></script><script src="assets/js/dng-intelligence-v5.js"></script>
 </body></html>
