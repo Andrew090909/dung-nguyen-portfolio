@@ -1,0 +1,12 @@
+{
+  "workflow_exists": true,
+  "workflow_cron_17utc": true,
+  "news_fetch_path": true,
+  "preview_chat_removed": true,
+  "news_ai_buttons_removed": true,
+  "support_core_present": true,
+  "worker_mode_site": true,
+  "ai_daily_browser_limit": true,
+  "global_pages_with_widget": 32,
+  "eligible_global_pages": 32
+}
