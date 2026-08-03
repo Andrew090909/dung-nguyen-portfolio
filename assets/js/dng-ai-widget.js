@@ -2,7 +2,8 @@
   'use strict';
   if (document.getElementById('dng-ai-global-trigger') || document.getElementById('aiTrigger')) return;
 
-  const endpoint = (document.documentElement.dataset.dngAiEndpoint || '').trim();
+  const base = String(window.DNG_AI_WORKER_BASE || document.documentElement.dataset.dngAiEndpoint || '').trim().replace(/\/$/,'');
+  const endpoint = base ? base + '/chat' : '';
 
   const trigger = document.createElement('button');
   trigger.id = 'dng-ai-global-trigger';
@@ -69,14 +70,26 @@
   async function ask(q){
     bubble(q,true);
     if(!endpoint){
-      bubble('AI chưa được kết nối máy chủ.');
+      bubble('AI chưa được kết nối.');
       return;
     }
     try{
-      const r=await fetch(endpoint,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:q,url:location.href,title:document.title})});
+      const r=await fetch(endpoint,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:q,mode:'auto',url:location.href,title:document.title})});
       if(!r.ok) throw new Error('HTTP '+r.status);
       const j=await r.json();
-      bubble(j.answer || j.message || 'Không có phản hồi.');
+      bubble(j.answer || 'Không có phản hồi.');
+      if(Array.isArray(j.sources) && j.sources.length){
+        const wrap=document.createElement('div');
+        wrap.className='dng-ai-sources';
+        j.sources.slice(0,5).forEach(src=>{
+          const a=document.createElement('a');
+          a.href=src.url; a.target='_blank'; a.rel='noopener';
+          a.textContent=(src.id?src.id+' · ':'')+(src.title||'Nguồn');
+          wrap.appendChild(a);
+        });
+        body.appendChild(wrap);
+        body.scrollTop=body.scrollHeight;
+      }
     }catch(e){
       bubble('Không thể kết nối DNG AI lúc này.');
     }

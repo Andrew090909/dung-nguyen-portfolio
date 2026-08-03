@@ -9,3 +9,6 @@
 .dng-ai-global-form input{min-width:0;height:44px;border:1px solid #bfcfc8;border-radius:12px;padding:0 12px;font:14px system-ui}.dng-ai-global-form button{border:0;border-radius:12px;padding:0 16px;background:var(--dng-ai-green);color:#fff;font-weight:700;cursor:pointer}
 .dng-ai-bubble{max-width:88%;padding:10px 12px;margin:0 0 9px;border-radius:13px;background:#eff8f3;font-size:13px;line-height:1.5}.dng-ai-bubble.user{margin-left:auto;background:#102235;color:#fff}
 @media(max-width:820px){#dng-ai-global-trigger{right:12px;bottom:92px;height:42px;padding:0 13px}#dng-ai-global-panel{right:12px;bottom:12px;width:calc(100vw - 24px);height:min(470px,60dvh)}}
+.dng-ai-sources{display:grid;gap:6px;margin:4px 0 12px;font:12px/1.35 system-ui,-apple-system,Segoe UI,sans-serif}
+.dng-ai-sources a{display:block;color:#087443;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dng-ai-sources a:hover{text-decoration:underline}
