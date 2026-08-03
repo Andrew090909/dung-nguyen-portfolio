@@ -630,3 +630,33 @@ body.online .contact-float{opacity:1;transform:none}.contact-float a{display:fle
   .project-stage .planet.p7{left:33%;top:42%;transform:scale(.72)}
   .project-stage .planet.p7:hover{transform:translateY(-3px) scale(.75)}
 }
+
+
+/* ===== V8.1 UX/UI FIXES ===== */
+.agent-copy,.project-copy,.twin-copy,.identity-copy{position:relative;z-index:6}
+.command,.twin-panel,.universe-map,.mobile-node-rail{position:relative;z-index:5}
+.command{
+  background:linear-gradient(180deg,rgba(4,38,28,.94),rgba(2,17,13,.97));
+  box-shadow:0 24px 84px rgba(0,0,0,.36), inset 0 1px 0 rgba(182,255,236,.06);
+}
+.command::before,.twin-panel::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));
+}
+.mobile-node-rail .mobile-chip{
+  background:rgba(3,28,20,.94);
+  backdrop-filter:blur(18px);
+  border-color:rgba(130,248,238,.14);
+}
+@media(max-width:680px){
+  .identity-copy{top:104px;padding-right:14px}
+  .identity-copy h2,.agent-copy h2,.project-copy h2,.twin-copy h2{font-size:32px;line-height:1.03}
+  .identity-copy p,.agent-copy p,.project-copy p,.twin-copy p{font-size:13px;line-height:1.56}
+  .agent-stage,.twin-stage{inset:78px 14px calc(var(--contact-h) + 28px)}
+  .project-stage{inset:76px 8px calc(var(--contact-h) + 26px)}
+  .project-copy{top:10px}
+  .neural{inset:72px 0 calc(var(--contact-h) + 26px)}
+  .mobile-node-rail{bottom:5.5%}
+  .command{padding:14px;border-radius:20px}
+  .command-head{padding-bottom:12px}
+}

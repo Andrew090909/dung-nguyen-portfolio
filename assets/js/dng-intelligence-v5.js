@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   let timer=setTimeout(()=>{body.classList.remove('booting');body.classList.add('online')},4750);
   skip?.addEventListener('click',()=>{clearTimeout(timer);body.classList.remove('booting');body.classList.add('online')});
 
+  const ui=window.DNG_UI||{};
+  const phaseNames=Object.assign({origin:'ORIGIN',identity:'IDENTITY CORE',neural:'NEURAL EXPANSION',agent:'AI AGENT NETWORK',project:'CAPABILITY UNIVERSE',twin:'DIGITAL TWIN'}, ui.phaseNames||{});
   const menuToggle=document.getElementById('menuToggle'),mobileMenu=document.getElementById('mobileMenu');
   menuToggle?.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
   document.addEventListener('click',e=>{
@@ -101,10 +103,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const r=story.getBoundingClientRect(),p=clamp(-r.top/(story.offsetHeight-innerHeight));
     if(bar)bar.style.height=p*100+'%';
     let gx=0,gy=0,gs=1,go=1,rot=0;
-    if(p<.16){gx=map(p,0,.16,0,16);gs=map(p,0,.16,1,.92)}
-    else if(p<.42){gx=map(p,.16,.42,16,0);gs=map(p,.16,.42,.92,.72);rot=map(p,.16,.42,0,-5)}
-    else if(p<.60){gx=map(p,.42,.60,0,-24);gs=map(p,.42,.60,.72,.52);gy=2}
-    else if(p<.74){gx=map(p,.60,.74,-24,0);gs=map(p,.60,.74,.52,3.4);go=1-map(p,.68,.74,0,1)}
+    const mobileUI=window.matchMedia('(max-width:680px)').matches;
+    if(p<.16){gx=map(p,0,.16,0,16);gs=map(p,0,.16,1,mobileUI ? .90 : .92)}
+    else if(p<.42){gx=map(p,.16,.42,16,0);gs=map(p,.16,.42,mobileUI ? .90 : .92,mobileUI ? .66 : .72);rot=map(p,.16,.42,0,-5);gy=mobileUI ? 3 : 0;go=mobileUI ? .90 : 1}
+    else if(p<.60){gx=map(p,.42,.60,0,-20);gs=map(p,.42,.60,mobileUI ? .66 : .72,mobileUI ? .47 : .52);gy=mobileUI ? 6 : 2;go=mobileUI ? .82 : 1}
+    else if(p<.74){gx=map(p,.60,.74,-20,0);gs=map(p,.60,.74,mobileUI ? .47 : .52,3.15);go=1-map(p,mobileUI ? .675 : .68,mobileUI ? .735 : .74,0,1)}
     else{gs=.2;go=0}
     /* Main path moves the whole intelligence system. The sphere itself rolls separately. */
     if(!body.classList.contains('booting')&&globeSystem){
@@ -142,13 +145,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     const io=fade(p,.015,.07,.14,.19);
     if(identity){identity.style.opacity=io;identity.style.transform=`translate(${(-44+44*map(p,.015,.07,0,1))}px,-50%)`}
     keywords.forEach((k,i)=>{const q=map(p,.035+i*.006,.09+i*.006,0,1)*(1-map(p,.145,.19,0,1));k.style.opacity=q;k.style.transform=`translateY(${(1-q)*14}px) scale(${.96+.04*q})`});
-    if(neural)neural.style.opacity=fade(p,.16,.205,.38,.43);
+    if(neural)neural.style.opacity=mobileUI ? fade(p,.165,.215,.36,.405) : fade(p,.16,.205,.38,.43);
     nodes.forEach(n=>{const s=parseFloat(n.dataset.start),q=map(p,s,s+.055,0,1)*(1-map(p,.385,.43,0,1)),center=n.classList.contains('n5')||n.classList.contains('n6');n.style.opacity=q;n.style.transform=center?`translate(-50%,${(1-q)*20}px) scale(${.96+.04*q})`:`translateY(${(1-q)*20}px) scale(${.96+.04*q})`});
-    const ao=fade(p,.405,.46,.57,.615);if(agent){agent.style.opacity=ao;agent.style.transform=`translateY(${(1-map(p,.405,.46,0,1))*22}px)`;agent.style.pointerEvents=ao>.55?'auto':'none'}
-    const po=fade(p,.60,.665,.80,.845);if(projects){projects.style.opacity=po;projects.style.transform=`scale(${.97+.03*map(p,.60,.665,0,1)})`;projects.style.pointerEvents=po>.55?'auto':'none'}
+    const ao=mobileUI ? fade(p,.435,.49,.56,.60) : fade(p,.405,.46,.57,.615);if(agent){agent.style.opacity=ao;agent.style.transform=`translateY(${(1-map(p,mobileUI ? .435 : .405,mobileUI ? .49 : .46,0,1))*22}px)`;agent.style.pointerEvents=ao>.55?'auto':'none'}
+    const po=mobileUI ? fade(p,.635,.69,.80,.845) : fade(p,.60,.665,.80,.845);if(projects){projects.style.opacity=po;projects.style.transform=`scale(${.97+.03*map(p,mobileUI ? .635 : .60,mobileUI ? .69 : .665,0,1)})`;projects.style.pointerEvents=po>.55?'auto':'none'}
     const to=map(p,.83,.91,0,1);if(twin){twin.style.opacity=to;twin.style.transform=`translateY(${(1-to)*20}px)`;twin.style.pointerEvents=to>.55?'auto':'none'}
     if(hint)hint.style.opacity=1-map(p,.02,.10,0,1);
-    if(phase)phase.innerHTML=p<.02?'<b>00</b> / ORIGIN':p<.16?'<b>01</b> / IDENTITY CORE':p<.42?'<b>02</b> / NEURAL EXPANSION':p<.61?'<b>03</b> / AI AGENT NETWORK':p<.84?'<b>04</b> / PROJECT UNIVERSE':'<b>05</b> / DIGITAL TWIN';
+    if(phase)phase.innerHTML=p<.02?`<b>00</b> / ${phaseNames.origin}`:p<.16?`<b>01</b> / ${phaseNames.identity}`:p<.42?`<b>02</b> / ${phaseNames.neural}`:p<.61?`<b>03</b> / ${phaseNames.agent}`:p<.84?`<b>04</b> / ${phaseNames.project}`:`<b>05</b> / ${phaseNames.twin}`;
     requestAnimationFrame(render);
   }
   requestAnimationFrame(render);
