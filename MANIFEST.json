@@ -1,0 +1,57 @@
+[
+  {
+    "path": ".github/workflows/update-news.yml",
+    "bytes": 1410,
+    "sha256": "95da643c4a385db7dff14de79f8b3f563acf218adbd183392942d4904aabe89a"
+  },
+  {
+    "path": "QA-V5.json",
+    "bytes": 731,
+    "sha256": "f1ae7cf7ed81f81dcabea206cb679d47855057fe8ebf3be4c4daab68258d5b80"
+  },
+  {
+    "path": "README-V5.md",
+    "bytes": 1279,
+    "sha256": "26eb5a637c4a04a4dea8cdebd533e909eb2a1d06b2b08fd62ba640169e8bf5dd"
+  },
+  {
+    "path": "assets/css/dng-ai-widget.css",
+    "bytes": 2182,
+    "sha256": "90675f61c180b53603e5d50a69a02141b262d73ba5327c732f2e092d0b093f8a"
+  },
+  {
+    "path": "assets/js/dng-ai-widget.js",
+    "bytes": 3865,
+    "sha256": "402bd10e5cbe000bbbaa34afa8c95d127535bdd615fc1c6f6e0ef05a6d26d9a1"
+  },
+  {
+    "path": "data/news.json",
+    "bytes": 12143,
+    "sha256": "9bd9677a54b61051a8401bbe0017d558dd6efac2d931fc7ae5b8166b8df0a367"
+  },
+  {
+    "path": "insights.html",
+    "bytes": 703806,
+    "sha256": "96c4bf219d0dd070bad91805c73bf309d8a73b08aa7d1af166da516bbf90565c"
+  },
+  {
+    "path": "scripts/__pycache__/inject_global_chat.cpython-313.pyc",
+    "bytes": 2244,
+    "sha256": "eab1fecc26b465dca33e114ee49ba34b218d236978c0c290c4ab16e9bdd353aa"
+  },
+  {
+    "path": "scripts/__pycache__/update_news.cpython-313.pyc",
+    "bytes": 11994,
+    "sha256": "ef8c394845c34a66655f77dc8ccd66176bffe50a9daf84dbb465a212a3de5c0e"
+  },
+  {
+    "path": "scripts/inject_global_chat.py",
+    "bytes": 1174,
+    "sha256": "ee9d69c404288c8f124c1ffa096034b36476c46e2590c6de6b7587b56b4b4572"
+  },
+  {
+    "path": "scripts/update_news.py",
+    "bytes": 6670,
+    "sha256": "f5c0cee940abe2d9ef167d2b62e8a6ab812da4ea087f63c55f90b598b826cb94"
+  }
+]

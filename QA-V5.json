@@ -1,0 +1,30 @@
+{
+  "version": "V5",
+  "scope": [
+    "Daily news JSON automation",
+    "Global DNG AI trigger injection",
+    "Insights loads data/news.json with embedded fallback",
+    "No AI commentary shown by default",
+    "Video section hides when no real video link exists"
+  ],
+  "schedule": {
+    "cron_utc": "0 17 * * *",
+    "target_vietnam_time": "00:00 GMT+7",
+    "note": "GitHub Actions can start a few minutes late."
+  },
+  "global_chat_targets": [
+    "/*.html",
+    "/en/*.html",
+    "/zh/*.html",
+    "/posts/*.html"
+  ],
+  "excluded": [
+    "_site",
+    "admin",
+    "node_modules",
+    "vendor",
+    ".git"
+  ],
+  "live_repo_modified_by_this_chat": false,
+  "reason": "GitHub connector became unavailable before deployment."
+}
