@@ -12,3 +12,8 @@
 .dng-ai-sources{display:grid;gap:6px;margin:4px 0 12px;font:12px/1.35 system-ui,-apple-system,Segoe UI,sans-serif}
 .dng-ai-sources a{display:block;color:#087443;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dng-ai-sources a:hover{text-decoration:underline}
+
+.dng-ai-quick{padding:0 14px 10px;display:flex;flex-wrap:wrap;gap:7px;background:#fff}
+.dng-ai-quick button{border:1px solid var(--dng-ai-line);background:#f8fbf9;color:#16352a;border-radius:999px;padding:7px 10px;font:700 12px/1 system-ui;cursor:pointer}
+.dng-ai-result-link{display:inline-block;margin:0 14px 10px;padding:8px 10px;border-radius:10px;background:#eef8f3;color:#087443;font:700 12px/1.2 system-ui;text-decoration:none}
+#dng-ai-global-panel.open{grid-template-rows:58px 1fr auto auto}

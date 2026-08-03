@@ -1,0 +1,115 @@
+(() => {
+  'use strict';
+
+  const MAX_AI_CALLS_PER_DAY = 3;
+  const WORKER_BASE = String(window.DNG_AI_WORKER_BASE || 'https://dng-ai.nguyendhungdung.workers.dev').replace(/\/$/,'');
+  const ENDPOINT = WORKER_BASE + '/chat';
+
+  function lang(){
+    const l=(document.documentElement.lang||'vi').toLowerCase();
+    if(l.startsWith('en')) return 'en';
+    if(l.startsWith('zh')) return 'zh';
+    return 'vi';
+  }
+  function links(l){
+    if(l==='en') return {pricing:'/en/pricing.html',portfolio:'/en/portfolio.html',contact:'/en/contact.html'};
+    if(l==='zh') return {pricing:'/zh/pricing.html',portfolio:'/zh/portfolio.html',contact:'/zh/contact.html'};
+    return {pricing:'/pricing.html',portfolio:'/portfolio.html',contact:'/contact.html'};
+  }
+  function normalize(s){
+    return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9\u4e00-\u9fff\s]/g,' ').replace(/\s+/g,' ').trim();
+  }
+  function has(q, terms){ return terms.some(t => q.includes(t)); }
+
+  function localAnswer(question, forcedLang){
+    const l=forcedLang||lang(), q=normalize(question), u=links(l);
+
+    if(has(q,['bao gia','gia','chi phi','pricing','price','cost','报价','价格','费用'])){
+      if(l==='en') return {answer:'You can review the current service scope and pricing on the Pricing page.',url:u.pricing,label:'View pricing'};
+      if(l==='zh') return {answer:'您可以在报价页面查看当前服务范围与费用。',url:u.pricing,label:'查看报价'};
+      return {answer:'Bạn có thể xem phạm vi dịch vụ và bảng giá hiện tại tại trang Báo giá.',url:u.pricing,label:'Xem bảng giá'};
+    }
+    if(has(q,['dich vu','lam gi','marketing','crm','branding','video','quay dung','service','services','what do you do','营销','服务','品牌','视频'])){
+      if(l==='en') return {answer:'Main areas include AI & Data Strategy, Brand & Positioning, Growth Marketing, Marketing Operations, plus video/content production. I can point you to pricing or contact.',url:u.pricing,label:'View services'};
+      if(l==='zh') return {answer:'主要服务包括 AI 与数据策略、品牌定位、增长营销、营销运营，以及视频与内容制作。',url:u.pricing,label:'查看服务'};
+      return {answer:'Các nhóm chính gồm AI & Data Strategy, Brand & Positioning, Growth Marketing, Marketing Operations, cùng quay dựng/video-content. Tôi có thể dẫn bạn tới bảng giá hoặc trang liên hệ.',url:u.pricing,label:'Xem dịch vụ'};
+    }
+    if(has(q,['portfolio','du an','case study','san pham da lam','project','projects','作品集','案例','项目'])){
+      if(l==='en') return {answer:'You can review selected projects and case studies on the Portfolio page.',url:u.portfolio,label:'Open portfolio'};
+      if(l==='zh') return {answer:'您可以在作品集页面查看代表项目与案例。',url:u.portfolio,label:'查看作品集'};
+      return {answer:'Bạn có thể xem các dự án và case tiêu biểu tại trang Portfolio.',url:u.portfolio,label:'Xem Portfolio'};
+    }
+    if(has(q,['lien he','zalo','dien thoai','phone','contact','email','dat lich','book','call','联系','电话','预约','邮箱'])){
+      if(l==='en') return {answer:'Quick contact: Zalo/phone 0377 348 008, email nguyendhungdung@gmail.com, or use the Contact page.',url:u.contact,label:'Contact'};
+      if(l==='zh') return {answer:'快速联系：Zalo/电话 0377 348 008，邮箱 nguyendhungdung@gmail.com，也可以使用联系页面。',url:u.contact,label:'联系'};
+      return {answer:'Liên hệ nhanh: Zalo/điện thoại 0377 348 008, email nguyendhungdung@gmail.com, hoặc gửi yêu cầu tại trang Liên hệ.',url:u.contact,label:'Liên hệ'};
+    }
+    if(has(q,['xin chao','hello','hi ','chao','你好','您好'])){
+      if(l==='en') return {answer:'Hello. I can help with services, pricing, portfolio, or contact details.'};
+      if(l==='zh') return {answer:'您好。我可以协助您查看服务、报价、作品集或联系方式。'};
+      return {answer:'Chào bạn. Tôi có thể hỗ trợ nhanh về dịch vụ, báo giá, portfolio hoặc thông tin liên hệ.'};
+    }
+    return null;
+  }
+
+  function dayKey(){
+    const d=new Date();
+    return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+  }
+  function quota(){
+    try{
+      const key='dng-support-ai-'+dayKey();
+      const used=Number(localStorage.getItem(key)||0);
+      return {key,used,left:Math.max(0,MAX_AI_CALLS_PER_DAY-used)};
+    }catch(_){ return {key:'',used:0,left:MAX_AI_CALLS_PER_DAY}; }
+  }
+  function consume(key,used){
+    if(!key) return;
+    try{ localStorage.setItem(key,String(used+1)); }catch(_){}
+  }
+  function fallbackText(l){
+    const u=links(l);
+    if(l==='en') return {answer:'For a more specific question, please contact directly so it can be handled accurately.',url:u.contact,label:'Contact'};
+    if(l==='zh') return {answer:'如需更具体的咨询，请直接联系，以便准确处理。',url:u.contact,label:'联系'};
+    return {answer:'Câu này cần tư vấn cụ thể hơn. Bạn có thể nhắn Zalo hoặc gửi yêu cầu liên hệ để được trả lời chính xác.',url:u.contact,label:'Liên hệ'};
+  }
+
+  async function ask(question, options={}){
+    const l=options.lang||lang();
+    const local=localAnswer(question,l);
+    if(local) return {...local,local:true,sources:[]};
+
+    // Only unknown questions consume Workers AI. No web search is used.
+    const q=quota();
+    if(q.left<=0) return {...fallbackText(l),local:true,quota_exhausted:true,sources:[]};
+
+    try{
+      const r=await fetch(ENDPOINT,{
+        method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify({message:String(question||'').slice(0,1200),mode:'site',url:location.href,title:document.title})
+      });
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      consume(q.key,q.used);
+      const j=await r.json();
+      return {answer:j.answer||fallbackText(l).answer,sources:Array.isArray(j.sources)?j.sources:[],local:false,ai_left:Math.max(0,q.left-1)};
+    }catch(_){
+      return {...fallbackText(l),local:true,error:true,sources:[]};
+    }
+  }
+
+  function quickItems(forcedLang){
+    const l=forcedLang||lang();
+    if(l==='en') return [
+      ['Services','What services do you provide?'],['Pricing','Where can I see pricing?'],['Portfolio','Show me the portfolio'],['Contact','How can I contact you?']
+    ];
+    if(l==='zh') return [
+      ['服务','你们提供什么服务？'],['报价','在哪里查看报价？'],['作品集','查看作品集'],['联系','如何联系？']
+    ];
+    return [
+      ['Dịch vụ','Bạn có những dịch vụ gì?'],['Báo giá','Tôi muốn xem báo giá'],['Portfolio','Cho tôi xem portfolio'],['Liên hệ','Liên hệ như thế nào?']
+    ];
+  }
+
+  window.DNGSupport={ask,localAnswer,quickItems,lang,MAX_AI_CALLS_PER_DAY};
+})();
