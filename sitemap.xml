@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dngworks.github.io/</loc></url>
-<url><loc>https://dngworks.github.io/portfolio.html</loc></url>
-<url><loc>https://dngworks.github.io/pricing.html</loc></url>
-<url><loc>https://dngworks.github.io/pricing-marketing.html</loc></url>
-<url><loc>https://dngworks.github.io/pricing-video.html</loc></url>
-<url><loc>https://dngworks.github.io/insights.html</loc></url>
-<url><loc>https://dngworks.github.io/contact.html</loc></url>
-<url><loc>https://dngworks.github.io/en/</loc></url>
-<url><loc>https://dngworks.github.io/en/portfolio.html</loc></url>
-<url><loc>https://dngworks.github.io/en/pricing.html</loc></url>
-<url><loc>https://dngworks.github.io/en/pricing-marketing.html</loc></url>
-<url><loc>https://dngworks.github.io/en/pricing-video.html</loc></url>
-<url><loc>https://dngworks.github.io/en/insights.html</loc></url>
-<url><loc>https://dngworks.github.io/en/contact.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/</loc></url>
-<url><loc>https://dngworks.github.io/zh/portfolio.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/pricing.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/pricing-marketing.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/pricing-video.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/insights.html</loc></url>
-<url><loc>https://dngworks.github.io/zh/contact.html</loc></url>
+  <url><loc>https://dngworks.github.io/index.html</loc></url>
+  <url><loc>https://dngworks.github.io/portfolio.html</loc></url>
+  <url><loc>https://dngworks.github.io/pricing.html</loc></url>
+  <url><loc>https://dngworks.github.io/pricing-marketing.html</loc></url>
+  <url><loc>https://dngworks.github.io/pricing-video.html</loc></url>
+  <url><loc>https://dngworks.github.io/insights.html</loc></url>
+  <url><loc>https://dngworks.github.io/contact.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/index.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/portfolio.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/pricing.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/pricing-marketing.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/pricing-video.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/insights.html</loc></url>
+  <url><loc>https://dngworks.github.io/en/contact.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/index.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/portfolio.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/pricing.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/pricing-marketing.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/pricing-video.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/insights.html</loc></url>
+  <url><loc>https://dngworks.github.io/zh/contact.html</loc></url>
 </urlset>
