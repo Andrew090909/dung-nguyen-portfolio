@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Sitemap: https://nguyen-studio.github.io/sitemap.xml
+Sitemap: https://dngworks.github.io/sitemap.xml
