@@ -1,0 +1,51 @@
+name: Apply DNGWORKS Site Hotfix
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/apply_site_hotfix.py'
+      - 'assets/images/social/**'
+      - 'favicon.svg'
+      - 'apple-touch-icon.png'
+      - 'site.webmanifest'
+      - '.github/workflows/apply-site-hotfix.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dngworks-site-hotfix
+  cancel-in-progress: false
+
+jobs:
+  apply-hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate hotfix script
+        run: python -m py_compile scripts/apply_site_hotfix.py
+
+      - name: Apply SEO, clean URLs, branding and social metadata
+        run: python scripts/apply_site_hotfix.py
+
+      - name: Commit generated site changes
+        run: |
+          git config user.name "dngworks-site-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No site hotfix changes to commit."
+          else
+            git commit -m "chore: apply DNGWORKS site hotfix"
+            git push
+          fi
