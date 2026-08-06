@@ -1,46 +1,6 @@
 {
-  "updated_at": "2026-08-06T12:13:04+07:00",
+  "updated_at": "2026-08-06T12:58:48+07:00",
   "latest_vn": [
-    {
-      "source": "VnExpress",
-      "time": "06/08 · 12:00",
-      "title": "Tảng băng trôi khổng lồ lật úp trước khu dân cư ở Greenland",
-      "summary": "Tảng băng khổng lồ lững lờ trôi sát khu dân cư ở Greenland rồi bất ngờ lật úp, vỡ vụn thành nhiều mảnh trong chưa đầy 2 phút.",
-      "url": "https://vnexpress.net/tang-bang-troi-khong-lo-lat-up-truoc-khu-dan-cu-o-greenland-5105947.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/Sequence03-1785991357-5057-1785991389.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=G1u_xF4h3e5yAlDc2nCnaA&t=image",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "VnExpress",
-      "time": "06/08 · 12:00",
-      "title": "Chung cư có niên hạn: Nhiều người đang hiểu lầm điều quan trọng nhất",
-      "summary": "Mọi tranh cãi đang lấn át câu hỏi quan trọng: Quyền sử dụng đất của chủ căn hộ sẽ được định giá và bảo vệ ra sao?",
-      "url": "https://vnexpress.net/nien-han-chung-cu-can-ho-chung-cu-co-gia-tri-ra-sao-khi-co-thoi-han-su-dung-5105824.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/chungcu-1785984014-3250-1785984028.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=edZI4HL8k5uMmIb5eefW7A",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "VnExpress",
-      "time": "06/08 · 12:00",
-      "title": "Nguyễn Kim tung chính sách mới sau khi về tay chủ người Việt",
-      "summary": "Sau khi trở lại sở hữu của doanh nghiệp Việt, Nguyễn Kim tái định vị thành Nguyễn Kim Prime và triển khai hàng loạt chính sách hướng đến khách hàng.",
-      "url": "https://vnexpress.net/nguyen-kim-tung-chinh-sach-moi-sau-khi-ve-tay-chu-nguoi-viet-5105882.html",
-      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/08/06/image001-1785986546-3015-1785986570.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=QuCO-F9PALz5sL28uu6K9Q",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "VnExpress",
-      "time": "06/08 · 12:00",
-      "title": "Ăn đêm thế nào để không tăng cân?",
-      "summary": "Tôi thường xuyên thức đến 1-2h để làm việc, cần phải ăn đêm để có sức. Tôi nên ăn gì và ăn thế nào để không tăng cân? (Anh Vỹ, TP HCM)",
-      "url": "https://vnexpress.net/an-dem-the-nao-de-khong-tang-can-5105729.html",
-      "image": "https://vcdn1-suckhoe.vnecdn.net/2026/08/06/z6353975987066f5bc785c4e3a6-17-1313-1859-1785976975.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Fowx43qusJF0YvP_bZX0CA",
-      "media": "",
-      "media_url": ""
-    },
     {
       "source": "VnExpress",
       "time": "06/08 · 11:52",
@@ -50,56 +10,96 @@
       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/cuu-thu-tuong-bangladesh-17859-8633-4107-1785990228.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=CC3jcThpMyfSLBnKCAnSRw",
       "media": "",
       "media_url": ""
+    },
+    {
+      "source": "VnExpress",
+      "time": "06/08 · 11:51",
+      "title": "Tên lửa SpaceX đâm vào Mặt Trăng tốc độ 8.690 km/h",
+      "summary": "Tầng trên của tên lửa Falcon 9 lao xuống Mặt Trăng tạo ra miệng hố rộng ít nhất 18 m sau một năm trôi nổi trong không gian.",
+      "url": "https://vnexpress.net/ten-lua-spacex-dam-vao-mat-trang-toc-do-8-690-km-h-5105926.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/VNEMoon-1785990215-7676-1785990326.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=If74PHFfF4g9mzzn9h7o6A",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "VnExpress",
+      "time": "06/08 · 11:48",
+      "title": "Mỹ Anh làm tour diễn ở Mỹ",
+      "summary": "Mỹ Anh, 24 tuổi, sẽ có tour diễn cá nhân tại Houston, Santa Ana và New York trong tháng 9, dự kiến hút hàng nghìn khán giả.",
+      "url": "https://vnexpress.net/my-anh-lam-tour-dien-o-my-5105825.html",
+      "image": "https://vcdn1-giaitri.vnecdn.net/2026/08/06/MyAnh1-1785985511-2400-1785986429.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=RA9qKmqcIM0013fACvi2_g",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "VnExpress",
+      "time": "06/08 · 11:46",
+      "title": "Nhiều ôtô thủng lốp vì sắt nhọn rơi trên cao tốc",
+      "summary": "Hơn 10 ôtô bị thủng lốp khi chạy qua các tuyến cao tốc từ Quảng Ngãi đến Khánh Hòa, nghi do sắt vụn rơi từ xe tải chở phế liệu.",
+      "url": "https://vnexpress.net/nhieu-oto-thung-lop-vi-sat-nhon-roi-tren-cao-toc-5105932.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/z8121813422745e183c4140c237779-6654-3173-1785990954.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=sNGSAKkQbdylc6PAWzjHRg",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "VnExpress",
+      "time": "06/08 · 11:45",
+      "title": "Chuyên gia: Xe Trung Quốc sắp vượt xe Hàn tại Việt Nam",
+      "summary": "Theo chuyên gia, với lượng thương hiệu áp đảo, thay đổi từ chất lượng sản phẩm đến chiến lược kinh doanh, doanh số xe Trung Quốc sẽ vượt xe Hàn.",
+      "url": "https://vnexpress.net/chuyen-gia-xe-trung-quoc-sap-vuot-xe-han-tai-viet-nam-5105571.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/08/06/556-1785991066-4647-1785991439.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=bW_id_3QV-2vBCY4C12uqw",
+      "media": "",
+      "media_url": ""
     }
   ],
   "popular_vn": [
     {
       "source": "VnExpress · Xem nhiều",
-      "time": "03/11 · 05:22",
-      "title": "Ronaldo lại cứu Man Utd",
-      "summary": "Cú đúp của Cristiano Ronaldo giúp Man Utd hòa 2-2 trên sân Atalanta ở bảng F Champions League, tối 2/11.",
-      "url": "https://vnexpress.net/ronaldo-lai-cuu-man-utd-4380623.html",
-      "image": "https://vcdn1-thethao.vnecdn.net/2021/11/03/Untitled-2292-1635895165.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=3phXlZMN5jzX5b8aAq6UJQ",
+      "time": "",
+      "title": "Chợ Biên Hòa cháy ngùn ngụt trong đêm",
+      "summary": "Đám cháy bùng lên tại ki-ốt mây tre trong chợ, rồi lan sang các gian hàng liền kề kèm theo nhiều tiếng nổ lớn khiến mọi người xung quanh hoảng loạn, tối 5/8.",
+      "url": "https://vnexpress.net/cho-bien-hoa-chay-ngun-ngut-trong-dem-5105698.html",
+      "image": "https://i2-vnexpress.vnecdn.net/2026/08/05/20260805212928-1785940194-8081-1785940294.png?w=1200&h=675&q=100&dpr=1&fit=crop&s=cLcCz4eLvPsF7U0EWPVogA",
       "media": "",
       "media_url": ""
     },
     {
       "source": "VnExpress · Xem nhiều",
-      "time": "02/11 · 00:01",
-      "title": "Người mắt kém chỉ thấy ba con mèo, còn bạn?",
-      "summary": "Có nhiều hơn ba con mèo ở trong bức ảnh, bạn có tìm ra vị trí con còn lại không?",
-      "url": "https://vnexpress.net/nguoi-mat-kem-chi-thay-ba-con-meo-con-ban-4379781.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2021/11/01/1-6973-1635739473-1635739831-8628-1635740009.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=a5CUk6Dv60vaxTrGdxAFwg",
+      "time": "",
+      "title": "Con dâu tỷ phú Hồ Hùng Anh làm Chủ tịch Hàng không Hải Âu",
+      "summary": "Bà Bùi Ngọc Bích Phương, Chủ tịch HĐQT Công ty Hàng không Hải Âu là con dâu của tỷ phú Hồ Hùng Anh, Chủ tịch ngân hàng Techcombank.",
+      "url": "https://vnexpress.net/con-dau-ty-phu-ho-hung-anh-lam-chu-tich-hang-khong-hai-au-5105499.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/08/05/hauai-1785909523-5117-1785909598.jpg?w=1200&h=675&q=100&dpr=1&fit=crop&s=yWo88vJNnhuOpkZuMkkLEg",
       "media": "",
       "media_url": ""
     },
     {
       "source": "VnExpress · Xem nhiều",
-      "time": "03/11 · 06:22",
-      "title": "F0 nhập viện ở TP HCM tăng",
-      "summary": "Lượng F0 nặng phải vào Trung tâm điều trị Covid-19, Bệnh viện Quân Y 175, tăng gần gấp đôi trong 5 ngày qua, song ở các bệnh viện Covid-19 tầng 1, 2 số nhập viện không tăng.",
-      "url": "https://vnexpress.net/f0-nhap-vien-o-tp-hcm-tang-4380535.html",
-      "image": "https://vcdn1-suckhoe.vnecdn.net/2021/11/02/f0-nhap-vien-tang-theo-tang-16-9295-1111-1635852903.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Wkc-8fpsMnA2MzNOuQp7HA",
+      "time": "",
+      "title": "Mái vòm chợ Biên Hòa đổ sập sau 2 giờ cháy",
+      "summary": "Đồng Nai- Cháy lớn khiến chợ Biên Hoà với khoảng 300 ki-ốt rơi vào cảnh tan hoang, hàng hoá thành than, mái, cửa cuốn cong vênh, đổ sập, tiểu thương thất thần vì trắng tay.",
+      "url": "https://vnexpress.net/mai-vom-cho-bien-hoa-do-sap-sau-2-gio-chay-5105706.html",
+      "image": "https://i2-vnexpress.vnecdn.net/2026/08/06/95fa5f24-d9e1f59ea-e1378956e452-jpeg-1785985191.jpg?w=1200&h=675&q=100&dpr=1&fit=crop&s=J3_6AQ-dPnAl1RXgk93Xmg",
       "media": "",
       "media_url": ""
     },
     {
       "source": "VnExpress · Xem nhiều",
-      "time": "02/11 · 20:31",
-      "title": "HLV Park ngại đánh giá trận thắng của U23 Việt Nam",
-      "summary": "Giành ngôi nhất bảng I cùng vé dự giải U23 châu Á 2022, nhưng HLV Park Hang-seo không muốn nhận xét nhiều về trận đấu Myanmar chiều 2/11.",
-      "url": "https://vnexpress.net/hlv-park-ngai-danh-gia-tran-thang-cua-u23-viet-nam-4380572.html",
-      "image": "https://vcdn1-thethao.vnecdn.net/2021/11/02/250208647314533290107357942894-1327-6216-1635858391.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GDe5S8l3G1Szrqi1EZcKWw",
+      "time": "",
+      "title": "Bộ Công an: Vụ điểm thi chuyên Tuyên Quang là tội phạm có tổ chức",
+      "summary": "Đại tá Nguyễn Tuấn Hưng, đại diện Bộ Công an, cho biết việc điều tra gian lận tại điểm thi ở chuyên Tuyên Quang gặp nhiều khó khăn do đây là tội phạm có tổ chức, số người liên quan lớn.",
+      "url": "https://vnexpress.net/bo-cong-an-vu-diem-thi-chuyen-tuyen-quang-la-toi-pham-co-to-chuc-5105606.html",
+      "image": "https://i2-vnexpress.vnecdn.net/2026/08/05/sequence0100000101still001-178-3832-7681-1785925444.jpg?w=1200&h=675&q=100&dpr=1&fit=crop&s=IQ-nDUoCTnSkJeKiIAM4Xw",
       "media": "",
       "media_url": ""
     },
     {
       "source": "VnExpress · Xem nhiều",
-      "time": "02/11 · 20:34",
-      "title": "Việt Nam chung nhóm Nhật Bản ở U23 châu Á",
-      "summary": "Theo kết quả phân nhóm để chia bảng vòng chung kết U23 châu Á 2022, Việt Nam ở cùng nhóm số ba với Nhật Bản, Qatar và Iraq.",
-      "url": "https://vnexpress.net/viet-nam-chung-nhom-nhat-ban-o-u23-chau-a-4380570.html",
-      "image": "https://vcdn1-thethao.vnecdn.net/2021/11/02/dtu23-jpeg-1635858541-16358585-9840-3378-1635858692.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=OBePlAKOU_MhZY4Hq7eydw",
+      "time": "",
+      "title": "Ca sĩ Phương Diễm Huyền vừa bị khởi tố là ai?",
+      "summary": "Bắt đầu ca hát từ năm 2018, Phương Diễm Huyền, 34 tuổi, theo đuổi dòng nhạc bolero, hoạt động độc lập và sở hữu kênh YouTube với hơn 200.000 người đăng ký trước khi bị khởi tố.",
+      "url": "https://vnexpress.net/ca-si-phuong-diem-huyen-vua-bi-khoi-to-la-ai-5105682.html",
+      "image": "https://i2-vnexpress.vnecdn.net/2026/08/05/Sequence5400012623Still001-178-1834-3829-1785931554.jpg?w=1200&h=675&q=100&dpr=1&fit=crop&s=0z5bqgTVcCU6yjOBmxvTbg",
       "media": "",
       "media_url": ""
     }
@@ -131,7 +131,7 @@
       "title": "Rihanna is 'in the studio', says partner A$AP Rocky",
       "summary": "The singer, who last released a full album in 2016, is in the studio and \"cooking\", her partner said.",
       "url": "https://www.bbc.co.uk/news/articles/c4gwvvw9k1xo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3b30/live/756a0030-9148-11f1-84fb-a3652faf7717.jpg",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7061/live/e58771f0-9156-11f1-9c66-83c8d74d9669.jpg",
       "media": "",
       "media_url": ""
     }
@@ -139,21 +139,21 @@
   "markets": [
     {
       "source": "BBC Business",
-      "time": "06/08 · 08:19",
-      "title": "Iran says deal with Oman on Strait of Hormuz is in final stages",
-      "summary": "Neither the US or Oman have commented on the proposed agreement on the vital waterway.",
-      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b45d/live/e272ff40-9104-11f1-a7ab-8b30adf0800a.jpg",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "BBC Business",
       "time": "06/08 · 12:00",
       "title": "Cashing in on SpaceX: 'Every chance I get, I'll sell a little more'",
       "summary": "Andre Lavoie joined SpaceX in 2009 as an engineer, now he's looking to cash in his shares in the company.",
       "url": "https://www.bbc.co.uk/news/articles/cm2g0j3y339o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/59e8/live/c0b97ce0-910d-11f1-b61e-4f9456542bbf.png",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "BBC Business",
+      "time": "06/08 · 08:19",
+      "title": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+      "summary": "Neither the US or Oman have commented on the proposed agreement on the vital waterway.",
+      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b45d/live/e272ff40-9104-11f1-a7ab-8b30adf0800a.jpg",
       "media": "",
       "media_url": ""
     },
@@ -172,30 +172,30 @@
     {
       "source": "OpenAI",
       "time": "",
-      "title": "Skip to main content",
-      "summary": "Stay up to speed on the rapid advancement of AI technology and the benefits it offers to humanity.",
-      "url": "https://openai.com/news/#main",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/6iFRMxhUWyxFR6zpThf2Am/1f826b5095ca8854064989ecec465049/SEO_Banner_2400x1350_04.png?w=1600&h=900&fit=fill",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "OpenAI",
-      "time": "",
-      "title": "Global Affairs",
-      "summary": "Stay up to speed on the rapid advancement of AI technology and the benefits it offers to humanity.",
-      "url": "https://openai.com/news/global-affairs/",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/6iFRMxhUWyxFR6zpThf2Am/1f826b5095ca8854064989ecec465049/SEO_Banner_2400x1350_04.png?w=1600&h=900&fit=fill",
-      "media": "",
-      "media_url": ""
-    },
-    {
-      "source": "OpenAI",
-      "time": "",
       "title": "Third-party cyber evaluations involving OpenAI models Security Aug 4, 2026",
       "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
       "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
       "image": "https://images.ctfassets.net/kftzwdyauwt9/6RSPaWdKwEvT9xWx4IjQy2/a334438e4daf9f62c24541c00c212749/third-party-cyber-evaluations_16x9.png?w=1600&h=900&fit=fill",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "OpenAI",
+      "time": "",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex Product Aug 4, 2026",
+      "summary": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/2ucoEDJhFKCnvweCx2DR4/d28e7c8e8acabba775c448de631a1276/16_9_SEO_Blog.jpg?w=1600&h=900&fit=fill",
+      "media": "",
+      "media_url": ""
+    },
+    {
+      "source": "OpenAI",
+      "time": "",
+      "title": "Apple is getting this wrong Company Aug 3, 2026",
+      "summary": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong/",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/3LMWP6Zq4rgiX3gVyxKiX/667973a65cc5111e602f68338b9f1c87/Frame__13_.png?w=1600&h=900&fit=fill",
       "media": "",
       "media_url": ""
     }
@@ -203,13 +203,18 @@
   "media": [
     {
       "source": "VnExpress",
-      "title": "Sun Group xây 50.000 nhà ở xã hội, cho thuê tại Phú Quốc",
-      "url": "https://vnexpress.net/sun-group-xay-50-000-nha-o-xa-hoi-cho-thue-tai-phu-quoc-5104349.html"
+      "title": "Cựu thủ tướng lưu vong Bangladesh muốn về nước bất chấp án tử hình",
+      "url": "https://vnexpress.net/cuu-thu-tuong-luu-vong-bangladesh-muon-ve-nuoc-bat-chap-an-tu-hinh-5105885.html"
     },
     {
-      "source": "Thanh Niên",
-      "title": "Xem nhanh 20h: cập nhật quốc tế và Iran",
-      "url": "https://thanhnien.vn/xem-nhanh-20h-ngay-28-ong-trump-quay-xe-huy-tan-cong-iran-no-bom-gay-thuong-vong-lon-o-moscow-185260802191421855.htm"
+      "source": "VnExpress",
+      "title": "Tên lửa SpaceX đâm vào Mặt Trăng tốc độ 8.690 km/h",
+      "url": "https://vnexpress.net/ten-lua-spacex-dam-vao-mat-trang-toc-do-8-690-km-h-5105926.html"
+    },
+    {
+      "source": "VnExpress",
+      "title": "Mỹ Anh làm tour diễn ở Mỹ",
+      "url": "https://vnexpress.net/my-anh-lam-tour-dien-o-my-5105825.html"
     }
   ]
 }
