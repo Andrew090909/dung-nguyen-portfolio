@@ -1,0 +1,25 @@
+DNGWORKS SEO / URL AUDIT — 06/08/2026
+
+PHÁT HIỆN TRÊN BẢN HIỆN TẠI
+- Search web cho truy vấn DNGWORKS chưa trả về kết quả DNGWORKS rõ ràng.
+- Repo homepage còn title kỹ thuật: "DNGWORKS V9.1 Fast Review · Dũng Nguyễn".
+- Canonical hiện dùng URL có `.html`.
+- sitemap.xml hiện liệt kê URL `.html`.
+- Portfolio đang dùng một ảnh OG chung `/assets/images/ui/og-cover.png`.
+- Insights live vẫn có cấu trúc tin hard-code trong HTML trong khi `data/news.json` đã cập nhật.
+- `data/news.json` tại thời điểm kiểm tra đã cập nhật 06/08/2026 12:13 (GMT+7), chứng minh lỗi chính là frontend không đọc snapshot mới.
+- `popular_vn` trong snapshot có dữ liệu VnExpress từ 2021: nguồn RSS "tin xem nhiều" cũ không còn đáng tin.
+- `ai_news` có thể lấy nhầm link điều hướng kiểu "Skip to main content" / "Global Affairs".
+- `media` có thể giữ tin cũ khi không tìm thấy video mới.
+
+GÓI HOTFIX SỬA
+- Clean URL bằng directory index trên GitHub Pages.
+- Legacy `.html` chuyển hướng bằng meta refresh + JS và canonical URL sạch.
+- Internal links đổi sang URL sạch.
+- Assets đổi sang root-absolute để không vỡ khi chuyển vào subdirectory.
+- SEO meta, canonical, hreflang, Open Graph, Twitter Card, JSON-LD.
+- Site name ưu tiên: DNGWORKS; alternate name: DNG / Dũng Nguyễn.
+- Favicon và social image riêng.
+- Brand header: Home = DNG; subpages = DŨNG NGUYỄN.
+- Sitemap tự sinh từ toàn bộ clean routes hiện có.
+- News cập nhật 6 giờ/lần và frontend đọc JSON thật.
